@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4C339756-FB93-4187-A0A8-CA194E81830A}" SchemaVersion="119">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{4C339756-FB93-4187-A0A8-CA194E81830A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4C339756-FB93-4187-A0A8-CA194E81830A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Test_Bell_Loop" ID="{A0599D5A-C168-443B-92CA-388C9F8D844E}" ShortID="110315645">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="IsNonCachable" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="IsStreamingEnabled" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
+						<Property Name="Soundly:FileID" Type="string" Value="1711148522EaxPqvvfRF"/>
+						<Property Name="Soundly:FileName" Type="string" Value="D:/Sound Effects/BOOM Library\Free SFX\Lucky Wheel\BELLLrg_Church Bell Steady Loop_B00M_WOF FREE.wav"/>
+						<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
+						<Property Name="Soundly:HandleStopTime" Type="string" Value="30.252697916666666"/>
+						<Property Name="Soundly:LibraryID" Type="string" Value="1711148513EDqnV9lOxh"/>
+						<Property Name="Soundly:LibraryLocation" Type="string" Value="Local"/>
+						<Property Name="Soundly:PlaybackSpeed" Type="string" Value="1"/>
+						<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
+						<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
+						<Property Name="Soundly:RenderedFilePath" Type="string" Value="C:\Users\kargl\Soundly Audio\BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 1.wav"/>
+						<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="96000"/>
+						<Property Name="Soundly:SelectionStartTime" Type="string" Value="0"/>
+						<Property Name="Soundly:SelectionStopTime" Type="string" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 1" ID="{ADF8966F-EFD5-47F7-AFEA-D1ED7AD0CEFC}">
+							<PropertyList>
+								<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="1711148522EaxPqvvfRF"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Soundly Audio\BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 1.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="187731458"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 1" ID="{ADF8966F-EFD5-47F7-AFEA-D1ED7AD0CEFC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
