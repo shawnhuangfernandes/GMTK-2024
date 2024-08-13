@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Mac</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D326F752-7CA2-0A14-FDB1-63ECE89D0199}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="3157003241" Type="User" Language="SFX" Hash="{2FBE5626-DCA0-7943-6F23-ABA01B480D03}">
+			<ShortName>Test</ShortName>
+			<Path>Test.bnk</Path>
+			<Media>
+				<File Id="694506031" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>Soundly Audio\BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 2.wav</ShortName>
+					<Path>Media/694506031.wem</Path>
+					<CachePath>SFX/Soundly Audio/BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 2_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2131429412" Name="Test_Bell_Loop" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="694506031"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{7571F1AA-229E-7D55-3493-C209B0AA91D0}</FileHash>
+</SoundBanksInfo>

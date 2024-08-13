@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2131429412	Test_Bell_Loop			\Default Work Unit\Test_Bell_Loop	
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	694506031	Test_Bell_Loop	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Mac\SFX\Soundly Audio\BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 2_FBC78EF0.wem	694506031.wem	\Actor-Mixer Hierarchy\Default Work Unit\Test_Bell_Loop	
+
