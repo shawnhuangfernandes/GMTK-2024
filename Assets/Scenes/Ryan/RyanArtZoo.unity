@@ -1165,10 +1165,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderFeatures:
-  - feature: {fileID: 1431710057198942840, guid: c40be3174f62c4acf8c1216858c64956,
+  - feature: {fileID: -7298849294004983303, guid: c40be3174f62c4acf8c1216858c64956,
       type: 2}
     isEnabled: 0
-  - feature: {fileID: -7298849294004983303, guid: c40be3174f62c4acf8c1216858c64956,
+  - feature: {fileID: 1431710057198942840, guid: c40be3174f62c4acf8c1216858c64956,
+      type: 2}
+    isEnabled: 1
+  - feature: {fileID: -1878332245247344467, guid: c40be3174f62c4acf8c1216858c64956,
       type: 2}
     isEnabled: 0
   pipelineAsset: {fileID: 11400000, guid: 7b7fd9122c28c4d15b667c7040e3b3fd, type: 2}

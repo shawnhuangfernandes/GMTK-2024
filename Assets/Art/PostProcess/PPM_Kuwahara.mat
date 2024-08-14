@@ -42,10 +42,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Base_Distance: 5
+    - _Base_Distance: 2
     - _Distance: 2
     - _Frame_Steps: 10
     - _Noise_Contrast: 2
-    - _Noise_Intensity: 15
-    m_Colors: []
+    - _Noise_Intensity: 20
+    m_Colors:
+    - _Noise_Tiling: {r: 3, g: 3, b: 0, a: 0}
   m_BuildTextureStacks: []
