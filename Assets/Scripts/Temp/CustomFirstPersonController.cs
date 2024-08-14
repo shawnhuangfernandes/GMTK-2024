@@ -18,7 +18,7 @@ public class CustomFirstPersonController : MonoBehaviour
     public float lookSpeed = 2.0f;
 
     [Tooltip("The limit of the character's pitch")]
-    public float lookXLimit = 45.0f;
+    public float lookXLimit = 90.0f;
 
     [Tooltip("The distance that the character will check for if they are grounded")]
     public float groundCheckDistance = 1.1f;

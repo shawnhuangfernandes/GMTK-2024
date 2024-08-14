@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 38f52f7bfb32434f8b3284d5c6ee7567
     GuidInternal: 
-    m_lastTime: -8584780909104410488
+    m_lastTime: -8584779946080235367
     List:
     - name: Test
       guid: a945bd56bd8778409bb368a15a4cb042
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7a08af5726675d4bb3bbcd0d71ae2e77
     GuidInternal: 
-    m_lastTime: -8584780909107791036
+    m_lastTime: -8584779946095818544
     List:
     - name: Test_Bell_Loop
       guid: c3107017c2c7db4698fd5c7959f123ea
