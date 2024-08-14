@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4673545928945137242}
   - component: {fileID: 511475435079104960}
   m_Layer: 5
-  m_Name: '[Canvas] AimingReticle'
+  m_Name: '[HUD] AimingReticle'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
