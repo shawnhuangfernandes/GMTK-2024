@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2269759196873463318
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_ShopGlass
+  m_Shader: {fileID: 4800000, guid: 849dc4ff793a3f943ad21a3b6ee26456, type: 3}
+  m_Parent: {fileID: 2100000, guid: 9ec7d9f66a2ec544fabf73392b9a8890, type: 2}
+  m_ModifiedSerializedProperties: 16
+  m_ValidKeywords:
+  - _ADDITIONAL_LIGHTS_ENABLED
+  - _ADDITIONAL_LIGHTS_SPECULAR
+  - _ALPHAPREMULTIPLY_ON
+  - _EMISSION
+  - _ENVIRONMENT_LIGHTING_ENABLED
+  - _FOG
+  - _RAMP_TRIPLE
+  - _REFLECTIONS
+  - _REFLECTION_PROBES
+  - _SPECULAR
+  - _SURFACE_TYPE_TRANSPARENT
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses:
+  - SHADOWCASTER
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _AdditionalLightsSpecular: 1
+    - _Blend: 1
+    - _Cull: 0
+    - _DstBlend: 10
+    - _Emission: 1
+    - _ReflectionBlend: 0.468
+    - _ReflectionProbes: 1
+    - _ReflectionSmoothness: 0
+    - _Reflections: 1
+    - _SpecularSmoothness: 0
+    - _SpecularThreshold: 0.849
+    - _SrcBlend: 1
+    - _Surface: 1
+    - _ZWrite: 0
+    m_Colors:
+    - _BaseColor: {r: 0.7484276, g: 0.7484276, b: 0.7484276, a: 0.6784314}
+    - _EmissionColor: {r: 0.25115415, g: 0.39734843, b: 0.39734843, a: 1}
+  m_BuildTextureStacks: []
