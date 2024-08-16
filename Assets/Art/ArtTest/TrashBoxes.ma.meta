@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 96271f52b00cdf541a3bf5e43fdbef44
+guid: 699a1cdeb84286e4fb20595038d556a3
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,17 +7,22 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_Concrete
-    second: {fileID: 2100000, guid: b066ef947fa50e64fafd16b54e6cb2b3, type: 2}
+      name: M_Cardboard
+    second: {fileID: 2100000, guid: 3dff49827e9481c45a42e398ca2bf1e8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_DistWindows
-    second: {fileID: 2100000, guid: 507e878ebc608644796f80471528471d, type: 2}
+      name: M_CardboardVar1
+    second: {fileID: 2100000, guid: 176a36f170701104289b201f11e7ee51, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_CardboardVar2
+    second: {fileID: 2100000, guid: 91064123a0a830c42a5a690be65a0df5, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
-    materialSearch: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
@@ -47,7 +52,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importPhysicalCameras: 1

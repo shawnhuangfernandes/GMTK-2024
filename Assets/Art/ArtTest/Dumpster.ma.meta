@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 96271f52b00cdf541a3bf5e43fdbef44
+guid: b8771cae14889c94d8c5aaa24aedcfb3
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,17 +7,37 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_Concrete
-    second: {fileID: 2100000, guid: b066ef947fa50e64fafd16b54e6cb2b3, type: 2}
+      name: M_BlueMetal
+    second: {fileID: 2100000, guid: b2516f4c7fc5c9549abbe111dae59078, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_DistWindows
-    second: {fileID: 2100000, guid: 507e878ebc608644796f80471528471d, type: 2}
+      name: M_DarkPlastic
+    second: {fileID: 2100000, guid: 9d05b07ef274b6147b8177b63495b77d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GarbageBag
+    second: {fileID: 2100000, guid: 448808df528d2aa44a304cb37a69564a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GreenMetal
+    second: {fileID: 2100000, guid: b2516f4c7fc5c9549abbe111dae59078, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_LightMetal
+    second: {fileID: 2100000, guid: 174c3234ab26c7a458ba548c906cfcc6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Paper
+    second: {fileID: 2100000, guid: 61053715a59ad5247a9c2b97f3783947, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
