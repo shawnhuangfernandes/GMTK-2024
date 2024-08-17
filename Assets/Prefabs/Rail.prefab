@@ -756,6 +756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bae78d5140e6d3744be0c8a590449252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <spline>k__BackingField: {fileID: 0}
 --- !u!33 &4172672361998608588
 MeshFilter:
   m_ObjectHideFlags: 0
