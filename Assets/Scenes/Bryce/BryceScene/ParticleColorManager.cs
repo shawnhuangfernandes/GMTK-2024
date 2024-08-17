@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class ParticleColorManager : MonoBehaviour
 {
-    public WaypointGlow waypointGlow; // Reference to the WaypointGlow 
-    public ParticleSystem ParticleSystem { get => particleSystem; set => particleSystem = value; }
+    public WaypointGlow waypointGlow; // Reference to the WaypointGlow script
+    private ParticleSystem particleSystem;
 
     void Start()
     {
@@ -14,8 +14,8 @@ public class ParticleColorManager : MonoBehaviour
             return;
         }
 
-        ParticleSystem = GetComponent<ParticleSystem>();
-        if (ParticleSystem == null)
+        particleSystem = GetComponent<ParticleSystem>();
+        if (particleSystem == null)
         {
             UnityEngine.Debug.LogError("Particle System not found.");
             return;
@@ -33,20 +33,20 @@ public class ParticleColorManager : MonoBehaviour
 
     void SetAlpha(float alphaValue)
     {
-        if (ParticleSystem == null)
+        if (particleSystem == null)
         {
             UnityEngine.Debug.LogError("Particle System not assigned.");
             return;
         }
 
         // Get the Main module of the Particle System
-        var main = ParticleSystem.main;
+        var main = particleSystem.main;
 
         // Get the current start color
         Color currentColor = main.startColor.color;
 
         // Set the alpha value of the start color
-        Color newColor = new Color(currentColor.r, currentColor.g, currentColor.b, alphaValue);
+        Color newColor = new Color(currentColor.r, currentColor.g, currentColor.b, alphaValue * 2);
         main.startColor = newColor;
     }
 }
