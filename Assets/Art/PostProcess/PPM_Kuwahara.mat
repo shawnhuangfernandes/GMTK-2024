@@ -46,7 +46,7 @@ Material:
     - _Distance: 2
     - _Frame_Steps: 10
     - _Noise_Contrast: 2
-    - _Noise_Intensity: 20
+    - _Noise_Intensity: 12
     m_Colors:
-    - _Noise_Tiling: {r: 3, g: 3, b: 0, a: 0}
+    - _Noise_Tiling: {r: 2, g: 2, b: 0, a: 0}
   m_BuildTextureStacks: []
