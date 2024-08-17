@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: d7d00e6eeb7d944488e0025878535282
+guid: 79619a155de739f4480c1f67984d3dfb
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
   externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Gateway
-    second: {fileID: 2100000, guid: 4ecc925dc1dcd844898bb87ea6fff7e0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
