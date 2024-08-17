@@ -9,7 +9,7 @@ using Dreamteck.Splines;
 [RequireComponent(typeof(SplineComputer))]
 public class Rail : MonoBehaviour
 {
-	[field: SerializeField()]
+	[field: SerializeField(), HideInInspector]
 	public SplineComputer spline { get; private set; }
 
 	private void Awake()

@@ -32,12 +32,13 @@ public class CustomFirstPersonController : MonoBehaviour
     public Dreamteck.Splines.SplineProjector railHandle;
     public float minGrindSpeed = 5;
     public float maxGrindSpeed = 15;
+    [Tooltip("When snapping to the current rail, the fraction of the distance to the rail this character covers in 1 second")]
     public float snapToRailLerpRate = 0.9f;
 
     private CharacterController characterController;
     private Vector3 velocity;
     /// <summary> The movement mode this character should surrently be following. </summary>
-    [field: SerializeField()]
+    [field: SerializeField(), HideInInspector]
     public MotionState motionState { get; private set; }
     
     private float rotationX = 0;
@@ -61,6 +62,8 @@ public class CustomFirstPersonController : MonoBehaviour
 
     private void Awake()
     {
+        characterController = GetComponent<CharacterController>();
+
         rootWalkSpeed = walkSpeed;
         rootRunSpeed = runSpeed;
         rootJumpForce = jumpForce;
@@ -70,7 +73,6 @@ public class CustomFirstPersonController : MonoBehaviour
 
     void Start()
     {
-        characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -130,7 +132,10 @@ public class CustomFirstPersonController : MonoBehaviour
                 AddForce(Physics.gravity, ForceMode.Acceleration);
 
                 // Then, align velocity to the current rail.
-                velocity = velocity.magnitude * railHandle.result.forward;
+                float speed = velocity.magnitude;
+                Vector3 direction = railHandle.result.forward;
+                speed = Mathf.Clamp(speed, minGrindSpeed, maxGrindSpeed);
+                velocity = speed * direction;
                 break;
 		}
 
@@ -158,9 +163,11 @@ public class CustomFirstPersonController : MonoBehaviour
 		{
             case MotionState.Grounded:
             case MotionState.Airborne:
-                foreach (Collider otherCollider in Physics.OverlapSphere(transform.position, 1.5f))
+                // Test for rails in a small area while grounded, and a large area while airborne.
+                float railTestRange = motionState==MotionState.Grounded ? 0.1f : 0.6f;
+                foreach (Collider otherCollider in Physics.OverlapSphere(railHandle.transform.position, railTestRange*transform.localScale.x))
                 {
-                    Rail otherRail = GetComponent<Rail>();
+                    Rail otherRail = otherCollider.GetComponentInParent<Rail>();
                     if (otherRail == null)
                         continue;
 
