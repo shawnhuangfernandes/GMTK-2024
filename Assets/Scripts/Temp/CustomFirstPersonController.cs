@@ -33,6 +33,13 @@ public class CustomFirstPersonController : MonoBehaviour
     
     private float rotationX = 0;
 
+    [HideInInspector] public float rootWalkSpeed = 0F;
+    [HideInInspector] public float rootRunSpeed = 0F;
+    [HideInInspector] public float rootJumpForce = 0F;
+    [HideInInspector] public float rootGroundCheckDistance = 0F;
+    [HideInInspector] public float rootCharacterControllerRadius = 0F;
+
+
 	public enum MotionState {
         /// <summary> Move according to player input, and stick to the ground. </summary>
         Grounded,
@@ -40,8 +47,16 @@ public class CustomFirstPersonController : MonoBehaviour
         Airborne,
     }
 
+    private void Awake()
+    {
+        rootWalkSpeed = walkSpeed;
+        rootRunSpeed = runSpeed;
+        rootJumpForce = jumpForce;
+        rootGroundCheckDistance = groundCheckDistance;
+        rootCharacterControllerRadius = characterController.radius;
+    }
 
-	void Start()
+    void Start()
     {
         characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
@@ -54,6 +69,8 @@ public class CustomFirstPersonController : MonoBehaviour
         // After all movement, decide how this character should respond to the ground.
         InteractWithGround();
         HandleCameraRotation();
+
+        Debug.Log(motionState);
     }
 
     void HandleMovement()
@@ -81,6 +98,7 @@ public class CustomFirstPersonController : MonoBehaviour
             case MotionState.Airborne:
                 // Apply gravity
                 AddForce(Physics.gravity, ForceMode.Acceleration);
+                Debug.Log("Moving Down");
                 break;
 		}
 
@@ -94,6 +112,8 @@ public class CustomFirstPersonController : MonoBehaviour
         float spherecastRadius = 0.99f * characterController.radius;
         bool isTouchingGround = Physics.SphereCast(new Ray(transform.position, Vector3.down), spherecastRadius, out hit, groundCheckDistance-spherecastRadius);
         isTouchingGround &= Vector3.Angle(Vector3.up, hit.normal) <= characterController.slopeLimit;
+
+        Debug.Log(isTouchingGround);
 
         switch (motionState)
         {
@@ -136,4 +156,11 @@ public class CustomFirstPersonController : MonoBehaviour
                 break;
         }
 	}
+
+    public void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+
+        Gizmos.DrawLine(transform.position, transform.position + Vector3.down * groundCheckDistance);
+    }
 }
