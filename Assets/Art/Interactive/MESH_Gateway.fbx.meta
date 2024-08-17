@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: M_Gateway
+    second: {fileID: 2100000, guid: 4ecc925dc1dcd844898bb87ea6fff7e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: M_Limestone
     second: {fileID: 2100000, guid: 3f600f0b3ec06d844b249e406afa7450, type: 2}
   materials:
