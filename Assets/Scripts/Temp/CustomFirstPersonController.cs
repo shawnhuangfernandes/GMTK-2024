@@ -30,6 +30,8 @@ public class CustomFirstPersonController : MonoBehaviour
     [Header("Rail Grinding")]
     [Tooltip("The object at whose position this character should attach to rails while grinding.")]
     public Dreamteck.Splines.SplineProjector railHandle;
+    [Tooltip("When grinding below the minimum grind speed, the acceleration with which to approach the minimum grind speed.")]
+    public float grindAcceleration = 5f;
     public float minGrindSpeed = 5;
     public float maxGrindSpeed = 15;
     [Tooltip("When snapping to the current rail, the fraction of the distance to the rail this character covers in 1 second")]
@@ -134,7 +136,9 @@ public class CustomFirstPersonController : MonoBehaviour
                 // Then, align velocity to the current rail.
                 float speed = velocity.magnitude;
                 Vector3 direction = railHandle.result.forward;
-                speed = Mathf.Clamp(speed, minGrindSpeed, maxGrindSpeed);
+                if(speed < minGrindSpeed)
+                    speed += grindAcceleration * Time.deltaTime;
+                speed = Mathf.Clamp(speed, 0, maxGrindSpeed);
                 velocity = speed * direction;
                 break;
 		}
@@ -159,28 +163,41 @@ public class CustomFirstPersonController : MonoBehaviour
     /// <summary> If able, search for nearby rails and start grinding. </summary>
     private void InteractWithRails()
 	{
+        void SnapToNearbyRail(float searchRadius)
+		{
+            foreach (Collider otherCollider in Physics.OverlapSphere(railHandle.transform.position, searchRadius * transform.localScale.x))
+            {
+                Rail otherRail = otherCollider.GetComponentInParent<Rail>();
+                if (otherRail == null)
+                    continue;
+
+                // Found a rail! Snap to it.
+                railHandle.spline = otherRail.spline;
+                if(railHandle.result.percent < 1f)
+				{
+                    motionState = MotionState.Grinding;
+                    currentRail = otherRail;
+                    break;
+				}
+            }
+        }
+
 		switch (motionState)
 		{
             case MotionState.Grounded:
-            case MotionState.Airborne:
-                // Test for rails in a small area while grounded, and a large area while airborne.
-                float railTestRange = motionState==MotionState.Grounded ? 0.1f : 0.6f;
-                foreach (Collider otherCollider in Physics.OverlapSphere(railHandle.transform.position, railTestRange*transform.localScale.x))
-                {
-                    Rail otherRail = otherCollider.GetComponentInParent<Rail>();
-                    if (otherRail == null)
-                        continue;
+                SnapToNearbyRail(0.1f);
+                break;
 
-                    // Found a rail! Snap to it.
-                    motionState = MotionState.Grinding;
-                    currentRail = otherRail;
-                    railHandle.spline = otherRail.spline;
-                    break;
-                }
+            case MotionState.Airborne:
+                if(velocity.y < 0)
+                    SnapToNearbyRail(0.6f);
                 break;
 
             case MotionState.Grinding:
-                // There's no need to interact with nearby rails if this character is already grinding.
+                // Leaving the rail:
+                // Leave the rail when this character reaches the end.
+                if (railHandle.result.percent >= 1f)
+                    motionState = MotionState.Airborne;
                 break;
         }
 	}
