@@ -49,6 +49,7 @@ public class CustomFirstPersonController : MonoBehaviour
 
     private void Awake()
     {
+        characterController = GetComponent<CharacterController>();
         rootWalkSpeed = walkSpeed;
         rootRunSpeed = runSpeed;
         rootJumpForce = jumpForce;
@@ -58,7 +59,7 @@ public class CustomFirstPersonController : MonoBehaviour
 
     void Start()
     {
-        characterController = GetComponent<CharacterController>();
+        
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }

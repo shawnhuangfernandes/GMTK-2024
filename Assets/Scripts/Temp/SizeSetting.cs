@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Size Setting")]
-public class SizeSetting : MonoBehaviour
+public class SizeSetting : ScriptableObject
 {
     [Tooltip("The scale to adjust the object by")]
-    [SerializeField] private float targetScale = 1;
+    [SerializeField] public float targetScale = 1;
 
     private const float SCALE_LERP_DURATION = 0.3F;
 
@@ -19,10 +19,10 @@ public class SizeSetting : MonoBehaviour
         characterController = target.GetComponent<CharacterController>();
         firstPersonController = target.GetComponent<CustomFirstPersonController>();
 
-        DOTween.To(() => 0F, (interpolant) => LerpCharacterMoveStats(interpolant), targetScale, SCALE_LERP_DURATION);      
+        DOTween.To(() => target.localScale.magnitude, (interpolant) => LerpCharacterMoveStats(interpolant), targetScale, SCALE_LERP_DURATION);      
     }
 
-    public void LerpCharacterMoveStats(float interpolant)
+    public void LerpCharacterMoveStats(float targetScale)
     {
         if (characterController != null)
         {
@@ -31,10 +31,13 @@ public class SizeSetting : MonoBehaviour
 
         if (firstPersonController != null)
         {
-            firstPersonController.rootWalkSpeed = firstPersonController.rootWalkSpeed * targetScale;
-            firstPersonController.rootRunSpeed = firstPersonController.rootRunSpeed * targetScale;
+            firstPersonController.walkSpeed = firstPersonController.rootWalkSpeed * targetScale;
+            firstPersonController.runSpeed = firstPersonController.rootRunSpeed * targetScale;
             firstPersonController.jumpForce = firstPersonController.rootJumpForce * targetScale;
-            firstPersonController.rootGroundCheckDistance = firstPersonController.rootGroundCheckDistance * targetScale;
+            firstPersonController.groundCheckDistance = firstPersonController.rootGroundCheckDistance * targetScale;
+            // TODO Add Rail Speed Adjustment
         }
+
+        characterController.transform.localScale = Vector3.one * targetScale;
     }
 }
