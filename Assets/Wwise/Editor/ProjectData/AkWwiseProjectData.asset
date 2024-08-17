@@ -94,8 +94,59 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7a08af5726675d4bb3bbcd0d71ae2e77
     GuidInternal: 
-    m_lastTime: -8584779946095818544
+    m_lastTime: -8584777353665437855
     List:
+    - name: Player_Grows
+      guid: cce2756d9916e14b92ed4aafb7a2cd43
+      id: 1310416267
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a08af5726675d4bb3bbcd0d71ae2e77
+      - ElementName: Player_Grows
+        ObjectType: 3
+        guid: cce2756d9916e14b92ed4aafb7a2cd43
+      Path: Events\Default Work Unit\Player_Grows
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player_Normal
+      guid: c1c3be9db15e0b4595721b5a681d00b0
+      id: 1432981492
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a08af5726675d4bb3bbcd0d71ae2e77
+      - ElementName: Player_Normal
+        ObjectType: 3
+        guid: c1c3be9db15e0b4595721b5a681d00b0
+      Path: Events\Default Work Unit\Player_Normal
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player_Shrinks
+      guid: cd63cf5a3f97ea4db845b586802cfefe
+      id: 3721520397
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a08af5726675d4bb3bbcd0d71ae2e77
+      - ElementName: Player_Shrinks
+        ObjectType: 3
+        guid: cd63cf5a3f97ea4db845b586802cfefe
+      Path: Events\Default Work Unit\Player_Shrinks
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Test_Bell_Loop
       guid: c3107017c2c7db4698fd5c7959f123ea
       id: 2131429412
@@ -125,8 +176,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 2db9b6da6575f7428329572c0b05a910
     GuidInternal: 
-    m_lastTime: -8584779946964753403
-    List: []
+    m_lastTime: -8584777353665427840
+    List:
+    - name: Player_Size
+      guid: 0cfa0bf4012d20468f7d006735cb5bf5
+      id: 3040674790
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2db9b6da6575f7428329572c0b05a910
+      - ElementName: Player_Size
+        ObjectType: 13
+        guid: 0cfa0bf4012d20468f7d006735cb5bf5
+      Path: Game Parameters\Default Work Unit\Player_Size
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -139,8 +204,90 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 24e77fe50c28ea4e86b739e402baf03f
     GuidInternal: 
-    m_lastTime: -8584779946962333402
-    List: []
+    m_lastTime: -8584777353665417821
+    List:
+    - name: PlayerSize
+      guid: 14e3b83f6276da4b94d6615b537e9b17
+      id: 4258827653
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 24e77fe50c28ea4e86b739e402baf03f
+      - ElementName: PlayerSize
+        ObjectType: 9
+        guid: 14e3b83f6276da4b94d6615b537e9b17
+      Path: States\Default Work Unit\PlayerSize
+      values:
+      - name: Large
+        guid: 1f72a9a585d7d54586c7de9e0ea3e5be
+        id: 4284352190
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 24e77fe50c28ea4e86b739e402baf03f
+        - ElementName: PlayerSize
+          ObjectType: 9
+          guid: 14e3b83f6276da4b94d6615b537e9b17
+        - ElementName: Large
+          ObjectType: 8
+          guid: 1f72a9a585d7d54586c7de9e0ea3e5be
+      - name: None
+        guid: fd21ef760bdfa14b8c3517d3a4a28957
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 24e77fe50c28ea4e86b739e402baf03f
+        - ElementName: PlayerSize
+          ObjectType: 9
+          guid: 14e3b83f6276da4b94d6615b537e9b17
+        - ElementName: None
+          ObjectType: 8
+          guid: fd21ef760bdfa14b8c3517d3a4a28957
+      - name: Normal
+        guid: d07a2da4c7822f4087c5d6e514991519
+        id: 1160234136
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 24e77fe50c28ea4e86b739e402baf03f
+        - ElementName: PlayerSize
+          ObjectType: 9
+          guid: 14e3b83f6276da4b94d6615b537e9b17
+        - ElementName: Normal
+          ObjectType: 8
+          guid: d07a2da4c7822f4087c5d6e514991519
+      - name: Small
+        guid: a23bec7bf4d7d445af95757e6aa8008a
+        id: 1846755610
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 24e77fe50c28ea4e86b739e402baf03f
+        - ElementName: PlayerSize
+          ObjectType: 9
+          guid: 14e3b83f6276da4b94d6615b537e9b17
+        - ElementName: Small
+          ObjectType: 8
+          guid: a23bec7bf4d7d445af95757e6aa8008a
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -153,8 +300,90 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: a24c2f969f74214e8872283108ce1df5
     GuidInternal: 
-    m_lastTime: -8584779946962333402
-    List: []
+    m_lastTime: -8584777353665402770
+    List:
+    - name: Footsteps
+      guid: ae8203b9246fa24ba0653cb688cf0335
+      id: 2385628198
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a24c2f969f74214e8872283108ce1df5
+      - ElementName: Footsteps
+        ObjectType: 11
+        guid: ae8203b9246fa24ba0653cb688cf0335
+      Path: Switches\Default Work Unit\Footsteps
+      values:
+      - name: Dirt
+        guid: de95ca5cab821d4985518e5339f6c786
+        id: 2195636714
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a24c2f969f74214e8872283108ce1df5
+        - ElementName: Footsteps
+          ObjectType: 11
+          guid: ae8203b9246fa24ba0653cb688cf0335
+        - ElementName: Dirt
+          ObjectType: 10
+          guid: de95ca5cab821d4985518e5339f6c786
+      - name: Grass
+        guid: eb7f77e12292b34180a1053755190892
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a24c2f969f74214e8872283108ce1df5
+        - ElementName: Footsteps
+          ObjectType: 11
+          guid: ae8203b9246fa24ba0653cb688cf0335
+        - ElementName: Grass
+          ObjectType: 10
+          guid: eb7f77e12292b34180a1053755190892
+      - name: Rock
+        guid: cd244c081339bb46ae96ddcc1afafdee
+        id: 2144363834
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a24c2f969f74214e8872283108ce1df5
+        - ElementName: Footsteps
+          ObjectType: 11
+          guid: ae8203b9246fa24ba0653cb688cf0335
+        - ElementName: Rock
+          ObjectType: 10
+          guid: cd244c081339bb46ae96ddcc1afafdee
+      - name: Tile
+        guid: 052b72339b7baf42b26c0fe8cebc8eb0
+        id: 2637588553
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a24c2f969f74214e8872283108ce1df5
+        - ElementName: Footsteps
+          ObjectType: 11
+          guid: ae8203b9246fa24ba0653cb688cf0335
+        - ElementName: Tile
+          ObjectType: 10
+          guid: 052b72339b7baf42b26c0fe8cebc8eb0
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:

@@ -24,10 +24,13 @@ public class CustomFirstPersonController : MonoBehaviour
     [Tooltip("The distance that the character will check for if they are grounded")]
     public float groundCheckDistance = 1.1f;
 
+    [Tooltip("The camera XFRM to control")]
+    public Transform cameraXFRM;
+
     private CharacterController characterController;
     private Vector3 velocity;
     public MotionState motionState { get; private set; }
-    private Transform cameraTransform;
+    
     private float rotationX = 0;
 
 	public enum MotionState {
@@ -41,7 +44,6 @@ public class CustomFirstPersonController : MonoBehaviour
 	void Start()
     {
         characterController = GetComponent<CharacterController>();
-        cameraTransform = Camera.main.transform;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -115,7 +117,7 @@ public class CustomFirstPersonController : MonoBehaviour
     {
         rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
         rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
-        cameraTransform.localRotation = Quaternion.Euler(rotationX, 0, 0);
+        cameraXFRM.localRotation = Quaternion.Euler(rotationX, 0, 0);
         transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
     }
 
