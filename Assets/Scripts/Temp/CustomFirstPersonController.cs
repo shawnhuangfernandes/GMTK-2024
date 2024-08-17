@@ -27,11 +27,24 @@ public class CustomFirstPersonController : MonoBehaviour
     [Tooltip("The camera XFRM to control")]
     public Transform cameraXFRM;
 
+    [Header("Rail Grinding")]
+    [Tooltip("The object at whose position this character should attach to rails while grinding.")]
+    public Dreamteck.Splines.SplineProjector railHandle;
+    [Tooltip("When grinding below the minimum grind speed, the acceleration with which to approach the minimum grind speed.")]
+    public float grindAcceleration = 5f;
+    public float minGrindSpeed = 5;
+    public float maxGrindSpeed = 15;
+    [Tooltip("When snapping to the current rail, the fraction of the distance to the rail this character covers in 1 second")]
+    public float snapToRailLerpRate = 0.9f;
+
     private CharacterController characterController;
     private Vector3 velocity;
+    /// <summary> The movement mode this character should surrently be following. </summary>
+    [field: SerializeField(), HideInInspector]
     public MotionState motionState { get; private set; }
     
     private float rotationX = 0;
+    private Rail? currentRail;
 
     [HideInInspector] public float rootWalkSpeed = 0F;
     [HideInInspector] public float rootRunSpeed = 0F;
@@ -45,11 +58,14 @@ public class CustomFirstPersonController : MonoBehaviour
         Grounded,
         /// <summary> Move according to player input and the force of gravity. </summary>
         Airborne,
+        /// <summary> Move along the current rail until this character reaches the end or jumps off. </summary>
+        Grinding,
     }
 
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
+
         rootWalkSpeed = walkSpeed;
         rootRunSpeed = runSpeed;
         rootJumpForce = jumpForce;
@@ -59,7 +75,6 @@ public class CustomFirstPersonController : MonoBehaviour
 
     void Start()
     {
-        
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -67,6 +82,7 @@ public class CustomFirstPersonController : MonoBehaviour
     void Update()
     {
         HandleMovement();
+        InteractWithRails();
         // After all movement, decide how this character should respond to the ground.
         InteractWithGround();
         HandleCameraRotation();
@@ -75,13 +91,24 @@ public class CustomFirstPersonController : MonoBehaviour
     }
 
     void HandleMovement()
-    {
-        float speed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
-        Vector3 moveDirection = transform.right * Input.GetAxis("Horizontal") + transform.forward * Input.GetAxis("Vertical");
-        moveDirection *= speed;
+	{
+		// If able, apply player movement input.
+		switch (motionState)
+		{
+            case MotionState.Grounded:
+            case MotionState.Airborne:
+		        float speed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
+                Vector3 moveDirection = transform.right * Input.GetAxis("Horizontal") + transform.forward * Input.GetAxis("Vertical");
+                moveDirection *= speed;
 
-        // Applying movement to the velocity.
-        velocity = new Vector3(moveDirection.x, velocity.y, moveDirection.z);
+                // Applying movement to the velocity.
+                velocity = new Vector3(moveDirection.x, velocity.y, moveDirection.z);
+                break;
+
+            case MotionState.Grinding:
+                // No directional control while grinding.
+                break;
+        }
 
         switch(motionState)
 		{
@@ -101,11 +128,79 @@ public class CustomFirstPersonController : MonoBehaviour
                 AddForce(Physics.gravity, ForceMode.Acceleration);
                 Debug.Log("Moving Down");
                 break;
+
+            case MotionState.Grinding:
+                // First, apply gravity.
+                AddForce(Physics.gravity, ForceMode.Acceleration);
+
+                // Then, align velocity to the current rail.
+                float speed = velocity.magnitude;
+                Vector3 direction = railHandle.result.forward;
+                if(speed < minGrindSpeed)
+                    speed += grindAcceleration * Time.deltaTime;
+                speed = Mathf.Clamp(speed, 0, maxGrindSpeed);
+                velocity = speed * direction;
+                break;
 		}
 
+        // Calculate the upcoming displacement based on this character's current velocity.
+        Vector3 displacement = velocity * Time.deltaTime;
+
+        // Nudge this character's position.
+        switch (motionState)
+		{
+            case MotionState.Grinding:
+                // Snap to the current rail.
+                float nudgeFactor = (1f - Mathf.Pow(1f-snapToRailLerpRate, Time.deltaTime));
+                displacement += (railHandle.result.position - railHandle.transform.position) * nudgeFactor;
+                break;
+        }
+
         // Finally, move this character.
-        characterController.Move(velocity * Time.deltaTime);
+        characterController.Move(displacement);
     }
+
+    /// <summary> If able, search for nearby rails and start grinding. </summary>
+    private void InteractWithRails()
+	{
+        void SnapToNearbyRail(float searchRadius)
+		{
+            foreach (Collider otherCollider in Physics.OverlapSphere(railHandle.transform.position, searchRadius * transform.localScale.x))
+            {
+                Rail otherRail = otherCollider.GetComponentInParent<Rail>();
+                if (otherRail == null)
+                    continue;
+
+                // Found a rail! Snap to it.
+                railHandle.spline = otherRail.spline;
+                if(railHandle.result.percent < 1f)
+				{
+                    motionState = MotionState.Grinding;
+                    currentRail = otherRail;
+                    break;
+				}
+            }
+        }
+
+		switch (motionState)
+		{
+            case MotionState.Grounded:
+                SnapToNearbyRail(0.1f);
+                break;
+
+            case MotionState.Airborne:
+                if(velocity.y < 0)
+                    SnapToNearbyRail(0.6f);
+                break;
+
+            case MotionState.Grinding:
+                // Leaving the rail:
+                // Leave the rail when this character reaches the end.
+                if (railHandle.result.percent >= 1f)
+                    motionState = MotionState.Airborne;
+                break;
+        }
+	}
 
     private void InteractWithGround()
     {
