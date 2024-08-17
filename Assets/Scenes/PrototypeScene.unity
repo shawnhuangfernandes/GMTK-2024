@@ -2451,41 +2451,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[Player] 1stPersonPlayer'
       objectReference: {fileID: 0}
-    - target: {fileID: 1318627968722622561, guid: a2eec9b4392d12f4c83f43ea8c410a26,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 1318627968722622561, guid: a2eec9b4392d12f4c83f43ea8c410a26,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 1318627968722622561, guid: a2eec9b4392d12f4c83f43ea8c410a26,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 11.88
-      objectReference: {fileID: 0}
-    - target: {fileID: 1318627968722622561, guid: a2eec9b4392d12f4c83f43ea8c410a26,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.97038907
-      objectReference: {fileID: 0}
-    - target: {fileID: 1318627968722622561, guid: a2eec9b4392d12f4c83f43ea8c410a26,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.14555939
-      objectReference: {fileID: 0}
-    - target: {fileID: 1318627968722622561, guid: a2eec9b4392d12f4c83f43ea8c410a26,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.19063024
-      objectReference: {fileID: 0}
-    - target: {fileID: 1318627968722622561, guid: a2eec9b4392d12f4c83f43ea8c410a26,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.02859474
-      objectReference: {fileID: 0}
     - target: {fileID: 3607908764784023447, guid: a2eec9b4392d12f4c83f43ea8c410a26,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2535,16 +2500,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5998961320894347270, guid: a2eec9b4392d12f4c83f43ea8c410a26,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7579957549262768447, guid: a2eec9b4392d12f4c83f43ea8c410a26,
-        type: 3}
-      propertyPath: field of view
-      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
