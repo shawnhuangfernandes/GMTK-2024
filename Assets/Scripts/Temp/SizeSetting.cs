@@ -33,7 +33,7 @@ public class SizeSetting : ScriptableObject
         {
             firstPersonController.walkSpeed = firstPersonController.rootWalkSpeed * targetScale;
             firstPersonController.runSpeed = firstPersonController.rootRunSpeed * targetScale;
-            firstPersonController.jumpForce = firstPersonController.rootJumpForce * targetScale;
+            firstPersonController.jumpForce = firstPersonController.rootJumpForce * targetScale * 2F;
             firstPersonController.groundCheckDistance = firstPersonController.rootGroundCheckDistance * targetScale;
             // TODO Add Rail Speed Adjustment
         }
