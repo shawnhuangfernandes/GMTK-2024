@@ -117,14 +117,14 @@ MonoBehaviour:
     useClippedPercent: 0
     keys: []
   _clipFromSample:
-    position: {x: -9.786684, y: 0, z: -0.012887239}
+    position: {x: -2.7608204, y: 0, z: -3.1373506}
     up: {x: 0, y: 1, z: 0}
     forward: {x: 0.024030479, y: 0.059344966, z: -0.9979483}
     color: {r: 1, g: 1, b: 1, a: 1}
     size: 1
     percent: 0
   _clipToSample:
-    position: {x: -11.099905, y: 0, z: 1.3181252}
+    position: {x: -4.0740414, y: 0, z: -1.8063381}
     up: {x: 0, y: 1, z: 0}
     forward: {x: 0.97606826, y: -0.12661853, z: 0.17680101}
     color: {r: 1, g: 1, b: 1, a: 1}
@@ -1009,7 +1009,7 @@ GameObject:
   - component: {fileID: 7246764327943065334}
   - component: {fileID: 1831899239182008143}
   m_Layer: 0
-  m_Name: Rail
+  m_Name: '[Interactable] Rail'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1435,14 +1435,14 @@ MonoBehaviour:
     useClippedPercent: 0
     keys: []
   _clipFromSample:
-    position: {x: -9.786684, y: 0, z: -0.012887239}
+    position: {x: -2.7608204, y: 0, z: -3.1373506}
     up: {x: 0, y: 1, z: 0}
     forward: {x: 0.024030479, y: 0.059344966, z: -0.9979483}
     color: {r: 1, g: 1, b: 1, a: 1}
     size: 1
     percent: 0
   _clipToSample:
-    position: {x: -11.099905, y: 0, z: 1.3181252}
+    position: {x: -4.0740414, y: 0, z: -1.8063381}
     up: {x: 0, y: 1, z: 0}
     forward: {x: 0.97606826, y: -0.12661853, z: 0.17680101}
     color: {r: 1, g: 1, b: 1, a: 1}

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1634574983772203769}
   - component: {fileID: 7955887730073147181}
   m_Layer: 0
-  m_Name: WaypointMarker
+  m_Name: '[Interactable] WaypointMarker'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
