@@ -3,6 +3,7 @@ using UnityEngine;
 // Author: Shawn Huang Fernandes
 // Description: This script moves a physics based character along the XZ axis
 
+[RequireComponent(typeof(CharacterController))]
 public class CustomFirstPersonController : MonoBehaviour
 {
     [Tooltip("The walk speed of the character")]
@@ -23,14 +24,23 @@ public class CustomFirstPersonController : MonoBehaviour
     [Tooltip("The distance that the character will check for if they are grounded")]
     public float groundCheckDistance = 1.1f;
 
-    private Rigidbody rb;
+    private CharacterController characterController;
+    private Vector3 velocity;
+    public MotionState motionState { get; private set; }
     private Transform cameraTransform;
     private float rotationX = 0;
 
-    void Start()
+	public enum MotionState {
+        /// <summary> Move according to player input, and stick to the ground. </summary>
+        Grounded,
+        /// <summary> Move according to player input and the force of gravity. </summary>
+        Airborne,
+    }
+
+
+	void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = true; // Prevent the Rigidbody from rotating automatically due to physics
+        characterController = GetComponent<CharacterController>();
         cameraTransform = Camera.main.transform;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -39,6 +49,8 @@ public class CustomFirstPersonController : MonoBehaviour
     void Update()
     {
         HandleMovement();
+        // After all movement, decide how this character should respond to the ground.
+        InteractWithGround();
         HandleCameraRotation();
     }
 
@@ -48,18 +60,58 @@ public class CustomFirstPersonController : MonoBehaviour
         Vector3 moveDirection = transform.right * Input.GetAxis("Horizontal") + transform.forward * Input.GetAxis("Vertical");
         moveDirection *= speed;
 
-        // Applying movement to the Rigidbody
-        Vector3 velocity = new Vector3(moveDirection.x, rb.velocity.y, moveDirection.z);
-        rb.velocity = velocity;
+        // Applying movement to the velocity.
+        velocity = new Vector3(moveDirection.x, velocity.y, moveDirection.z);
 
-        // Jumping
-        if (IsGrounded() && Input.GetButtonDown("Jump"))
+        switch(motionState)
+		{
+            case MotionState.Grounded:
+                velocity.y = 0;
+
+                // Jumping
+                if (Input.GetButtonDown("Jump"))
+                {
+                    AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+                    motionState = MotionState.Airborne;
+                }
+                break;
+
+            case MotionState.Airborne:
+                // Apply gravity
+                AddForce(Physics.gravity, ForceMode.Acceleration);
+                break;
+		}
+
+        // Finally, move this character.
+        characterController.Move(velocity * Time.deltaTime);
+    }
+
+    private void InteractWithGround()
+    {
+        RaycastHit hit;
+        float spherecastRadius = 0.99f * characterController.radius;
+        bool isTouchingGround = Physics.SphereCast(new Ray(transform.position, Vector3.down), spherecastRadius, out hit, groundCheckDistance-spherecastRadius);
+        isTouchingGround &= Vector3.Angle(Vector3.up, hit.normal) <= characterController.slopeLimit;
+
+        switch (motionState)
         {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            case MotionState.Grounded:
+                // Stick to the ground.
+                if (isTouchingGround)
+                    characterController.Move(Vector3.down * characterController.stepOffset);
+                
+                if(!isTouchingGround)
+                    motionState = MotionState.Airborne;
+                break;
+
+            case MotionState.Airborne:
+                if(velocity.y < 0 && isTouchingGround)
+                    motionState = MotionState.Grounded;
+                break;
         }
     }
 
-    void HandleCameraRotation()
+	void HandleCameraRotation()
     {
         rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
         rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
@@ -67,8 +119,19 @@ public class CustomFirstPersonController : MonoBehaviour
         transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
     }
 
-    bool IsGrounded()
-    {
-        return Physics.Raycast(transform.position, Vector3.down, groundCheckDistance);
-    }
+    public void AddForce(Vector3 force, ForceMode forceMode)
+	{
+		switch (forceMode)
+		{
+            case ForceMode.Acceleration:
+            case ForceMode.Force:
+                velocity += force * Time.deltaTime;
+                break;
+
+            case ForceMode.Impulse:
+            case ForceMode.VelocityChange:
+		        velocity += force;
+                break;
+        }
+	}
 }
