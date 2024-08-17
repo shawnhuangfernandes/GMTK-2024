@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{02F19AF0-6AA5-42B7-997F-B8741FD5DC2D}" SchemaVersion="119">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{02F19AF0-6AA5-42B7-997F-B8741FD5DC2D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{02F19AF0-6AA5-42B7-997F-B8741FD5DC2D}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Player_Size" ID="{3921AFEF-432F-4CD8-A1FF-FD75ACE09F03}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Test_Bell_Loop" ID="{177010C3-C7C2-46DB-98FD-5C7959F123EA}" WorkUnitID="{57AF087A-6726-4B5D-B3BB-CD0D71AE2E77}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Shrinks" ID="{5ACF63CD-973F-4DEA-B845-B586802CFEFE}" WorkUnitID="{57AF087A-6726-4B5D-B3BB-CD0D71AE2E77}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Normal" ID="{9DBEC3C1-5EB1-450B-9572-1B5A681D00B0}" WorkUnitID="{57AF087A-6726-4B5D-B3BB-CD0D71AE2E77}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Grows" ID="{6D75E2CC-1699-4BE1-92ED-4AAFB7A2CD43}" WorkUnitID="{57AF087A-6726-4B5D-B3BB-CD0D71AE2E77}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Player_Size" ID="{F40BFA0C-2D01-4620-8F7D-006735CB5BF5}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{76EF21FD-DF0B-4BA1-8C35-17D3A4A28957}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Dirt" ID="{5CCA95DE-82AB-491D-8551-8E5339F6C786}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

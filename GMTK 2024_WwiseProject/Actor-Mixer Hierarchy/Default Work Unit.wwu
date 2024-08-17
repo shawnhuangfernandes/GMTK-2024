@@ -3,60 +3,6 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{4C339756-FB93-4187-A0A8-CA194E81830A}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="Test_Bell_Loop" ID="{778A4738-E2F0-4003-B350-643FD8DF631C}" ShortID="257292225">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="19"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="IsNonCachable" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
-						<Property Name="IsStreamingEnabled" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-						<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
-						<Property Name="Soundly:FileID" Type="string" Value="1711148522EaxPqvvfRF"/>
-						<Property Name="Soundly:FileName" Type="string" Value="D:/Sound Effects/BOOM Library\Free SFX\Lucky Wheel\BELLLrg_Church Bell Steady Loop_B00M_WOF FREE.wav"/>
-						<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
-						<Property Name="Soundly:HandleStopTime" Type="string" Value="30.252697916666666"/>
-						<Property Name="Soundly:LibraryID" Type="string" Value="1711148513EDqnV9lOxh"/>
-						<Property Name="Soundly:LibraryLocation" Type="string" Value="Local"/>
-						<Property Name="Soundly:PlaybackSpeed" Type="string" Value="1"/>
-						<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
-						<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
-						<Property Name="Soundly:RenderedFilePath" Type="string" Value="C:\Users\kargl\Soundly Audio\BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 2.wav"/>
-						<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="96000"/>
-						<Property Name="Soundly:SelectionStartTime" Type="string" Value="0"/>
-						<Property Name="Soundly:SelectionStopTime" Type="string" Value="0"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 2" ID="{FD169995-EDD9-4EB4-AD13-33C20D211205}">
-							<PropertyList>
-								<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="1711148522EaxPqvvfRF"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>Soundly Audio\BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 2.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="694506031"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 2" ID="{FD169995-EDD9-4EB4-AD13-33C20D211205}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="Bird_Call" ID="{34DC04F0-4788-4937-9A9F-FECE7DF4F556}" ShortID="66432252">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -939,6 +885,209 @@
 						</Reference>
 					</ReferenceList>
 				</BlendContainer>
+				<Sound Name="Test_Bell_Loop" ID="{778A4738-E2F0-4003-B350-643FD8DF631C}" ShortID="257292225">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="IsNonCachable" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="IsStreamingEnabled" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="OverrideEffect" Type="bool" Value="True"/>
+						<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
+						<Property Name="Soundly:FileID" Type="string" Value="1711148522EaxPqvvfRF"/>
+						<Property Name="Soundly:FileName" Type="string" Value="D:/Sound Effects/BOOM Library\Free SFX\Lucky Wheel\BELLLrg_Church Bell Steady Loop_B00M_WOF FREE.wav"/>
+						<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
+						<Property Name="Soundly:HandleStopTime" Type="string" Value="30.252697916666666"/>
+						<Property Name="Soundly:LibraryID" Type="string" Value="1711148513EDqnV9lOxh"/>
+						<Property Name="Soundly:LibraryLocation" Type="string" Value="Local"/>
+						<Property Name="Soundly:PlaybackSpeed" Type="string" Value="1"/>
+						<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
+						<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
+						<Property Name="Soundly:RenderedFilePath" Type="string" Value="C:\Users\kargl\Soundly Audio\BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 2.wav"/>
+						<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="96000"/>
+						<Property Name="Soundly:SelectionStartTime" Type="string" Value="0"/>
+						<Property Name="Soundly:SelectionStopTime" Type="string" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 2" ID="{FD169995-EDD9-4EB4-AD13-33C20D211205}">
+							<PropertyList>
+								<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="1711148522EaxPqvvfRF"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Soundly Audio\BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="694506031"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="PlayerSize" ID="{3FB8E314-7662-4BDA-94D6-615B537E9B17}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Normal" ID="{A42D7AD0-82C7-402F-87C5-D6E514991519}"/>
+								<CustomState Name="" ID="{994F396B-772C-4250-BDB2-5D152A6CB51B}" ShortID="154143927"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Small" ID="{7BEC3BA2-D7F4-45D4-AF95-757E6AA8008A}"/>
+								<CustomState Name="" ID="{83972AAB-FCAE-40EE-BFC9-436A853D5D56}" ShortID="249128080"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Large" ID="{A5A9721F-D785-45D5-86C7-DE9E0EA3E5BE}"/>
+								<CustomState Name="" ID="{F846252C-8BCC-4E4D-947F-5066D1F49E0F}" ShortID="450806261"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{2B3DD1D2-DA8F-4A59-B07F-7BFBB13BC87C}" ShortID="956801240">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+												<ObjectRef Name="Small_Stretch" ID="{32231724-759A-49EA-B2EC-7EFE1E62F449}" WorkUnitID="{8BF7151F-2C1F-4B78-8B0E-BA56B6718193}"/>
+											</Reference>
+										</ReferenceList>
+										<StateInfo>
+											<CustomStateList>
+												<CustomState>
+													<StateRef Name="Normal" ID="{A42D7AD0-82C7-402F-87C5-D6E514991519}"/>
+													<CustomState Name="" ID="{8E4FD366-2F06-4EF8-B259-42B42D3BC84C}" ShortID="232059769"/>
+												</CustomState>
+												<CustomState>
+													<StateRef Name="Small" ID="{7BEC3BA2-D7F4-45D4-AF95-757E6AA8008A}"/>
+													<CustomState Name="" ID="{25E33812-5297-4FEC-A99F-30A62C2F7F64}" ShortID="33305427"/>
+												</CustomState>
+												<CustomState>
+													<StateRef Name="Large" ID="{A5A9721F-D785-45D5-86C7-DE9E0EA3E5BE}"/>
+													<CustomState Name="" ID="{BA32179A-8B62-4CFA-8BBA-70D0D59DE3F3}" ShortID="840235821"/>
+												</CustomState>
+											</CustomStateList>
+										</StateInfo>
+									</EffectSlot>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{31C62001-5B56-464C-8D30-8C411DE9108D}" ShortID="955906280">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+												<ObjectRef Name="Small_EQ" ID="{7B737B68-03D6-493C-866F-7AC3DA14A4BC}" WorkUnitID="{8BF7151F-2C1F-4B78-8B0E-BA56B6718193}"/>
+											</Reference>
+										</ReferenceList>
+										<StateInfo>
+											<CustomStateList>
+												<CustomState>
+													<StateRef Name="Normal" ID="{A42D7AD0-82C7-402F-87C5-D6E514991519}"/>
+													<CustomState Name="" ID="{DA29C408-AB4E-4C5E-BEE7-4087C4E61089}" ShortID="203970594"/>
+												</CustomState>
+												<CustomState>
+													<StateRef Name="Small" ID="{7BEC3BA2-D7F4-45D4-AF95-757E6AA8008A}"/>
+													<CustomState Name="" ID="{1C201423-A7DC-4F6B-BED8-6CEC9646699E}" ShortID="786756358"/>
+												</CustomState>
+												<CustomState>
+													<StateRef Name="Large" ID="{A5A9721F-D785-45D5-86C7-DE9E0EA3E5BE}"/>
+													<CustomState Name="" ID="{CBEB52E8-54D5-4FDD-B2BA-EAAF2BA5F06F}" ShortID="807880296"/>
+												</CustomState>
+											</CustomStateList>
+										</StateInfo>
+									</EffectSlot>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{2165843A-EF1C-4398-8E70-529138746BF6}" ShortID="773965995">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+												<ObjectRef Name="Small_Reverb" ID="{5C9484DE-EE0A-4800-9569-CA4685769DAA}" WorkUnitID="{8BF7151F-2C1F-4B78-8B0E-BA56B6718193}"/>
+											</Reference>
+										</ReferenceList>
+										<StateInfo>
+											<CustomStateList>
+												<CustomState>
+													<StateRef Name="Normal" ID="{A42D7AD0-82C7-402F-87C5-D6E514991519}"/>
+													<CustomState Name="" ID="{300B2ACB-8FA6-41DC-81DD-5AFA5DDC9DB1}" ShortID="970935871"/>
+												</CustomState>
+												<CustomState>
+													<StateRef Name="Small" ID="{7BEC3BA2-D7F4-45D4-AF95-757E6AA8008A}"/>
+													<CustomState Name="" ID="{26BF6522-05E3-4B78-B30A-C99EE460DBDA}" ShortID="57704392"/>
+												</CustomState>
+												<CustomState>
+													<StateRef Name="Large" ID="{A5A9721F-D785-45D5-86C7-DE9E0EA3E5BE}"/>
+													<CustomState Name="" ID="{97566395-73F6-47DE-969E-B0D1DB9B86F1}" ShortID="653102631"/>
+												</CustomState>
+											</CustomStateList>
+										</StateInfo>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{8E877DB7-E490-47A0-AA22-F39442FA63F6}" ShortID="289181913">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Player_Size" ID="{F40BFA0C-2D01-4620-8F7D-006735CB5BF5}" WorkUnitID="{DAB6B92D-7565-42F7-8329-572C0B05A910}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{B923D1B2-3EAD-403A-B6D4-0EF246B8E884}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>50</XPos>
+																<YPos>-3</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-3</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 2" ID="{FD169995-EDD9-4EB4-AD13-33C20D211205}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

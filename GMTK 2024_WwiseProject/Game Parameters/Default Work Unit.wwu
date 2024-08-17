@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{DAB6B92D-7565-42F7-8329-572C0B05A910}" SchemaVersion="119">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{DAB6B92D-7565-42F7-8329-572C0B05A910}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{DAB6B92D-7565-42F7-8329-572C0B05A910}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Player_Size" ID="{F40BFA0C-2D01-4620-8F7D-006735CB5BF5}">
+					<PropertyList>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

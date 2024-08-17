@@ -14,6 +14,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Player_Shrinks" ID="{5ACF63CD-973F-4DEA-B845-B586802CFEFE}">
+					<ChildrenList>
+						<Action Name="" ID="{9203D8E7-6A30-4B32-9941-2B1C2DEA5C2B}" ShortID="418074114">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Size" ID="{F40BFA0C-2D01-4620-8F7D-006735CB5BF5}" WorkUnitID="{DAB6B92D-7565-42F7-8329-572C0B05A910}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Grows" ID="{6D75E2CC-1699-4BE1-92ED-4AAFB7A2CD43}">
+					<ChildrenList>
+						<Action Name="" ID="{94B5620E-8ABA-4768-B586-0DE4BB45B6D6}" ShortID="1032870571">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Size" ID="{F40BFA0C-2D01-4620-8F7D-006735CB5BF5}" WorkUnitID="{DAB6B92D-7565-42F7-8329-572C0B05A910}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Normal" ID="{9DBEC3C1-5EB1-450B-9572-1B5A681D00B0}">
+					<ChildrenList>
+						<Action Name="" ID="{A5ABA963-6498-4475-8948-21C83FA4E480}" ShortID="192484371">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="50"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Size" ID="{F40BFA0C-2D01-4620-8F7D-006735CB5BF5}" WorkUnitID="{DAB6B92D-7565-42F7-8329-572C0B05A910}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

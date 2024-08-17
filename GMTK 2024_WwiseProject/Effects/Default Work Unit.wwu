@@ -1,6 +1,247 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8BF7151F-2C1F-4B78-8B0E-BA56B6718193}" SchemaVersion="119">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{8BF7151F-2C1F-4B78-8B0E-BA56B6718193}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8BF7151F-2C1F-4B78-8B0E-BA56B6718193}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Small_Stretch" ID="{32231724-759A-49EA-B2EC-7EFE1E62F449}" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+					<PropertyList>
+						<Property Name="PitchShift" Type="Real32" Value="-700"/>
+						<Property Name="TimeStretch" Type="Real32" Value="120"/>
+					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{00DC2F44-C6D2-478B-9144-66B4D5D95114}" ShortID="190864618">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="TimeStretch"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Player_Size" ID="{F40BFA0C-2D01-4620-8F7D-006735CB5BF5}" WorkUnitID="{DAB6B92D-7565-42F7-8329-572C0B05A910}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{19B5E317-CC6F-4242-AA3A-A168437E89FF}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>120</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>50</XPos>
+																<YPos>100</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{BA9B300D-3358-4140-A4CC-9766AE1BF0F6}" ShortID="612135824">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="PitchShift"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Player_Size" ID="{F40BFA0C-2D01-4620-8F7D-006735CB5BF5}" WorkUnitID="{DAB6B92D-7565-42F7-8329-572C0B05A910}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{625B02EC-F0BB-4BB4-A4E5-282DEEC931C2}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-700</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>50</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>410.89494</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Effect>
+				<Effect Name="Small_EQ" ID="{7B737B68-03D6-493C-866F-7AC3DA14A4BC}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="1324"/>
+						<Property Name="GainBand1" Type="Real32" Value="-11"/>
+					</PropertyList>
+					<StateInfo>
+						<StatePropertyList>
+							<Property Name="GainBand3"/>
+						</StatePropertyList>
+					</StateInfo>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{84F2D4F2-13F9-4AA0-8C26-852188552E15}" ShortID="963921546">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="FrequencyBand3"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Player_Size" ID="{F40BFA0C-2D01-4620-8F7D-006735CB5BF5}" WorkUnitID="{DAB6B92D-7565-42F7-8329-572C0B05A910}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{6BEC6832-1E81-4783-8880-43C04BC80089}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="5"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>1120.90294</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>50</XPos>
+																<YPos>20000</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>11683.33859</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{2F32F3A3-795C-4AF1-8BFA-89DD80F29330}" ShortID="843658578">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="FrequencyBand1"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Player_Size" ID="{F40BFA0C-2D01-4620-8F7D-006735CB5BF5}" WorkUnitID="{DAB6B92D-7565-42F7-8329-572C0B05A910}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{D57CCB4F-6457-4FC2-B8FD-26FA58D2AB36}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="5"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>50</XPos>
+																<YPos>100</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>3205.06301</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Effect>
+				<Effect Name="Small_Reverb" ID="{5C9484DE-EE0A-4800-9569-CA4685769DAA}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+					<PropertyList>
+						<Property Name="Density" Type="Real32" Value="34"/>
+						<Property Name="DryLevel" Type="Real32" Value="-7.3"/>
+						<Property Name="PreDelay" Type="Real32" Value="28"/>
+						<Property Name="RoomSize" Type="Real32" Value="48"/>
+					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{ED5FF482-9318-4863-99FE-06B9FEA2D4B8}" ShortID="60450399">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="ReverbLevel"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Player_Size" ID="{F40BFA0C-2D01-4620-8F7D-006735CB5BF5}" WorkUnitID="{DAB6B92D-7565-42F7-8329-572C0B05A910}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{4F1A55FE-CAA1-4F47-BF99-562A9D012A75}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>50</XPos>
+																<YPos>-96.3</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-96.3</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>
