@@ -158,7 +158,7 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 2
+  m_Height: 1.9
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 9.665003, z: -1.8999958}
+  m_FollowOffset: {x: 0.13393402, y: 10.658614, z: -1.9285021}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -298,8 +298,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7068185063387008716}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14555939, y: 0.19063024, z: -0.02859474, w: 0.97038907}
-  m_LocalPosition: {x: -0.87, y: 6.26, z: 11.88}
+  m_LocalRotation: {x: 0.113813326, y: -0.6342658, z: 0.095140524, w: 0.75875014}
+  m_LocalPosition: {x: -4.5600185, y: 5.2683873, z: -3.9865813}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

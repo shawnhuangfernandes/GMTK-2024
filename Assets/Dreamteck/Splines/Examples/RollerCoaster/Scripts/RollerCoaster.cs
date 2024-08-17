@@ -66,6 +66,7 @@ namespace Dreamteck.Splines.Examples
                     continue;
                 }
             }
+
             float distance = follower.CalculateLength(0.0, follower.result.percent); //Get the excess distance after looping
             follower.spline = computers[Random.Range(0, computers.Count)]; //Change the spline computer to the new spline
             follower.SetDistance(distance); //Set the excess distance along the new spline
