@@ -17,8 +17,8 @@ public class CustomFirstPersonController : MonoBehaviour
     [Tooltip("The acceleration of the character while airborne")]
     public float airborneAcceleration = 15f;
 
-    [Tooltip("The jumping force of the character")]
-    public float jumpForce = 5.0f;
+    [Tooltip("The height this character will jump from a standstill.")]
+    public float jumpHeight = 1.25f;
 
     [Tooltip("The look speed of the character (driven by the mouse)")]
     public float lookSpeed = 2.0f;
@@ -53,7 +53,7 @@ public class CustomFirstPersonController : MonoBehaviour
 
     [HideInInspector] public float rootWalkSpeed = 0F;
     [HideInInspector] public float rootRunSpeed = 0F;
-    [HideInInspector] public float rootJumpForce = 0F;
+    [HideInInspector] public float rootJumpHeight = 0F;
     [HideInInspector] public float rootGroundCheckDistance = 0F;
     [HideInInspector] public float rootCharacterControllerRadius = 0F;
     [HideInInspector] public float rootCharacterControllerSkinWidth = 0F;
@@ -79,7 +79,7 @@ public class CustomFirstPersonController : MonoBehaviour
 
         rootWalkSpeed = walkSpeed;
         rootRunSpeed = runSpeed;
-        rootJumpForce = jumpForce;
+        rootJumpHeight = jumpHeight;
         rootGroundCheckDistance = groundCheckDistance;
         rootCharacterControllerRadius = characterController.radius;
         rootCharacterControllerSkinWidth = characterController.skinWidth;
@@ -317,7 +317,8 @@ public class CustomFirstPersonController : MonoBehaviour
 
     private void JumpAndBecomeAirborne()
 	{
-        AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        float jumpSpeed = Mathf.Sqrt(jumpHeight * 2 * Physics.gravity.magnitude);
+        AddForce(Vector3.up * jumpSpeed, ForceMode.VelocityChange);
         motionState = MotionState.Airborne;
     }
 }

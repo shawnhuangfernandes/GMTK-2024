@@ -34,7 +34,7 @@ public class SizeSetting : ScriptableObject
         {
             firstPersonController.walkSpeed = firstPersonController.rootWalkSpeed * targetScale;
             firstPersonController.runSpeed = firstPersonController.rootRunSpeed * targetScale;
-            firstPersonController.jumpForce = firstPersonController.rootJumpForce * targetScale;
+            firstPersonController.jumpHeight = firstPersonController.rootJumpHeight * targetScale;
             firstPersonController.groundCheckDistance = firstPersonController.rootGroundCheckDistance * targetScale;
             
             firstPersonController.grindAcceleration = targetScale * firstPersonController.rootgrindAcceleration;
