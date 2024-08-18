@@ -10,15 +10,15 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Player_Shrinks" ID="{5ACF63CD-973F-4DEA-B845-B586802CFEFE}" WorkUnitID="{57AF087A-6726-4B5D-B3BB-CD0D71AE2E77}"/>
+							<ObjectRef Name="Player_Shrinks" ID="{5ACF63CD-973F-4DEA-B845-B586802CFEFE}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Player_Normal" ID="{9DBEC3C1-5EB1-450B-9572-1B5A681D00B0}" WorkUnitID="{57AF087A-6726-4B5D-B3BB-CD0D71AE2E77}"/>
+							<ObjectRef Name="Player_Normal" ID="{9DBEC3C1-5EB1-450B-9572-1B5A681D00B0}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Player_Grows" ID="{6D75E2CC-1699-4BE1-92ED-4AAFB7A2CD43}" WorkUnitID="{57AF087A-6726-4B5D-B3BB-CD0D71AE2E77}"/>
+							<ObjectRef Name="Player_Grows" ID="{6D75E2CC-1699-4BE1-92ED-4AAFB7A2CD43}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
 							<Position X="1" Y="2"/>
 						</Module>
 					</ModuleList>
@@ -32,7 +32,28 @@
 						<CurrentStateRef Name="None" ID="{76EF21FD-DF0B-4BA1-8C35-17D3A4A28957}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Dirt" ID="{5CCA95DE-82AB-491D-8551-8E5339F6C786}"/>
+						<CurrentSwitchRef Name="Grass" ID="{E1777FEB-9222-41B3-80A1-053755190892}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Player Movement" ID="{2A3031DB-C014-4E25-A25A-946BA7030E9B}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Player_Footsteps" ID="{94F7E324-B34F-47E2-84EE-53DB04FB3B8B}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Jump" ID="{1DF27C00-14D1-42AC-8547-62B4B4305AFF}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Landing" ID="{FF2CCB64-3A47-455B-99FB-2D37B8EAF108}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Grass" ID="{E1777FEB-9222-41B3-80A1-053755190892}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

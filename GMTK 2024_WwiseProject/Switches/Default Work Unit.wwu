@@ -6,8 +6,6 @@
 				<SwitchGroup Name="Footsteps" ID="{B90382AE-6F24-4BA2-A065-3CB688CF0335}">
 					<ChildrenList>
 						<Switch Name="Grass" ID="{E1777FEB-9222-41B3-80A1-053755190892}"/>
-						<Switch Name="Dirt" ID="{5CCA95DE-82AB-491D-8551-8E5339F6C786}"/>
-						<Switch Name="Tile" ID="{33722B05-7B9B-42AF-B26C-0FE8CEBC8EB0}"/>
 						<Switch Name="Rock" ID="{084C24CD-3913-46BB-AE96-DDCC1AFAFDEE}"/>
 					</ChildrenList>
 				</SwitchGroup>

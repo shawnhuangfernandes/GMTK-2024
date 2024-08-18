@@ -3,36 +3,6 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{4C339756-FB93-4187-A0A8-CA194E81830A}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="Bird_Call" ID="{34DC04F0-4788-4937-9A9F-FECE7DF4F556}" ShortID="66432252">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
-						</Reference>
-					</ReferenceList>
-				</Sound>
-				<Sound Name="Airplane_Flyby" ID="{9263855F-6FFF-4A37-8DD6-062ADDA5DBA5}" ShortID="736532502">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
-						</Reference>
-					</ReferenceList>
-				</Sound>
-				<Sound Name="Helicopter_Flyby" ID="{8F2B7912-C78F-4731-A08B-10FF9FFFFB21}" ShortID="908642102">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
-						</Reference>
-					</ReferenceList>
-				</Sound>
 				<Sound Name="Mailbox_Open" ID="{35BA185D-0C85-4995-85A3-B06639EAD315}" ShortID="354959981">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -63,26 +33,6 @@
 						</Reference>
 					</ReferenceList>
 				</Sound>
-				<Sound Name="Player_Shrinks" ID="{9A985F79-A2DD-469C-87F4-57C98E09D0D3}" ShortID="179979721">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
-						</Reference>
-					</ReferenceList>
-				</Sound>
-				<Sound Name="Player_Grows" ID="{B27A14B1-E095-42C7-8BCE-092A03583ADD}" ShortID="66728623">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
-						</Reference>
-					</ReferenceList>
-				</Sound>
 				<Sound Name="Rail_Mount" ID="{10A680D0-6091-4172-96C6-DA43BF4783CA}" ShortID="550986040">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -104,26 +54,6 @@
 					</ReferenceList>
 				</Sound>
 				<Sound Name="Rail_Dismount" ID="{502739B6-8ADF-4F58-96E3-6FABBEC7FA26}" ShortID="779071090">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
-						</Reference>
-					</ReferenceList>
-				</Sound>
-				<Sound Name="Player_Respawns" ID="{C0111548-39C5-4289-A2CD-DC983C278822}" ShortID="783442148">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
-						</Reference>
-					</ReferenceList>
-				</Sound>
-				<Sound Name="Grass_WindRustle" ID="{D68E255D-1ADD-4B00-9CB2-BB7DDA332676}" ShortID="1036781222">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
