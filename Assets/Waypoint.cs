@@ -8,6 +8,7 @@ public class Waypoint : MonoBehaviour
 	public UnityEvent onFirstTrigger;
 	public UnityEvent onRepeatTrigger;
 
+	/// <summary> True if this waypoint has been triggered before. False otherwise. </summary>
 	private bool isObtained = false;
 
 	private void Update()
@@ -21,7 +22,10 @@ public class Waypoint : MonoBehaviour
 		if(respawner == null)
 			return;
 
+		// Triggered!
 		respawner.SaveState(this);
+		(isObtained ? onRepeatTrigger : onFirstTrigger).Invoke();
+		isObtained = true;
 	}
 
 	private void OnDrawGizmos()
