@@ -1,0 +1,19 @@
+Event	ID	Name			Wwise Object Path	Notes
+	278617630	Play_Ambience			\Environment\Play_Ambience	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	925587760	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Environment\Wind_Gust_Controller\Wind_Silence\Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	225300281	Wind_Gusts-004	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Wind_Gusts-004_818F3B66.wem		\Actor-Mixer Hierarchy\Environment\Wind_Gust_Controller\Wind_Gusts\Wind_Gusts-004		2792200
+	317943795	Wind_Gusts-008	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Wind_Gusts-008_818F3B66.wem		\Actor-Mixer Hierarchy\Environment\Wind_Gust_Controller\Wind_Gusts\Wind_Gusts-008		2239752
+	343487331	Wind_Gusts-009	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Wind_Gusts-009_818F3B66.wem		\Actor-Mixer Hierarchy\Environment\Wind_Gust_Controller\Wind_Gusts\Wind_Gusts-009		1478268
+	386437277	Wind_Gusts-007	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Wind_Gusts-007_818F3B66.wem		\Actor-Mixer Hierarchy\Environment\Wind_Gust_Controller\Wind_Gusts\Wind_Gusts-007		1328960
+	397417459	Wind_Ambience	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Wind_Ambience _7B74C408.wem		\Actor-Mixer Hierarchy\Environment\Wind_Ambience		15963808
+	449167905	Wind_Gusts-003	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Wind_Gusts-003_818F3B66.wem		\Actor-Mixer Hierarchy\Environment\Wind_Gust_Controller\Wind_Gusts\Wind_Gusts-003		1970996
+	531644487	Wind_Gusts-001	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Wind_Gusts-001_818F3B66.wem		\Actor-Mixer Hierarchy\Environment\Wind_Gust_Controller\Wind_Gusts\Wind_Gusts-001		3598480
+	533012591	Wind_Gusts-006	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Wind_Gusts-006_818F3B66.wem		\Actor-Mixer Hierarchy\Environment\Wind_Gust_Controller\Wind_Gusts\Wind_Gusts-006		1492896
+	737916792	Wind_Gusts-010	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Wind_Gusts-010_818F3B66.wem		\Actor-Mixer Hierarchy\Environment\Wind_Gust_Controller\Wind_Gusts\Wind_Gusts-010		1970996
+	803296198	Wind_Gusts-002	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Wind_Gusts-002_818F3B66.wem		\Actor-Mixer Hierarchy\Environment\Wind_Gust_Controller\Wind_Gusts\Wind_Gusts-002		2075512
+	925352297	Wind_Gusts-005	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Wind_Gusts-005_818F3B66.wem		\Actor-Mixer Hierarchy\Environment\Wind_Gust_Controller\Wind_Gusts\Wind_Gusts-005		1433476
+

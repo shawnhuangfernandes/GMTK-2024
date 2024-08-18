@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5C791470-803D-4B1E-8856-EBC83CEA69C4}" SchemaVersion="119">
 	<SoundBanks>
-		<WorkUnit Name="Environment" ID="{5C791470-803D-4B1E-8856-EBC83CEA69C4}" PersistMode="Standalone"/>
+		<WorkUnit Name="Environment" ID="{5C791470-803D-4B1E-8856-EBC83CEA69C4}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="2"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<SoundBank Name="Environment" ID="{FCFE3F21-0B42-4702-BC4D-C6E05B57F742}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Environment" ID="{93A8A08E-0D81-4824-B96E-92E177B8D654}" WorkUnitID="{93A8A08E-0D81-4824-B96E-92E177B8D654}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

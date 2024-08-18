@@ -9,9 +9,7 @@
 			<ChildrenList>
 				<SoundBank Name="Player" ID="{42B9C9F0-FE15-44C8-ADAE-D5A7A42BD808}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Player_Jump" ID="{1DF27C00-14D1-42AC-8547-62B4B4305AFF}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Player_Landing" ID="{FF2CCB64-3A47-455B-99FB-2D37B8EAF108}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Player_Footsteps" ID="{94F7E324-B34F-47E2-84EE-53DB04FB3B8B}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player" ID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
