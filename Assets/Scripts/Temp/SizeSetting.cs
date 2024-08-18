@@ -9,7 +9,7 @@ public class SizeSetting : ScriptableObject
     [Tooltip("The scale to adjust the object by")]
     [SerializeField] public float targetScale = 1;
 
-    private const float SCALE_LERP_DURATION = 0.3F;
+    private const float SCALE_LERP_DURATION = 1F;
 
     private CharacterController characterController;
     private CustomFirstPersonController firstPersonController;
