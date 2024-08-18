@@ -17,6 +17,7 @@ Material:
   - _FOG
   - _NORMALMAP
   - _RAMP_TRIPLE
+  - _SHADOW_MASK
   - _VERTEX_COLOR
   m_InvalidKeywords:
   - _ZWRITE_ON
