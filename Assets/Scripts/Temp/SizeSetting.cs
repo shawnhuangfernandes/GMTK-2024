@@ -27,6 +27,7 @@ public class SizeSetting : ScriptableObject
         if (characterController != null)
 		{
             characterController.skinWidth = targetScale * firstPersonController.rootCharacterControllerSkinWidth;
+            characterController.stepOffset = targetScale * firstPersonController.rootCharacterControllerStepOffset;
         }
 
         if (firstPersonController != null)
