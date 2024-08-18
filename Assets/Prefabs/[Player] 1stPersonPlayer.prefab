@@ -71,6 +71,8 @@ GameObject:
   - component: {fileID: 5998961320894347270}
   - component: {fileID: 2460606443929101623}
   - component: {fileID: 7086699404733965797}
+  - component: {fileID: 2807227061738303597}
+  - component: {fileID: 5912853675827590655}
   m_Layer: 0
   m_Name: '[Player] 1stPersonPlayer'
   m_TagString: Untagged
@@ -113,7 +115,7 @@ MonoBehaviour:
   runSpeed: 12
   groundedAcceleration: 60
   airborneAcceleration: 15
-  jumpForce: 5
+  jumpHeight: 1.25
   lookSpeed: 2
   lookXLimit: 45
   groundCheckDistance: 1.1
@@ -126,9 +128,11 @@ MonoBehaviour:
   <motionState>k__BackingField: 0
   rootWalkSpeed: 0
   rootRunSpeed: 0
-  rootJumpForce: 0
+  rootJumpHeight: 0
   rootGroundCheckDistance: 0
   rootCharacterControllerRadius: 0
+  rootCharacterControllerSkinWidth: 0
+  rootCharacterControllerStepOffset: 0
   rootgrindAcceleration: 0
   rootminGrindSpeed: 0
   rootmaxGrindSpeed: 0
@@ -171,6 +175,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionRootXFRM: {fileID: 1318627968722622561}
+--- !u!114 &2807227061738303597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870044342990587400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 092757125cfaef744a5141ad57b3b5c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.25
+  onRespawnStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onRespawn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5912853675827590655}
+        m_TargetAssemblyTypeName: CharacterScaler, Assembly-CSharp
+        m_MethodName: ResetState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5998961320894347270}
+        m_TargetAssemblyTypeName: CustomFirstPersonController, Assembly-CSharp
+        m_MethodName: ResetState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5912853675827590655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870044342990587400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5f3f7a9a77818a48b67e6180422bc30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSize: {fileID: 11400000, guid: db1e8761bd7621b40977368c52e642d4, type: 2}
+  <size>k__BackingField: {fileID: 0}
 --- !u!1 &1882698103594026026
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,9 +10,10 @@ public class SizeChanger : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
-        {
-            sizeSettingToAdjustPlayer.ScaleTarget(other.transform);
-        }
+        CharacterScaler otherCharacterScaler = other.GetComponent<CharacterScaler>();
+        if(otherCharacterScaler == null)
+            return;
+
+        otherCharacterScaler.ScaleTarget(sizeSettingToAdjustPlayer);
     }
 }

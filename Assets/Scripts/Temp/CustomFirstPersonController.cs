@@ -64,7 +64,15 @@ public class CustomFirstPersonController : MonoBehaviour
     /// <summary> The current radius of characterController, accounting for this character's localScale. </summary>
     private float CharacterRadius => transform.localScale.x * characterController.radius;
 
-    public enum MotionState {
+	public void ResetState()
+	{
+		velocity = Vector3.zero;
+        motionState = MotionState.Airborne;
+        rotationX = 0f;
+        currentRail = null;
+	}
+
+	public enum MotionState {
         /// <summary> Move according to player input, and stick to the ground. </summary>
         Grounded,
         /// <summary> Move according to player input and the force of gravity. </summary>
