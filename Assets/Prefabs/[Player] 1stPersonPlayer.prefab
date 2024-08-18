@@ -68,7 +68,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3607908764784023447}
-  - component: {fileID: 972430837647550762}
   - component: {fileID: 5998961320894347270}
   - component: {fileID: 2460606443929101623}
   - component: {fileID: 7086699404733965797}
@@ -98,29 +97,6 @@ Transform:
   - {fileID: 8349802363616729134}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &972430837647550762
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 870044342990587400}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5998961320894347270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,6 +117,7 @@ MonoBehaviour:
   groundCheckDistance: 1.1
   cameraXFRM: {fileID: 3734681139474511949}
   railHandle: {fileID: 15782956333938716}
+  grindAcceleration: 5
   minGrindSpeed: 5
   maxGrindSpeed: 15
   snapToRailLerpRate: 0.9
@@ -150,6 +127,9 @@ MonoBehaviour:
   rootJumpForce: 0
   rootGroundCheckDistance: 0
   rootCharacterControllerRadius: 0
+  rootgrindAcceleration: 0
+  rootminGrindSpeed: 0
+  rootmaxGrindSpeed: 0
 --- !u!143 &2460606443929101623
 CharacterController:
   m_ObjectHideFlags: 0
