@@ -2,8 +2,15 @@
 <WwiseDocument Type="WorkUnit" ID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}" SchemaVersion="119">
 	<AudioObjects>
 		<WorkUnit Name="Player" ID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="17"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<Sound Name="Player_Grows" ID="{B27A14B1-E095-42C7-8BCE-092A03583ADD}" ShortID="66728623">
+					<PropertyList>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
@@ -14,6 +21,9 @@
 					</ReferenceList>
 				</Sound>
 				<Sound Name="Player_Shrinks" ID="{9A985F79-A2DD-469C-87F4-57C98E09D0D3}" ShortID="179979721">
+					<PropertyList>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
@@ -3560,6 +3570,10 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Player_Respawn" ID="{4000C36C-1953-43C3-B2A7-92C3F3A079BE}" ShortID="946421696">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
