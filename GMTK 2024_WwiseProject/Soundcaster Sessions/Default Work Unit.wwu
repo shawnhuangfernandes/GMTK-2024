@@ -64,7 +64,7 @@
 						<CurrentStateRef Name="None" ID="{76EF21FD-DF0B-4BA1-8C35-17D3A4A28957}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Rock" ID="{084C24CD-3913-46BB-AE96-DDCC1AFAFDEE}"/>
+						<CurrentSwitchRef Name="Grass" ID="{E1777FEB-9222-41B3-80A1-053755190892}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Respawn" ID="{BA4C1F71-B6EF-417C-9E40-ED398B522D41}">

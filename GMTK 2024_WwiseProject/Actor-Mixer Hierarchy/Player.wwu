@@ -3761,7 +3761,6 @@
 						<RandomSequenceContainer Name="Respawn_HandPan" ID="{F879A35F-735B-4C16-A7F3-201947341B13}" ShortID="657389800">
 							<PropertyList>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -3896,7 +3895,7 @@
 						<RandomSequenceContainer Name="Respawn_Paper" ID="{D8D8EEFB-D7B2-44D3-9E29-C0E3E4FD4CA2}" ShortID="989008156">
 							<PropertyList>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -4015,50 +4014,6 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Respawn_Paper-005" ID="{BF8B143B-5041-4144-8F14-7D813DB751BB}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Respawn_Paper-006" ID="{4ECF601E-C850-486F-8ECA-F61F1BE7F100}" ShortID="1016223342">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Respawn_Paper-006" ID="{9E78B1B2-0D08-4D3C-A4C8-639B6F0B28BF}">
-											<Language>SFX</Language>
-											<AudioFile>Respawn_Paper-006.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="301753364"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Respawn_Paper-006" ID="{9E78B1B2-0D08-4D3C-A4C8-639B6F0B28BF}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Respawn_Paper-007" ID="{180A1DD6-4298-46BA-8A0E-86C3083B80D6}" ShortID="485725948">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Respawn_Paper-007" ID="{56DBE3ED-7DC4-4FD4-A26E-E877966E5170}">
-											<Language>SFX</Language>
-											<AudioFile>Respawn_Paper-007.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="994583015"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Respawn_Paper-007" ID="{56DBE3ED-7DC4-4FD4-A26E-E877966E5170}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
