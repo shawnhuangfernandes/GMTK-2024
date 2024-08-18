@@ -49,6 +49,9 @@ public class CustomFirstPersonController : MonoBehaviour
     public MotionState motionState { get; private set; }
     
     private float rotationX = 0;
+    /// <summary> The surface normal of the ground this character was touching when the groundedness was last updated. Null if not touching the ground.
+    /// Touching the ground does NOT indicate that this character is grounded. </summary>
+    private Vector3? groundNormal = null;
     private Rail? currentRail;
 
     [HideInInspector] public float rootWalkSpeed = 0F;
@@ -188,8 +191,24 @@ public class CustomFirstPersonController : MonoBehaviour
                 break;
         }
 
+        // Slide off of steep surfaces.
+        switch(motionState)
+		{
+            case MotionState.Airborne:
+                if(groundNormal.HasValue && Vector3.Dot(displacement, groundNormal.Value) < 0)
+                    displacement = Vector3.ProjectOnPlane(displacement, groundNormal.Value);
+                break;
+        }
+
+        // Only walk up steps while grounded.
+        float stepOffset = characterController.stepOffset;
+        if(motionState != MotionState.Grounded)
+            characterController.stepOffset = 0f;  // (Restored at function end)
+
         // Finally, move this character.
         characterController.Move(displacement);
+        // Cleanup:
+        characterController.stepOffset = stepOffset;
     }
 
     /// <summary> If able, search for nearby rails and start grinding. If grinding, stop if needed. </summary>
@@ -242,23 +261,33 @@ public class CustomFirstPersonController : MonoBehaviour
         RaycastHit hit;
         float spherecastRadius = 0.99f * CharacterRadius;
         bool isTouchingGround = Physics.SphereCast(new Ray(transform.position, Vector3.down), spherecastRadius, out hit, groundCheckDistance-spherecastRadius);
-        isTouchingGround &= Vector3.Angle(Vector3.up, hit.normal) <= characterController.slopeLimit;
+        groundNormal = (isTouchingGround ? hit.normal : null);
 
-        Debug.Log(isTouchingGround);
+        bool canWalkOnGround = isTouchingGround;
+        canWalkOnGround &= Vector3.Angle(Vector3.up, hit.normal) <= characterController.slopeLimit;
+        // Don't allow this character to walk on rails, depending on its size.
+        if(canWalkOnGround)
+		{
+            Rail rail = hit.collider.GetComponentInParent<Rail>();
+            if(rail!=null && !rail.CanWalkOn(this))
+                canWalkOnGround = false;
+		}
+
+        Debug.Log(canWalkOnGround);
 
         switch (motionState)
         {
             case MotionState.Grounded:
                 // Stick to the ground.
-                if (isTouchingGround)
+                if (canWalkOnGround)
                     characterController.Move(Vector3.down * characterController.stepOffset);
                 
-                if(!isTouchingGround)
+                if(!canWalkOnGround)
                     motionState = MotionState.Airborne;
                 break;
 
             case MotionState.Airborne:
-                if(velocity.y < 0 && isTouchingGround)
+                if(velocity.y < 0 && canWalkOnGround)
                     motionState = MotionState.Grounded;
                 break;
         }

@@ -28,4 +28,13 @@ public class Rail : MonoBehaviour
 
 		return characterScaler.size == sizeRequiredToEmbark;
 	}
+
+	public bool CanWalkOn(CustomFirstPersonController controller)
+	{
+		CharacterScaler characterScaler = controller.GetComponent<CharacterScaler>();
+		if (characterScaler == null)
+			return false;
+
+		return characterScaler.size.targetScale <= sizeRequiredToEmbark.targetScale;
+	}
 }
