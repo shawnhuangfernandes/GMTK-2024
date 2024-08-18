@@ -58,6 +58,24 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Ambience" ID="{9C644436-50BD-4AD8-9765-B503E2B859F2}">
+					<ChildrenList>
+						<Action Name="" ID="{484E4C8A-AC66-4D08-B659-CE8FF592E108}" ShortID="1073566234">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wind_Ambience" ID="{A359EDD6-F6CD-4FBA-B7D7-E3645C4FA2DA}" WorkUnitID="{D735D4EA-05C6-48E5-A28A-E0512FE7EBED}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5F5F05BB-C333-4F55-AFF8-A2D8F3578664}" ShortID="398220380">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wind_Gust_Controller" ID="{FD0B4D16-5B79-4905-BEC7-A95F20F0334E}" WorkUnitID="{D735D4EA-05C6-48E5-A28A-E0512FE7EBED}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

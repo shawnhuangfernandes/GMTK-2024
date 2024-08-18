@@ -12,6 +12,11 @@ public class CustomFirstPersonController : MonoBehaviour
     [Tooltip("The running speed of the character")]
     public float runSpeed = 12.0f;
 
+    [Tooltip("The acceleration of the character while grounded")]
+    public float groundedAcceleration = 60f;
+    [Tooltip("The acceleration of the character while airborne")]
+    public float airborneAcceleration = 15f;
+
     [Tooltip("The jumping force of the character")]
     public float jumpForce = 5.0f;
 
@@ -51,9 +56,15 @@ public class CustomFirstPersonController : MonoBehaviour
     [HideInInspector] public float rootJumpForce = 0F;
     [HideInInspector] public float rootGroundCheckDistance = 0F;
     [HideInInspector] public float rootCharacterControllerRadius = 0F;
+    [HideInInspector] public float rootCharacterControllerSkinWidth = 0F;
+    [HideInInspector] public float rootCharacterControllerStepOffset = 0F;
+    [HideInInspector] public float rootgrindAcceleration;
+    [HideInInspector] public float rootminGrindSpeed;
+    [HideInInspector] public float rootmaxGrindSpeed;
+    /// <summary> The current radius of characterController, accounting for this character's localScale. </summary>
+    private float CharacterRadius => transform.localScale.x * characterController.radius;
 
-
-	public enum MotionState {
+    public enum MotionState {
         /// <summary> Move according to player input, and stick to the ground. </summary>
         Grounded,
         /// <summary> Move according to player input and the force of gravity. </summary>
@@ -71,6 +82,11 @@ public class CustomFirstPersonController : MonoBehaviour
         rootJumpForce = jumpForce;
         rootGroundCheckDistance = groundCheckDistance;
         rootCharacterControllerRadius = characterController.radius;
+        rootCharacterControllerSkinWidth = characterController.skinWidth;
+        rootCharacterControllerStepOffset = characterController.stepOffset;
+        rootgrindAcceleration = grindAcceleration;
+        rootminGrindSpeed = minGrindSpeed;
+        rootmaxGrindSpeed = maxGrindSpeed;
     }
 
     void Start()
@@ -96,17 +112,27 @@ public class CustomFirstPersonController : MonoBehaviour
 		switch (motionState)
 		{
             case MotionState.Grounded:
-            case MotionState.Airborne:
-		        float speed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
-                Vector3 moveDirection = transform.right * Input.GetAxis("Horizontal") + transform.forward * Input.GetAxis("Vertical");
-                moveDirection *= speed;
+                ApplyMovementInput(groundedAcceleration, true);
+                break;
 
-                // Applying movement to the velocity.
-                velocity = new Vector3(moveDirection.x, velocity.y, moveDirection.z);
+            case MotionState.Airborne:
+		        ApplyMovementInput(airborneAcceleration, false);
                 break;
 
             case MotionState.Grinding:
                 // No directional control while grinding.
+                break;
+		}
+
+		// Jumping
+		switch (motionState)
+		{
+			case MotionState.Grounded:
+            case MotionState.Grinding:
+			    if (Input.GetButtonDown("Jump"))
+                {
+                    JumpAndBecomeAirborne();
+                }
                 break;
         }
 
@@ -114,13 +140,6 @@ public class CustomFirstPersonController : MonoBehaviour
 		{
             case MotionState.Grounded:
                 velocity.y = 0;
-
-                // Jumping
-                if (Input.GetButtonDown("Jump"))
-                {
-                    AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-                    motionState = MotionState.Airborne;
-                }
                 break;
 
             case MotionState.Airborne:
@@ -130,12 +149,16 @@ public class CustomFirstPersonController : MonoBehaviour
                 break;
 
             case MotionState.Grinding:
-                // First, apply gravity.
-                AddForce(Physics.gravity, ForceMode.Acceleration);
-
                 // Then, align velocity to the current rail.
                 float speed = velocity.magnitude;
                 Vector3 direction = railHandle.result.forward;
+
+                // Apply gravity.
+                float speedChangeDueToGravity = Vector3.Dot(Physics.gravity*Time.deltaTime, direction);
+                if (speedChangeDueToGravity > 0 || speed >= minGrindSpeed)
+                    speed += speedChangeDueToGravity;
+
+                // Enforce min and max speed.
                 if(speed < minGrindSpeed)
                     speed += grindAcceleration * Time.deltaTime;
                 speed = Mathf.Clamp(speed, 0, maxGrindSpeed);
@@ -152,7 +175,8 @@ public class CustomFirstPersonController : MonoBehaviour
             case MotionState.Grinding:
                 // Snap to the current rail.
                 float nudgeFactor = (1f - Mathf.Pow(1f-snapToRailLerpRate, Time.deltaTime));
-                displacement += (railHandle.result.position - railHandle.transform.position) * nudgeFactor;
+                Vector3 goalPosition = railHandle.result.position + (railHandle.result.up + Vector3.down) * CharacterRadius;
+                displacement += (goalPosition - railHandle.transform.position) * nudgeFactor;
                 break;
         }
 
@@ -160,7 +184,7 @@ public class CustomFirstPersonController : MonoBehaviour
         characterController.Move(displacement);
     }
 
-    /// <summary> If able, search for nearby rails and start grinding. </summary>
+    /// <summary> If able, search for nearby rails and start grinding. If grinding, stop if needed. </summary>
     private void InteractWithRails()
 	{
         void SnapToNearbyRail(float searchRadius)
@@ -205,7 +229,7 @@ public class CustomFirstPersonController : MonoBehaviour
     private void InteractWithGround()
     {
         RaycastHit hit;
-        float spherecastRadius = 0.99f * characterController.radius;
+        float spherecastRadius = 0.99f * CharacterRadius;
         bool isTouchingGround = Physics.SphereCast(new Ray(transform.position, Vector3.down), spherecastRadius, out hit, groundCheckDistance-spherecastRadius);
         isTouchingGround &= Vector3.Angle(Vector3.up, hit.normal) <= characterController.slopeLimit;
 
@@ -256,7 +280,44 @@ public class CustomFirstPersonController : MonoBehaviour
     public void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-
         Gizmos.DrawLine(transform.position, transform.position + Vector3.down * groundCheckDistance);
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawRay(transform.position, velocity);
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawRay(transform.position, 2 * (transform.right* Input.GetAxis("Horizontal") + transform.forward * Input.GetAxis("Vertical")));
+    }
+
+    /// <summary> Poll directional input and update this character's velocity accordingly. </summary>
+    /// <param name="acceleration"></param>
+    /// <param name="shouldStopAutomatically">True if this character should try to stop while no directional input is held. False if it should keep moving.</param>
+    private void ApplyMovementInput(float acceleration, bool shouldStopAutomatically)
+	{
+        acceleration *= transform.localScale.x;
+
+        float speed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
+        Vector3 moveDirection = transform.right * Input.GetAxis("Horizontal") + transform.forward * Input.GetAxis("Vertical");
+        moveDirection = Vector3.ClampMagnitude(moveDirection, 1f);
+        moveDirection *= speed;
+        
+        if(!shouldStopAutomatically && moveDirection == Vector3.zero)
+            return;
+
+        // If not slowing down automatically AND not trying to reverse direction, don't slow down.
+        Vector3 horizontalVelocity = new Vector3(velocity.x, 0, velocity.z);
+        if (!shouldStopAutomatically && Vector3.Dot(moveDirection, horizontalVelocity) >= 0 && moveDirection.magnitude < horizontalVelocity.magnitude)
+            moveDirection = moveDirection.normalized * horizontalVelocity.magnitude;
+
+        Vector3 goalVelocity = new Vector3(moveDirection.x, velocity.y, moveDirection.z);
+
+        // Applying movement to the velocity.
+        velocity = Vector3.MoveTowards(velocity, goalVelocity, acceleration * Time.deltaTime);
+    }
+
+    private void JumpAndBecomeAirborne()
+	{
+        AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        motionState = MotionState.Airborne;
     }
 }
