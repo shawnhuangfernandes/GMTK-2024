@@ -203,6 +203,9 @@ public class CustomFirstPersonController : MonoBehaviour
                 if (otherRail == null)
                     continue;
 
+                if(!otherRail.CanStartGrinding(this))
+                    continue;
+
                 // Found a rail! Snap to it.
                 railHandle.spline = otherRail.spline;
                 if(railHandle.result.percent < 1f)

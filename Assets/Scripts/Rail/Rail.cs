@@ -9,11 +9,23 @@ using Dreamteck.Splines;
 [RequireComponent(typeof(SplineComputer))]
 public class Rail : MonoBehaviour
 {
+	[Tooltip("The SizeSetting a character must have as their current size in order to start grinding on this rail")]
+	public SizeSetting sizeRequiredToEmbark;
+
 	[field: SerializeField(), HideInInspector]
 	public SplineComputer spline { get; private set; }
 
 	private void Awake()
 	{
 		spline = GetComponent<SplineComputer>();
+	}
+
+	public bool CanStartGrinding(CustomFirstPersonController controller)
+	{
+		CharacterScaler characterScaler = controller.GetComponent<CharacterScaler>();
+		if(characterScaler == null)
+			return true;
+
+		return characterScaler.size == sizeRequiredToEmbark;
 	}
 }
