@@ -56,6 +56,7 @@ public class CustomFirstPersonController : MonoBehaviour
     [HideInInspector] public float rootJumpForce = 0F;
     [HideInInspector] public float rootGroundCheckDistance = 0F;
     [HideInInspector] public float rootCharacterControllerRadius = 0F;
+    [HideInInspector] public float rootCharacterControllerSkinWidth = 0F;
     [HideInInspector] public float rootgrindAcceleration;
     [HideInInspector] public float rootminGrindSpeed;
     [HideInInspector] public float rootmaxGrindSpeed;
@@ -80,6 +81,7 @@ public class CustomFirstPersonController : MonoBehaviour
         rootJumpForce = jumpForce;
         rootGroundCheckDistance = groundCheckDistance;
         rootCharacterControllerRadius = characterController.radius;
+        rootCharacterControllerSkinWidth = characterController.skinWidth;
         rootgrindAcceleration = grindAcceleration;
         rootminGrindSpeed = minGrindSpeed;
         rootmaxGrindSpeed = maxGrindSpeed;

@@ -24,6 +24,11 @@ public class SizeSetting : ScriptableObject
 
     public void LerpCharacterMoveStats(float targetScale)
     {
+        if (characterController != null)
+		{
+            characterController.skinWidth = targetScale * firstPersonController.rootCharacterControllerSkinWidth;
+        }
+
         if (firstPersonController != null)
         {
             firstPersonController.walkSpeed = firstPersonController.rootWalkSpeed * targetScale;
