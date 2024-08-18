@@ -24,18 +24,16 @@ public class SizeSetting : ScriptableObject
 
     public void LerpCharacterMoveStats(float targetScale)
     {
-        if (characterController != null)
-        {
-            characterController.radius = firstPersonController.rootCharacterControllerRadius * targetScale;
-        }
-
         if (firstPersonController != null)
         {
             firstPersonController.walkSpeed = firstPersonController.rootWalkSpeed * targetScale;
             firstPersonController.runSpeed = firstPersonController.rootRunSpeed * targetScale;
             firstPersonController.jumpForce = firstPersonController.rootJumpForce * targetScale;
             firstPersonController.groundCheckDistance = firstPersonController.rootGroundCheckDistance * targetScale;
-            // TODO Add Rail Speed Adjustment
+            
+            firstPersonController.grindAcceleration = targetScale * firstPersonController.rootgrindAcceleration;
+            firstPersonController.minGrindSpeed = targetScale * firstPersonController.rootminGrindSpeed;
+            firstPersonController.maxGrindSpeed = targetScale * firstPersonController.rootmaxGrindSpeed;
         }
 
         characterController.transform.localScale = Vector3.one * targetScale;
