@@ -12,11 +12,34 @@ public class Respawner : MonoBehaviour
 	public UnityEvent onRespawn;
 	private Coroutine currentRespawnCoroutine;
 	private bool isRespawning = false;
-	private Vector3 spawnPoint;
+	private SavedState spawnState;
+
+	/// <summary> Data about where and how this character will be when it respawns. </summary>
+	private struct SavedState
+	{
+		public Vector3 position;
+		public Quaternion rotation;
+	}
 
 	private void Awake()
 	{
-		spawnPoint = transform.position;
+		spawnState = new SavedState()
+		{
+			position = transform.position,
+			rotation = transform.rotation,
+		};
+	}
+
+	public void SaveState(Waypoint spawnPoint)
+	{
+		spawnState = new SavedState()
+		{
+			position = spawnPoint.transform.position,
+			rotation = spawnPoint.transform.rotation,
+		};
+
+		CharacterScaler characterScaler = GetComponent<CharacterScaler>();
+		characterScaler.defaultSize = characterScaler.size;
 	}
 
 	public void StartRespawning()
@@ -36,7 +59,8 @@ public class Respawner : MonoBehaviour
 		CharacterController characterController = GetComponent<CharacterController>();
 		bool prevEnabled = characterController.enabled;
 		characterController.enabled = false;
-		transform.position = spawnPoint;
+		transform.position = spawnState.position;
+		transform.rotation = spawnState.rotation;
 		characterController.enabled = prevEnabled;
 
 		onRespawn.Invoke();
