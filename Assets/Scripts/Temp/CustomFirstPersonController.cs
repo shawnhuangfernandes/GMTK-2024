@@ -115,19 +115,25 @@ public class CustomFirstPersonController : MonoBehaviour
             case MotionState.Grinding:
                 // No directional control while grinding.
                 break;
+		}
+
+		// Jumping
+		switch (motionState)
+		{
+			case MotionState.Grounded:
+            case MotionState.Grinding:
+			    if (Input.GetButtonDown("Jump"))
+                {
+                    JumpAndBecomeAirborne();
+                }
+                break;
         }
+
 
         switch(motionState)
 		{
             case MotionState.Grounded:
                 velocity.y = 0;
-
-                // Jumping
-                if (Input.GetButtonDown("Jump"))
-                {
-                    AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-                    motionState = MotionState.Airborne;
-                }
                 break;
 
             case MotionState.Airborne:
@@ -270,5 +276,11 @@ public class CustomFirstPersonController : MonoBehaviour
         Gizmos.color = Color.red;
 
         Gizmos.DrawLine(transform.position, transform.position + Vector3.down * groundCheckDistance);
+    }
+
+    private void JumpAndBecomeAirborne()
+	{
+        AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        motionState = MotionState.Airborne;
     }
 }

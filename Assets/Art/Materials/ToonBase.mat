@@ -17,7 +17,6 @@ Material:
   - _FOG
   - _NORMALMAP
   - _RAMP_TRIPLE
-  - _SPECULAR
   m_InvalidKeywords:
   - _ZWRITE_ON
   m_LightmapFlags: 4
@@ -136,7 +135,7 @@ Material:
     - _ShadowMask: 0
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
-    - _Specular: 1
+    - _Specular: 0
     - _SpecularExponent: 200
     - _SpecularHighlights: 1
     - _SpecularSmoothness: 0.025
