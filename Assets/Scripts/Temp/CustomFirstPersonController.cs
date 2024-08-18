@@ -255,10 +255,12 @@ public class CustomFirstPersonController : MonoBehaviour
 
 	void HandleCameraRotation()
     {
+
         rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
         rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
         cameraXFRM.localRotation = Quaternion.Euler(rotationX, 0, 0);
         transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
+        Debug.Log(Input.GetAxis("Mouse Y") + "           " + Input.GetAxis("Mouse X"));
     }
 
     public void AddForce(Vector3 force, ForceMode forceMode)

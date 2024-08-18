@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7a08af5726675d4bb3bbcd0d71ae2e77
     GuidInternal: 
-    m_lastTime: -8584776878891921779
+    m_lastTime: -8584776537638149963
     List:
+    - name: Play_Ambience
+      guid: 3644649cbd50d84a9765b503e2b859f2
+      id: 278617630
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a08af5726675d4bb3bbcd0d71ae2e77
+      - ElementName: Play_Ambience
+        ObjectType: 3
+        guid: 3644649cbd50d84a9765b503e2b859f2
+      Path: Events\Default Work Unit\Play_Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Player_Grows
       guid: cce2756d9916e14b92ed4aafb7a2cd43
       id: 1310416267
