@@ -2,6 +2,10 @@
 <WwiseDocument Type="WorkUnit" ID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}" SchemaVersion="119">
 	<Events>
 		<WorkUnit Name="Player" ID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="17"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<Event Name="Player_Footsteps" ID="{94F7E324-B34F-47E2-84EE-53DB04FB3B8B}">
 					<ChildrenList>
