@@ -51,9 +51,13 @@ public class CustomFirstPersonController : MonoBehaviour
     [HideInInspector] public float rootJumpForce = 0F;
     [HideInInspector] public float rootGroundCheckDistance = 0F;
     [HideInInspector] public float rootCharacterControllerRadius = 0F;
+    [HideInInspector] public float rootgrindAcceleration;
+    [HideInInspector] public float rootminGrindSpeed;
+    [HideInInspector] public float rootmaxGrindSpeed;
+    /// <summary> The current radius of characterController, accounting for this character's localScale. </summary>
+    private float CharacterRadius => transform.localScale.x * characterController.radius;
 
-
-	public enum MotionState {
+    public enum MotionState {
         /// <summary> Move according to player input, and stick to the ground. </summary>
         Grounded,
         /// <summary> Move according to player input and the force of gravity. </summary>
@@ -71,6 +75,9 @@ public class CustomFirstPersonController : MonoBehaviour
         rootJumpForce = jumpForce;
         rootGroundCheckDistance = groundCheckDistance;
         rootCharacterControllerRadius = characterController.radius;
+        rootgrindAcceleration = grindAcceleration;
+        rootminGrindSpeed = minGrindSpeed;
+        rootmaxGrindSpeed = maxGrindSpeed;
     }
 
     void Start()
@@ -130,12 +137,16 @@ public class CustomFirstPersonController : MonoBehaviour
                 break;
 
             case MotionState.Grinding:
-                // First, apply gravity.
-                AddForce(Physics.gravity, ForceMode.Acceleration);
-
                 // Then, align velocity to the current rail.
                 float speed = velocity.magnitude;
                 Vector3 direction = railHandle.result.forward;
+
+                // Apply gravity.
+                float speedChangeDueToGravity = Vector3.Dot(Physics.gravity*Time.deltaTime, direction);
+                if (speedChangeDueToGravity > 0 || speed >= minGrindSpeed)
+                    speed += speedChangeDueToGravity;
+
+                // Enforce min and max speed.
                 if(speed < minGrindSpeed)
                     speed += grindAcceleration * Time.deltaTime;
                 speed = Mathf.Clamp(speed, 0, maxGrindSpeed);
@@ -152,7 +163,8 @@ public class CustomFirstPersonController : MonoBehaviour
             case MotionState.Grinding:
                 // Snap to the current rail.
                 float nudgeFactor = (1f - Mathf.Pow(1f-snapToRailLerpRate, Time.deltaTime));
-                displacement += (railHandle.result.position - railHandle.transform.position) * nudgeFactor;
+                Vector3 goalPosition = railHandle.result.position + (railHandle.result.up + Vector3.down) * CharacterRadius;
+                displacement += (goalPosition - railHandle.transform.position) * nudgeFactor;
                 break;
         }
 
@@ -160,7 +172,7 @@ public class CustomFirstPersonController : MonoBehaviour
         characterController.Move(displacement);
     }
 
-    /// <summary> If able, search for nearby rails and start grinding. </summary>
+    /// <summary> If able, search for nearby rails and start grinding. If grinding, stop if needed. </summary>
     private void InteractWithRails()
 	{
         void SnapToNearbyRail(float searchRadius)
@@ -205,7 +217,7 @@ public class CustomFirstPersonController : MonoBehaviour
     private void InteractWithGround()
     {
         RaycastHit hit;
-        float spherecastRadius = 0.99f * characterController.radius;
+        float spherecastRadius = 0.99f * CharacterRadius;
         bool isTouchingGround = Physics.SphereCast(new Ray(transform.position, Vector3.down), spherecastRadius, out hit, groundCheckDistance-spherecastRadius);
         isTouchingGround &= Vector3.Angle(Vector3.up, hit.normal) <= characterController.slopeLimit;
 
