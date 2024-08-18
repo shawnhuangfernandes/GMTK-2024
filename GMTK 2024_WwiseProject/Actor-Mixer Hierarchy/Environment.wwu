@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D735D4EA-05C6-48E5-A28A-E0512FE7EBED}" SchemaVersion="119">
 	<AudioObjects>
-		<WorkUnit Name="SFX_Ambience" ID="{D735D4EA-05C6-48E5-A28A-E0512FE7EBED}" PersistMode="Standalone">
+		<WorkUnit Name="Environment" ID="{D735D4EA-05C6-48E5-A28A-E0512FE7EBED}" PersistMode="Standalone">
 			<ChildrenList>
 				<BlendContainer Name="Wind_Ambience_Blend" ID="{C7285A79-FD3D-44B4-9951-1A9A0816408B}" ShortID="167731078">
 					<ReferenceList>

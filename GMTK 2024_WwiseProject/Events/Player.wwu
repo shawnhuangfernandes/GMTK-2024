@@ -1,6 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}" SchemaVersion="119">
 	<Events>
-		<WorkUnit Name="Player" ID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}" PersistMode="Standalone"/>
+		<WorkUnit Name="Player" ID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Player_Footsteps" ID="{94F7E324-B34F-47E2-84EE-53DB04FB3B8B}">
+					<ChildrenList>
+						<Action Name="" ID="{52E9C52E-0FFA-467A-B22C-140C32AD0D20}" ShortID="211497945">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Footsteps" ID="{EC792D6B-74CF-4E28-8550-C90FFF0CAA1D}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Grows" ID="{6D75E2CC-1699-4BE1-92ED-4AAFB7A2CD43}">
+					<ChildrenList>
+						<Action Name="" ID="{94B5620E-8ABA-4768-B586-0DE4BB45B6D6}" ShortID="1032870571">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Size" ID="{F40BFA0C-2D01-4620-8F7D-006735CB5BF5}" WorkUnitID="{DAB6B92D-7565-42F7-8329-572C0B05A910}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Normal" ID="{9DBEC3C1-5EB1-450B-9572-1B5A681D00B0}">
+					<ChildrenList>
+						<Action Name="" ID="{A5ABA963-6498-4475-8948-21C83FA4E480}" ShortID="192484371">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="50"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Size" ID="{F40BFA0C-2D01-4620-8F7D-006735CB5BF5}" WorkUnitID="{DAB6B92D-7565-42F7-8329-572C0B05A910}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Shrinks" ID="{5ACF63CD-973F-4DEA-B845-B586802CFEFE}">
+					<ChildrenList>
+						<Action Name="" ID="{9203D8E7-6A30-4B32-9941-2B1C2DEA5C2B}" ShortID="418074114">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Size" ID="{F40BFA0C-2D01-4620-8F7D-006735CB5BF5}" WorkUnitID="{DAB6B92D-7565-42F7-8329-572C0B05A910}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Landing" ID="{FF2CCB64-3A47-455B-99FB-2D37B8EAF108}">
+					<ChildrenList>
+						<Action Name="" ID="{A60740CE-9D18-4514-837A-F320814B5A47}" ShortID="20973554">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Landing" ID="{7BAF5871-5794-4F8D-BF35-083D725ECAB3}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Jump" ID="{1DF27C00-14D1-42AC-8547-62B4B4305AFF}">
+					<ChildrenList>
+						<Action Name="" ID="{29BC558C-FA39-4DC2-9F21-E2615A112525}" ShortID="393983851">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Jump" ID="{75867604-124A-4491-A4AF-C23AB433ED85}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

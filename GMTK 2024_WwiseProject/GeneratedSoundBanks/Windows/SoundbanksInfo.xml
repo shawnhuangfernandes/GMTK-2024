@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{2BB64290-2DF1-1E06-FD3F-E56C8646857F}">
+		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{41CD25F8-6A74-8282-D1D3-B6FFBC77E664}">
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<Media>
@@ -29,10 +29,6 @@
 					<ShortName>Footstep_07.wav</ShortName>
 					<CachePath>SFX/Footstep_07_818F3B66.wem</CachePath>
 				</File>
-				<File Id="203386750" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass_03.wav</ShortName>
-					<CachePath>SFX/Grass_03_818F3B66.wem</CachePath>
-				</File>
 				<File Id="238272670" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footstep_01.wav</ShortName>
 					<CachePath>SFX/Footstep_01_818F3B66.wem</CachePath>
@@ -40,10 +36,6 @@
 				<File Id="244839083" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gak_07.wav</ShortName>
 					<CachePath>SFX/Gak_07_818F3B66.wem</CachePath>
-				</File>
-				<File Id="254331487" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass_07.wav</ShortName>
-					<CachePath>SFX/Grass_07_818F3B66.wem</CachePath>
 				</File>
 				<File Id="267339551" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footstep_05.wav</ShortName>
@@ -57,10 +49,6 @@
 					<ShortName>Gak_02.wav</ShortName>
 					<CachePath>SFX/Gak_02_818F3B66.wem</CachePath>
 				</File>
-				<File Id="302838608" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass_02.wav</ShortName>
-					<CachePath>SFX/Grass_02_818F3B66.wem</CachePath>
-				</File>
 				<File Id="320670769" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gak_06.wav</ShortName>
 					<CachePath>SFX/Gak_06_818F3B66.wem</CachePath>
@@ -73,37 +61,17 @@
 					<ShortName>Gak_10.wav</ShortName>
 					<CachePath>SFX/Gak_10_818F3B66.wem</CachePath>
 				</File>
-				<File Id="507163570" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass_04.wav</ShortName>
-					<CachePath>SFX/Grass_04_818F3B66.wem</CachePath>
-				</File>
-				<File Id="517948701" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass_09.wav</ShortName>
-					<CachePath>SFX/Grass_09_818F3B66.wem</CachePath>
-				</File>
 				<File Id="596041254" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footstep_10.wav</ShortName>
 					<CachePath>SFX/Footstep_10_818F3B66.wem</CachePath>
-				</File>
-				<File Id="642988751" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass_10.wav</ShortName>
-					<CachePath>SFX/Grass_10_818F3B66.wem</CachePath>
 				</File>
 				<File Id="646295349" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gak_04.wav</ShortName>
 					<CachePath>SFX/Gak_04_818F3B66.wem</CachePath>
 				</File>
-				<File Id="664546033" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass_01.wav</ShortName>
-					<CachePath>SFX/Grass_01_818F3B66.wem</CachePath>
-				</File>
 				<File Id="698227480" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footstep_04.wav</ShortName>
 					<CachePath>SFX/Footstep_04_818F3B66.wem</CachePath>
-				</File>
-				<File Id="780069726" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass_06.wav</ShortName>
-					<CachePath>SFX/Grass_06_818F3B66.wem</CachePath>
 				</File>
 				<File Id="782078128" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gak_03.wav</ShortName>
@@ -121,21 +89,13 @@
 					<ShortName>Footstep_08.wav</ShortName>
 					<CachePath>SFX/Footstep_08_818F3B66.wem</CachePath>
 				</File>
-				<File Id="1032595168" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass_05.wav</ShortName>
-					<CachePath>SFX/Grass_05_818F3B66.wem</CachePath>
-				</File>
 				<File Id="1038134498" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gak_08.wav</ShortName>
 					<CachePath>SFX/Gak_08_818F3B66.wem</CachePath>
 				</File>
-				<File Id="1053780604" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Grass_08.wav</ShortName>
-					<CachePath>SFX/Grass_08_818F3B66.wem</CachePath>
-				</File>
 			</Media>
 			<Events>
-				<Event Id="1730208058" Name="Player_Footsteps" DurationType="OneShot" DurationMin="1.2544678" DurationMax="1.4758322">
+				<Event Id="1730208058" Name="Player_Footsteps" DurationType="OneShot" DurationMin="1.2607603" DurationMax="1.4758322">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="2144363834"/>
@@ -169,32 +129,22 @@
 								<MediaRef Id="40822885"/>
 								<MediaRef Id="65851852"/>
 								<MediaRef Id="155080818"/>
-								<MediaRef Id="203386750"/>
 								<MediaRef Id="238272670"/>
 								<MediaRef Id="244839083"/>
-								<MediaRef Id="254331487"/>
 								<MediaRef Id="267339551"/>
 								<MediaRef Id="271732420"/>
 								<MediaRef Id="298240106"/>
-								<MediaRef Id="302838608"/>
 								<MediaRef Id="320670769"/>
 								<MediaRef Id="449175834"/>
 								<MediaRef Id="490577953"/>
-								<MediaRef Id="507163570"/>
-								<MediaRef Id="517948701"/>
 								<MediaRef Id="596041254"/>
-								<MediaRef Id="642988751"/>
 								<MediaRef Id="646295349"/>
-								<MediaRef Id="664546033"/>
 								<MediaRef Id="698227480"/>
-								<MediaRef Id="780069726"/>
 								<MediaRef Id="782078128"/>
 								<MediaRef Id="805539665"/>
 								<MediaRef Id="907478584"/>
 								<MediaRef Id="962110443"/>
-								<MediaRef Id="1032595168"/>
 								<MediaRef Id="1038134498"/>
-								<MediaRef Id="1053780604"/>
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -279,5 +229,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{613508C4-95FA-1A52-5BAF-69E13E30066B}</FileHash>
+	<FileHash>{20238FB1-77D9-2F0A-8E15-8F42B6F0DABF}</FileHash>
 </SoundBanksInfo>
