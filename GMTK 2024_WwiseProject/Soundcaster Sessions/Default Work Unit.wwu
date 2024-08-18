@@ -64,8 +64,23 @@
 						<CurrentStateRef Name="None" ID="{76EF21FD-DF0B-4BA1-8C35-17D3A4A28957}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Rock" ID="{084C24CD-3913-46BB-AE96-DDCC1AFAFDEE}"/>
+						<CurrentSwitchRef Name="Grass" ID="{E1777FEB-9222-41B3-80A1-053755190892}"/>
 					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Respawn" ID="{BA4C1F71-B6EF-417C-9E40-ED398B522D41}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Ambience" ID="{9C644436-50BD-4AD8-9765-B503E2B859F2}" WorkUnitID="{93A8A08E-0D81-4824-B96E-92E177B8D654}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Respawn" ID="{978D3693-3C44-4D79-9468-1F8C598531D4}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
