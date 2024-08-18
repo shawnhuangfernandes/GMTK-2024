@@ -46,15 +46,15 @@ Material:
     - _ColorFactor: 1
     - _Color_Thresh: 1.1
     - _DepthFade: 1
-    - _DepthFadeFactor: 0.02
+    - _DepthFadeFactor: 0.01
     - _Distance: 2
     - _Frame_Steps: 10
     - _Noise_Contrast: 2
     - _Noise_Intensity: 15
     - _NormalFactor: 1
     - _Nrm_Thresh: 0.3
-    - _OutlineOpacity: 1
-    - _SearchDist: 2
+    - _OutlineOpacity: 0.42
+    - _SearchDist: 1
     m_Colors:
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
