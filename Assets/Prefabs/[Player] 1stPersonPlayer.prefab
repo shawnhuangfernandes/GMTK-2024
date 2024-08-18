@@ -111,6 +111,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 6
   runSpeed: 12
+  groundedAcceleration: 60
+  airborneAcceleration: 15
   jumpForce: 5
   lookSpeed: 2
   lookXLimit: 45

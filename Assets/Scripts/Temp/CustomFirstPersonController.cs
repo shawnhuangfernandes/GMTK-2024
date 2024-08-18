@@ -12,6 +12,11 @@ public class CustomFirstPersonController : MonoBehaviour
     [Tooltip("The running speed of the character")]
     public float runSpeed = 12.0f;
 
+    [Tooltip("The acceleration of the character while grounded")]
+    public float groundedAcceleration = 60f;
+    [Tooltip("The acceleration of the character while airborne")]
+    public float airborneAcceleration = 15f;
+
     [Tooltip("The jumping force of the character")]
     public float jumpForce = 5.0f;
 
@@ -103,13 +108,11 @@ public class CustomFirstPersonController : MonoBehaviour
 		switch (motionState)
 		{
             case MotionState.Grounded:
-            case MotionState.Airborne:
-		        float speed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
-                Vector3 moveDirection = transform.right * Input.GetAxis("Horizontal") + transform.forward * Input.GetAxis("Vertical");
-                moveDirection *= speed;
+                ApplyMovementInput(groundedAcceleration, true);
+                break;
 
-                // Applying movement to the velocity.
-                velocity = new Vector3(moveDirection.x, velocity.y, moveDirection.z);
+            case MotionState.Airborne:
+		        ApplyMovementInput(airborneAcceleration, false);
                 break;
 
             case MotionState.Grinding:
@@ -128,7 +131,6 @@ public class CustomFirstPersonController : MonoBehaviour
                 }
                 break;
         }
-
 
         switch(motionState)
 		{
@@ -274,8 +276,39 @@ public class CustomFirstPersonController : MonoBehaviour
     public void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-
         Gizmos.DrawLine(transform.position, transform.position + Vector3.down * groundCheckDistance);
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawRay(transform.position, velocity);
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawRay(transform.position, 2 * (transform.right* Input.GetAxis("Horizontal") + transform.forward * Input.GetAxis("Vertical")));
+    }
+
+    /// <summary> Poll directional input and update this character's velocity accordingly. </summary>
+    /// <param name="acceleration"></param>
+    /// <param name="shouldStopAutomatically">True if this character should try to stop while no directional input is held. False if it should keep moving.</param>
+    private void ApplyMovementInput(float acceleration, bool shouldStopAutomatically)
+	{
+        acceleration *= transform.localScale.x;
+
+        float speed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
+        Vector3 moveDirection = transform.right * Input.GetAxis("Horizontal") + transform.forward * Input.GetAxis("Vertical");
+        moveDirection = Vector3.ClampMagnitude(moveDirection, 1f);
+        moveDirection *= speed;
+        
+        if(!shouldStopAutomatically && moveDirection == Vector3.zero)
+            return;
+
+        // If not slowing down automatically AND not trying to reverse direction, don't slow down.
+        Vector3 horizontalVelocity = new Vector3(velocity.x, 0, velocity.z);
+        if (!shouldStopAutomatically && Vector3.Dot(moveDirection, horizontalVelocity) >= 0 && moveDirection.magnitude < horizontalVelocity.magnitude)
+            moveDirection = moveDirection.normalized * horizontalVelocity.magnitude;
+
+        Vector3 goalVelocity = new Vector3(moveDirection.x, velocity.y, moveDirection.z);
+
+        // Applying movement to the velocity.
+        velocity = Vector3.MoveTowards(velocity, goalVelocity, acceleration * Time.deltaTime);
     }
 
     private void JumpAndBecomeAirborne()
