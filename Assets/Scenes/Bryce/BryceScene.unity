@@ -5327,6 +5327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7abe72691bed2654da0a7e723515e76a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waypointGlow: {fileID: 1862951064}
 --- !u!1 &799792449 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 870044342990587400, guid: a2eec9b4392d12f4c83f43ea8c410a26,
@@ -5803,6 +5804,8 @@ MonoBehaviour:
   player: {fileID: 799792449}
   activationRange: 10
   glowColor: {r: 0.5372549, g: 1, b: 0, a: 1}
+  activationPercent: 0
+  glowIntensity: 0
 --- !u!4 &1862951068 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1616601726988146846, guid: 697eeaf6b9b2512478a6486623c7362b,
