@@ -11,6 +11,7 @@ public class Respawner : MonoBehaviour
 	public UnityEvent onRespawnStart;
 	public UnityEvent onRespawn;
 	private Coroutine currentRespawnCoroutine;
+	private bool isRespawning = false;
 	private Vector3 spawnPoint;
 
 	private void Awake()
@@ -31,7 +32,13 @@ public class Respawner : MonoBehaviour
 		onRespawnStart.Invoke();
 		yield return new WaitForSeconds(delay);
 
+		// If this is a character, force it to teleport.
+		CharacterController characterController = GetComponent<CharacterController>();
+		bool prevEnabled = characterController.enabled;
+		characterController.enabled = false;
 		transform.position = spawnPoint;
+		characterController.enabled = prevEnabled;
+
 		onRespawn.Invoke();
 		currentRespawnCoroutine = null;
 	}
