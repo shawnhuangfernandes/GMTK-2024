@@ -1,6 +1,23 @@
 Event	ID	Name			Wwise Object Path	Notes
 	2131429412	Test_Bell_Loop			\Default Work Unit\Test_Bell_Loop	
 
+State Group	ID	Name			Wwise Object Path	Notes
+	4258827653	PlayerSize			\Default Work Unit\PlayerSize	
+
+State	ID	Name	State Group			Notes
+	748895195	None	PlayerSize			
+	1160234136	Normal	PlayerSize			
+	1846755610	Small	PlayerSize			
+	4284352190	Large	PlayerSize			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3040674790	Player_Size			\Default Work Unit\Player_Size	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1501174592	Small_Stretch	Wwise Time Stretch			
+	2481867971	Small_EQ	Wwise Parametric EQ			
+	4052205305	Small_Reverb	Wwise RoomVerb			
+
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	694506031	Test_Bell_Loop	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Soundly Audio\BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 2_FBC78EF0.wem	694506031.wem	\Actor-Mixer Hierarchy\Default Work Unit\Test_Bell_Loop	
+	694506031	Test_Bell_Loop	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Soundly Audio\BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 2_FBC78EF0.wem	694506031.wem	\Actor-Mixer Hierarchy\Default Work Unit\Test_Bell_Loop	
 

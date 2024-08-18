@@ -84,6 +84,31 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Player_Respawn" ID="{978D3693-3C44-4D79-9468-1F8C598531D4}">
+					<ChildrenList>
+						<Action Name="" ID="{5D2EED57-DFD2-4916-8424-1C86FDA078FD}" ShortID="584091415">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Respawn_HandPan" ID="{F879A35F-735B-4C16-A7F3-201947341B13}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{74BFCBF7-24F1-406D-A05A-820EB8FB597F}" ShortID="350570379">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Respawn_Paper" ID="{D8D8EEFB-D7B2-44D3-9E29-C0E3E4FD4CA2}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8E1A6E2D-99A9-4447-B84B-7FD5E1265FB7}" ShortID="424914825">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Respawn_Wind" ID="{70A015E2-91C5-4ADD-848C-0D69B22629A2}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

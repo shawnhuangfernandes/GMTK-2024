@@ -13,16 +13,6 @@
 						</Reference>
 					</ReferenceList>
 				</Sound>
-				<Sound Name="Player_Respawns" ID="{C0111548-39C5-4289-A2CD-DC983C278822}" ShortID="783442148">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
-						</Reference>
-					</ReferenceList>
-				</Sound>
 				<Sound Name="Player_Shrinks" ID="{9A985F79-A2DD-469C-87F4-57C98E09D0D3}" ShortID="179979721">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -3567,6 +3557,498 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Player_Respawn" ID="{4000C36C-1953-43C3-B2A7-92C3F3A079BE}" ShortID="946421696">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Respawn_Wind" ID="{70A015E2-91C5-4ADD-848C-0D69B22629A2}" ShortID="940091808">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Respawn_Wind-001" ID="{2E86EBA1-A457-4E71-8D2E-35AE0233B96B}" ShortID="346065721">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Respawn_Wind-001" ID="{B47CD059-C5E2-400C-AD85-145F68310818}">
+											<Language>SFX</Language>
+											<AudioFile>Respawn_Wind-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="193658144"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Respawn_Wind-001" ID="{B47CD059-C5E2-400C-AD85-145F68310818}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Respawn_Wind-002" ID="{E8FAAEAC-7BF9-439D-9780-6D8AF9436501}" ShortID="913515398">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Respawn_Wind-002" ID="{C493F381-2EFE-4CB9-A744-14D093C24AA1}">
+											<Language>SFX</Language>
+											<AudioFile>Respawn_Wind-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="707031096"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Respawn_Wind-002" ID="{C493F381-2EFE-4CB9-A744-14D093C24AA1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Respawn_Wind-003" ID="{AD410C52-7608-4C78-839B-79FA2BA1A815}" ShortID="1043822449">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Respawn_Wind-003" ID="{060C6494-2A3B-4AE8-BA61-D3B9C90CFF29}">
+											<Language>SFX</Language>
+											<AudioFile>Respawn_Wind-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="644494758"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Respawn_Wind-003" ID="{060C6494-2A3B-4AE8-BA61-D3B9C90CFF29}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Respawn_Wind-004" ID="{05F29840-3EA7-47A8-B1CD-BCE6D7085CC4}" ShortID="903042290">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Respawn_Wind-004" ID="{70FC0CEE-39E9-439B-AD91-613A899DE132}">
+											<Language>SFX</Language>
+											<AudioFile>Respawn_Wind-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="359341459"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Respawn_Wind-004" ID="{70FC0CEE-39E9-439B-AD91-613A899DE132}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Respawn_Wind-005" ID="{C9029FFA-4C2A-4198-AA9A-7F671A33A68B}" ShortID="46555662">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Respawn_Wind-005" ID="{05313712-850F-4389-B842-FF85F9BAC445}">
+											<Language>SFX</Language>
+											<AudioFile>Respawn_Wind-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="402630463"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Respawn_Wind-005" ID="{05313712-850F-4389-B842-FF85F9BAC445}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Respawn_Wind-006" ID="{D26BE891-2213-4C6B-A693-1BC7288C86F9}" ShortID="527267180">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Respawn_Wind-006" ID="{40F67D48-F7F4-4E94-B465-164D1D3189C4}">
+											<Language>SFX</Language>
+											<AudioFile>Respawn_Wind-006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="427679451"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Respawn_Wind-006" ID="{40F67D48-F7F4-4E94-B465-164D1D3189C4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Respawn_Wind-007" ID="{F725131D-B12C-4308-810A-2783778BAE6B}" ShortID="307789224">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Respawn_Wind-007" ID="{8ADC7F95-DA51-4657-821C-7D6BEB718E2F}">
+											<Language>SFX</Language>
+											<AudioFile>Respawn_Wind-007.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="963630446"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Respawn_Wind-007" ID="{8ADC7F95-DA51-4657-821C-7D6BEB718E2F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Respawn_HandPan" ID="{F879A35F-735B-4C16-A7F3-201947341B13}" ShortID="657389800">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Respawn_HandPan-001" ID="{27B5B3D6-2DEF-4C27-AF78-D03A5E52E8A6}" ShortID="1589825">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{AB387BD5-A4F7-43F1-A38C-559FFBB40E7D}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Respawn_HandPan-001" ID="{4A347D55-23FF-4D4A-AA47-0ABB94F34AF4}">
+											<Language>SFX</Language>
+											<AudioFile>Respawn_HandPan-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="407647084"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Respawn_HandPan-001" ID="{4A347D55-23FF-4D4A-AA47-0ABB94F34AF4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Respawn_HandPan-002" ID="{59991330-A273-4003-A317-E209A20937BE}" ShortID="752856465">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Respawn_HandPan-002" ID="{D34DA044-6F45-4141-BABA-0555E5819EB7}">
+											<Language>SFX</Language>
+											<AudioFile>Respawn_HandPan-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="595347034"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Respawn_HandPan-002" ID="{D34DA044-6F45-4141-BABA-0555E5819EB7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Respawn_HandPan-003" ID="{C7D3EB23-F6B7-49E2-A7E4-983A80528C55}" ShortID="434418035">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Respawn_HandPan-003" ID="{8C501D86-E0ED-4B35-824C-FF7A824937A7}">
+											<Language>SFX</Language>
+											<AudioFile>Respawn_HandPan-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="929641478"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Respawn_HandPan-003" ID="{8C501D86-E0ED-4B35-824C-FF7A824937A7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Respawn_HandPan-004" ID="{C6906E8B-E9A8-44EF-96C6-92736777E29A}" ShortID="940035292">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Respawn_HandPan-004" ID="{B7A6A68F-8593-46A7-ACBF-457B4A7F61FA}">
+											<Language>SFX</Language>
+											<AudioFile>Respawn_HandPan-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="746776842"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Respawn_HandPan-004" ID="{B7A6A68F-8593-46A7-ACBF-457B4A7F61FA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Respawn_HandPan-005" ID="{2AE8403B-9606-4C24-9C7D-D82AD52406C5}" ShortID="795961035">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Respawn_HandPan-005" ID="{D8C5BF4D-1CFC-4BF8-9A33-DD91DBEFA032}">
+											<Language>SFX</Language>
+											<AudioFile>Respawn_HandPan-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="941795228"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Respawn_HandPan-005" ID="{D8C5BF4D-1CFC-4BF8-9A33-DD91DBEFA032}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Respawn_Paper" ID="{D8D8EEFB-D7B2-44D3-9E29-C0E3E4FD4CA2}" ShortID="989008156">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Respawn_Paper-001" ID="{2CCAF26B-7EB6-4C7F-8FD3-46DD77E54777}" ShortID="273566988">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Respawn_Paper-001" ID="{8BF02A7F-C936-4F7E-9EA9-DEF6912535D0}">
+											<Language>SFX</Language>
+											<AudioFile>Respawn_Paper-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="121327956"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Respawn_Paper-001" ID="{8BF02A7F-C936-4F7E-9EA9-DEF6912535D0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Respawn_Paper-002" ID="{840DE8EF-EA14-4E91-8397-86FBA7F39587}" ShortID="113231916">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Respawn_Paper-002" ID="{C99E1C66-8F43-4A78-BFE2-A68BA925A941}">
+											<Language>SFX</Language>
+											<AudioFile>Respawn_Paper-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="674561519"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Respawn_Paper-002" ID="{C99E1C66-8F43-4A78-BFE2-A68BA925A941}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Respawn_Paper-003" ID="{14B9A237-5319-4EE7-859F-A93488D7EC14}" ShortID="601060693">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Respawn_Paper-003" ID="{DF6B8702-ABDA-470B-BA88-A7F8FD017D1B}">
+											<Language>SFX</Language>
+											<AudioFile>Respawn_Paper-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="283295158"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Respawn_Paper-003" ID="{DF6B8702-ABDA-470B-BA88-A7F8FD017D1B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Respawn_Paper-004" ID="{928495C0-7495-4CEA-94AB-DF7330372897}" ShortID="829904965">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Respawn_Paper-004" ID="{7E22B10A-24C9-40DF-B566-7C56813E01E8}">
+											<Language>SFX</Language>
+											<AudioFile>Respawn_Paper-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="11464898"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Respawn_Paper-004" ID="{7E22B10A-24C9-40DF-B566-7C56813E01E8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Respawn_Paper-005" ID="{D2FCE6CD-5ACB-497C-A2FC-1ED29BE3B737}" ShortID="827181224">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Respawn_Paper-005" ID="{BF8B143B-5041-4144-8F14-7D813DB751BB}">
+											<Language>SFX</Language>
+											<AudioFile>Respawn_Paper-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="684931886"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Respawn_Paper-005" ID="{BF8B143B-5041-4144-8F14-7D813DB751BB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Respawn_Paper-006" ID="{4ECF601E-C850-486F-8ECA-F61F1BE7F100}" ShortID="1016223342">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Respawn_Paper-006" ID="{9E78B1B2-0D08-4D3C-A4C8-639B6F0B28BF}">
+											<Language>SFX</Language>
+											<AudioFile>Respawn_Paper-006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="301753364"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Respawn_Paper-006" ID="{9E78B1B2-0D08-4D3C-A4C8-639B6F0B28BF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Respawn_Paper-007" ID="{180A1DD6-4298-46BA-8A0E-86C3083B80D6}" ShortID="485725948">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Respawn_Paper-007" ID="{56DBE3ED-7DC4-4FD4-A26E-E877966E5170}">
+											<Language>SFX</Language>
+											<AudioFile>Respawn_Paper-007.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="994583015"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Respawn_Paper-007" ID="{56DBE3ED-7DC4-4FD4-A26E-E877966E5170}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
