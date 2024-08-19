@@ -32,7 +32,7 @@
 						<CurrentStateRef Name="None" ID="{76EF21FD-DF0B-4BA1-8C35-17D3A4A28957}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Rock" ID="{084C24CD-3913-46BB-AE96-DDCC1AFAFDEE}"/>
+						<CurrentSwitchRef Name="Grass" ID="{E1777FEB-9222-41B3-80A1-053755190892}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Player Movement" ID="{2A3031DB-C014-4E25-A25A-946BA7030E9B}">

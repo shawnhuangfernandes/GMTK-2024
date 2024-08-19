@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{1C286F8A-EB8B-3CE8-C133-C1D6E3385456}">
+		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{6F4B1FA0-8352-5C98-FB44-FACF989127D4}">
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<Media>
@@ -396,12 +396,13 @@
 				<SwitchGroup Id="2385628198" Name="Footsteps">
 					<Switches>
 						<Switch Id="2144363834" Name="Rock"/>
+						<Switch Id="2473969246" Name="Metal"/>
 						<Switch Id="4248645337" Name="Grass"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{7149D104-9266-92F5-B6C1-0D7B8539010E}">
+		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{94B49CEE-10F8-581D-376B-1143D4BE5986}">
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 			<Media>
@@ -507,6 +508,7 @@
 				<SwitchGroup Id="2385628198" Name="Footsteps">
 					<Switches>
 						<Switch Id="2144363834" Name="Rock"/>
+						<Switch Id="2473969246" Name="Metal"/>
 						<Switch Id="4248645337" Name="Grass"/>
 					</Switches>
 				</SwitchGroup>
@@ -547,7 +549,7 @@
 				<GameParameter Id="3040674790" Name="Player_Size"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{E9AC2844-5915-F1E8-18E9-37DD69D04F40}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{6ADF1257-0E08-57B0-871F-D3417A6139D7}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
@@ -579,5 +581,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{30B0882F-BDE4-8682-A307-69DCCC6A0C7F}</FileHash>
+	<FileHash>{CE1DC427-DDA6-315A-731B-C746D0694F50}</FileHash>
 </SoundBanksInfo>
