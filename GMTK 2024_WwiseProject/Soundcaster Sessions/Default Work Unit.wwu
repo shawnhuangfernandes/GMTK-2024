@@ -32,7 +32,7 @@
 						<CurrentStateRef Name="None" ID="{76EF21FD-DF0B-4BA1-8C35-17D3A4A28957}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Rock" ID="{084C24CD-3913-46BB-AE96-DDCC1AFAFDEE}"/>
+						<CurrentSwitchRef Name="Grass" ID="{E1777FEB-9222-41B3-80A1-053755190892}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Player Movement" ID="{2A3031DB-C014-4E25-A25A-946BA7030E9B}">
@@ -75,6 +75,25 @@
 						</Module>
 						<Module>
 							<ObjectRef Name="Player_Respawn" ID="{978D3693-3C44-4D79-9468-1F8C598531D4}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Music" ID="{9F31E199-0B0B-419E-9CFD-E8728B798EB6}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Music_Menu" ID="{A77759A2-E6AF-4067-B075-72044C16F422}" WorkUnitID="{8A485FB3-535D-415F-B560-4B9336BB7454}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ambience" ID="{9C644436-50BD-4AD8-9765-B503E2B859F2}" WorkUnitID="{93A8A08E-0D81-4824-B96E-92E177B8D654}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PressStart" ID="{2CB8A27B-16FC-4B77-917D-CFBB0E350A13}" WorkUnitID="{8A485FB3-535D-415F-B560-4B9336BB7454}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 					</ModuleList>

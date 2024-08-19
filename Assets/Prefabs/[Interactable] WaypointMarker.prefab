@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1616601726988146846}
   - component: {fileID: 1768554196222050297}
   - component: {fileID: 5179797241694153208}
+  - component: {fileID: 3719073752510592316}
   m_Layer: 0
   m_Name: '[Interactable] WaypointMarker'
   m_TagString: Untagged
@@ -127,6 +128,99 @@ CapsuleCollider:
   m_Height: 6.280056
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &3719073752510592316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770423406862419716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0233a52d0134ff448ce251447645582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensityOverDistance:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 5
+      value: 1
+      inSlope: -0.08591995
+      outSlope: -0.08591995
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.48219344
+    - serializedVersion: 3
+      time: 30
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  intensityOverLookAngleDeflection:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 5
+      value: 1
+      inSlope: -0.03793592
+      outSlope: -0.03793592
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.48533127
+    - serializedVersion: 3
+      time: 60
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  colorOverIntensity:
+    serializedVersion: 2
+    key0: {r: 0.27058825, g: 0.5294118, b: 0.54901963, a: 1}
+    key1: {r: 0.6564014, g: 0.83, b: 0.26975, a: 1}
+    key2: {r: 1, g: 0.92156863, b: 0.015686275, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 32768
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 2
+    m_ColorSpace: -1
+    m_NumColorKeys: 3
+    m_NumAlphaKeys: 2
+  glowColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  particleRenderer: {fileID: 1654605360655462320}
+  player: {fileID: 0}
 --- !u!1 &3083750275601323838
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,11 +339,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0233a52d0134ff448ce251447645582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  activationRange: 5
+  intensityOverDistance:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  intensityOverLookAngleDeflection:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  colorOverIntensity:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
   glowColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  activationPercent: 0
-  glowIntensity: 0
+  particleRenderer: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1001 &693935237535103460
 PrefabInstance:
   m_ObjectHideFlags: 0
