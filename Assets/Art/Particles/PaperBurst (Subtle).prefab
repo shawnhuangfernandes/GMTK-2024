@@ -146,6 +146,16 @@ PrefabInstance:
     - target: {fileID: 6712146780904184031, guid: d82accf823f2c7241b4f157199f670b1,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874887615175180867, guid: d82accf823f2c7241b4f157199f670b1,
+        type: 3}
+      propertyPath: EmissionModule.m_BurstCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874887615175180867, guid: d82accf823f2c7241b4f157199f670b1,
+        type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.size
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

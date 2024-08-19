@@ -483,6 +483,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PureSparkles (Subtle)
       objectReference: {fileID: 0}
+    - target: {fileID: 6755408718645255263, guid: 7c2953c3b9452c8499842ab835321ff3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
