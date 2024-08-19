@@ -14,6 +14,9 @@ public class GameStartHandler : MonoBehaviour
 
     [Tooltip("The virtual camera to disable (to trigger starting view shift to player - consider replacing with a Timeline)")]
     [SerializeField] private CinemachineVirtualCamera gameStartViewVirtualCamera;
+
+    [Tooltip("The event used for the musical chime for pressing spacebar")]
+    [SerializeField] private AK.Wwise.Event gameStartEvent;
     private CustomFirstPersonController controller => _controller == null ? FindObjectOfType<CustomFirstPersonController>() : _controller;
     private CustomFirstPersonController _controller;
 
@@ -37,6 +40,8 @@ public class GameStartHandler : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             triggered = true;
+
+            gameStartEvent.Post(gameObject);
 
             fadeUIOnSpacebar?.DOFade(0F, 0.5F)
             .SetEase(Ease.OutQuad)

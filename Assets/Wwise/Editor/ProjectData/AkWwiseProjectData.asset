@@ -93,8 +93,49 @@ MonoBehaviour:
     ParentPath: SoundBanks\Environment
     guid: 7014795c3d801e4b8856ebc83cea69c4
     GuidInternal: 
-    m_lastTime: -8584775981089136872
-    List: []
+    m_lastTime: -8584775793363905569
+    List:
+    - name: Environment
+      guid: 213ffefc420b0247bc4dc6e05b57f742
+      id: 1229948536
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Environment
+        ObjectType: 12
+        guid: 7014795c3d801e4b8856ebc83cea69c4
+      - ElementName: Environment
+        ObjectType: 7
+        guid: 213ffefc420b0247bc4dc6e05b57f742
+      Path: SoundBanks\Environment\Environment
+  - PhysicalPath: SoundBanks\Music.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music
+      ObjectType: 12
+      guid: 81ab3d1147748543947763c10320879b
+    ParentPath: SoundBanks\Music
+    guid: 81ab3d1147748543947763c10320879b
+    GuidInternal: 
+    m_lastTime: -8584775793363895469
+    List:
+    - name: Music
+      guid: 21f19ca9e630a74d901eaa7f647fd362
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: 81ab3d1147748543947763c10320879b
+      - ElementName: Music
+        ObjectType: 7
+        guid: 21f19ca9e630a74d901eaa7f647fd362
+      Path: SoundBanks\Music\Music
   - PhysicalPath: SoundBanks\Player.wwu
     PathAndIcons:
     - ElementName: SoundBanks
@@ -106,7 +147,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Player
     guid: e4556c728c0c7e4aae2d89efa2e7cccf
     GuidInternal: 
-    m_lastTime: -8584775898907670068
+    m_lastTime: -8584775793363885484
     List:
     - name: Player
       guid: f0c9b94215fec844adaed5a7a42bd808
@@ -134,7 +175,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7a08af5726675d4bb3bbcd0d71ae2e77
     GuidInternal: 
-    m_lastTime: -8584775976250942529
+    m_lastTime: -8584775945894015048
     List:
     - name: Test_Bell_Loop
       guid: c3107017c2c7db4698fd5c7959f123ea
@@ -164,7 +205,7 @@ MonoBehaviour:
     ParentPath: Events\Environment
     guid: 8ea0a893810d2448b96e92e177b8d654
     GuidInternal: 
-    m_lastTime: -8584775889791156413
+    m_lastTime: -8584775793379774044
     List:
     - name: Play_Ambience
       guid: 3644649cbd50d84a9765b503e2b859f2
@@ -183,6 +224,36 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+  - PhysicalPath: Events\Music.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music
+      ObjectType: 12
+      guid: b35f488a5d535f41b5604b9336bb7454
+    ParentPath: Events\Music
+    guid: b35f488a5d535f41b5604b9336bb7454
+    GuidInternal: 
+    m_lastTime: -8584775793379764061
+    List:
+    - name: Play_Music_Menu
+      guid: a25977a7afe66740b07572044c16f422
+      id: 1699343283
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: b35f488a5d535f41b5604b9336bb7454
+      - ElementName: Play_Music_Menu
+        ObjectType: 3
+        guid: a25977a7afe66740b07572044c16f422
+      Path: Events\Music\Play_Music_Menu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Player.wwu
     PathAndIcons:
     - ElementName: Events
@@ -194,7 +265,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: 1e1b3d425e97e842bd97d5598dde0d35
     GuidInternal: 
-    m_lastTime: -8584775896748716478
+    m_lastTime: -8584775793379754025
     List:
     - name: Player_Footsteps
       guid: 24e3f7944fb3e24784ee53db04fb3b8b
@@ -228,8 +299,8 @@ MonoBehaviour:
         guid: cce2756d9916e14b92ed4aafb7a2cd43
       Path: Events\Player\Player_Grows
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Player_Jump
       guid: 007cf21dd114ac42854762b4b4305aff
       id: 1305133589
@@ -279,8 +350,8 @@ MonoBehaviour:
         guid: c1c3be9db15e0b4595721b5a681d00b0
       Path: Events\Player\Player_Normal
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Player_Respawn
       guid: 93368d97443c794d94681f8c598531d4
       id: 2161713971
@@ -296,8 +367,8 @@ MonoBehaviour:
         guid: 93368d97443c794d94681f8c598531d4
       Path: Events\Player\Player_Respawn
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 6.014
+      minDuration: 5.0342083
     - name: Player_Shrinks
       guid: cd63cf5a3f97ea4db845b586802cfefe
       id: 3721520397
@@ -313,8 +384,8 @@ MonoBehaviour:
         guid: cd63cf5a3f97ea4db845b586802cfefe
       Path: Events\Player\Player_Shrinks
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -451,7 +522,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: a24c2f969f74214e8872283108ce1df5
     GuidInternal: 
-    m_lastTime: -8584775976249074140
+    m_lastTime: -8584775945893250459
     List:
     - name: Footsteps
       guid: ae8203b9246fa24ba0653cb688cf0335
