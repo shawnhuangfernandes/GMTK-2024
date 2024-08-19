@@ -33,36 +33,6 @@
 						</Reference>
 					</ReferenceList>
 				</Sound>
-				<Sound Name="Rail_Mount" ID="{10A680D0-6091-4172-96C6-DA43BF4783CA}" ShortID="550986040">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
-						</Reference>
-					</ReferenceList>
-				</Sound>
-				<Sound Name="Rail_Grind" ID="{069CA052-EBFB-4FE4-929E-982FEA4C41DC}" ShortID="145585477">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
-						</Reference>
-					</ReferenceList>
-				</Sound>
-				<Sound Name="Rail_Dismount" ID="{502739B6-8ADF-4F58-96E3-6FABBEC7FA26}" ShortID="779071090">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
-						</Reference>
-					</ReferenceList>
-				</Sound>
 				<Sound Name="Test_Bell_Loop" ID="{778A4738-E2F0-4003-B350-643FD8DF631C}" ShortID="257292225">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="19"/>
@@ -247,6 +217,28 @@
 					</ObjectLists>
 					<ActiveSourceList>
 						<ActiveSource Name="BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 2" ID="{FD169995-EDD9-4EB4-AD13-33C20D211205}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Rail_Grind" ID="{992CE4AB-1FDD-4FAD-B54B-548C0D47D247}" ShortID="293128164">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Rail_Grind" ID="{204E8C05-52A2-44E7-B999-13DD6DB8EBA5}">
+							<Language>SFX</Language>
+							<AudioFile>Rail_Grind.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="473229729"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Rail_Grind" ID="{204E8C05-52A2-44E7-B999-13DD6DB8EBA5}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

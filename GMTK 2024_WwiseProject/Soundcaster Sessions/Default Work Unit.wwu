@@ -32,7 +32,7 @@
 						<CurrentStateRef Name="None" ID="{76EF21FD-DF0B-4BA1-8C35-17D3A4A28957}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Grass" ID="{E1777FEB-9222-41B3-80A1-053755190892}"/>
+						<CurrentSwitchRef Name="Metal" ID="{07F91A37-A64E-4E60-B97B-CB8DD383AB52}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Player Movement" ID="{2A3031DB-C014-4E25-A25A-946BA7030E9B}">
@@ -53,6 +53,22 @@
 							<ObjectRef Name="Player_Landing" ID="{FF2CCB64-3A47-455B-99FB-2D37B8EAF108}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
 							<Position X="1" Y="1"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Rail_Grind_Start" ID="{82DED27D-B7D0-41D6-BC0E-AC16674F09E0}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Rail_Grind_Stop" ID="{E8930796-D06E-40F4-B6BB-F9FB3B0F6C84}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Test_Metal_Jump" ID="{A53482F8-B7DA-446A-AC58-CF1B382BA92E}" WorkUnitID="{57AF087A-6726-4B5D-B3BB-CD0D71AE2E77}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Test_Metal_Landing" ID="{A1DB11E4-5120-43A4-A8D1-CD087CEB31AE}" WorkUnitID="{57AF087A-6726-4B5D-B3BB-CD0D71AE2E77}"/>
+							<Position X="3" Y="1"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -64,7 +80,7 @@
 						<CurrentStateRef Name="None" ID="{76EF21FD-DF0B-4BA1-8C35-17D3A4A28957}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Grass" ID="{E1777FEB-9222-41B3-80A1-053755190892}"/>
+						<CurrentSwitchRef Name="Metal" ID="{07F91A37-A64E-4E60-B97B-CB8DD383AB52}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Respawn" ID="{BA4C1F71-B6EF-417C-9E40-ED398B522D41}">

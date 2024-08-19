@@ -109,6 +109,35 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Rail_Grind_Start" ID="{82DED27D-B7D0-41D6-BC0E-AC16674F09E0}">
+					<ChildrenList>
+						<Action Name="" ID="{B19FF1A0-6B23-4D22-B612-9B10ADBBAFF5}" ShortID="1014797601">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rail_Grind" ID="{6BFB608D-AFE1-4EEB-9BAF-C7337A7D1C73}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Rail_Grind_Stop" ID="{E8930796-D06E-40F4-B6BB-F9FB3B0F6C84}">
+					<ChildrenList>
+						<Action Name="" ID="{704EB8C6-950B-4044-B8AC-BE6544434CCD}" ShortID="382048692">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rail_Grind" ID="{6BFB608D-AFE1-4EEB-9BAF-C7337A7D1C73}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
