@@ -1626,7 +1626,7 @@ MonoBehaviour:
         pinFixedScale: 0
         pinFixedScaleValue: {x: 1, y: 1, z: 1}
         placeEulerAngles: {x: 0, y: -15, z: 15}
-        placeScale: 1.1
+        placeScale: 2.5
         throwRadius: 1
         throwSpacing: 1
         throwHeight: 3
