@@ -18,23 +18,15 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Player_Grows" ID="{6D75E2CC-1699-4BE1-92ED-4AAFB7A2CD43}">
+				<Event Name="Player_Grows" ID="{9DBEC3C1-5EB1-450B-9572-1B5A681D00B0}">
 					<ChildrenList>
-						<Action Name="" ID="{94B5620E-8ABA-4768-B586-0DE4BB45B6D6}" ShortID="1032870571">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="38"/>
-								<Property Name="GameParameterValue" Type="Real64" Value="100"/>
-							</PropertyList>
+						<Action Name="" ID="{AAA603AB-C833-4E1A-81E5-8678D5BEE55C}" ShortID="732812386">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Player_Size" ID="{F40BFA0C-2D01-4620-8F7D-006735CB5BF5}" WorkUnitID="{DAB6B92D-7565-42F7-8329-572C0B05A910}"/>
+									<ObjectRef Name="Player_SizeChange" ID="{2C479492-CD93-4E9D-96B0-F59991E2A93B}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Player_Normal" ID="{9DBEC3C1-5EB1-450B-9572-1B5A681D00B0}">
-					<ChildrenList>
 						<Action Name="" ID="{A5ABA963-6498-4475-8948-21C83FA4E480}" ShortID="192484371">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="38"/>
@@ -50,6 +42,13 @@
 				</Event>
 				<Event Name="Player_Shrinks" ID="{5ACF63CD-973F-4DEA-B845-B586802CFEFE}">
 					<ChildrenList>
+						<Action Name="" ID="{1E82639A-B80F-4F78-B18B-A9F785C9217F}" ShortID="55685958">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_SizeChange" ID="{2C479492-CD93-4E9D-96B0-F59991E2A93B}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{9203D8E7-6A30-4B32-9941-2B1C2DEA5C2B}" ShortID="418074114">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="38"/>
@@ -104,6 +103,35 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Respawn_Wind" ID="{70A015E2-91C5-4ADD-848C-0D69B22629A2}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Rail_Grind_Start" ID="{82DED27D-B7D0-41D6-BC0E-AC16674F09E0}">
+					<ChildrenList>
+						<Action Name="" ID="{B19FF1A0-6B23-4D22-B612-9B10ADBBAFF5}" ShortID="1014797601">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rail_Grind" ID="{6BFB608D-AFE1-4EEB-9BAF-C7337A7D1C73}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Rail_Grind_Stop" ID="{E8930796-D06E-40F4-B6BB-F9FB3B0F6C84}">
+					<ChildrenList>
+						<Action Name="" ID="{704EB8C6-950B-4044-B8AC-BE6544434CCD}" ShortID="382048692">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rail_Grind" ID="{6BFB608D-AFE1-4EEB-9BAF-C7337A7D1C73}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

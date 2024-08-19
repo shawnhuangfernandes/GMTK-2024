@@ -40,7 +40,7 @@ public class GameStartHandler : MonoBehaviour
 
         controller.enabled = false;
 
-        gameStartEvent.Post(gameObject);
+        ambienceSoundEvent.Post(gameObject);
         musicSoundEvent.Post(gameObject);
     }
     private void Update()

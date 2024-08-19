@@ -14,12 +14,8 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Player_Normal" ID="{9DBEC3C1-5EB1-450B-9572-1B5A681D00B0}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
+							<ObjectRef Name="Player_Grows" ID="{9DBEC3C1-5EB1-450B-9572-1B5A681D00B0}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
 							<Position X="1" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Player_Grows" ID="{6D75E2CC-1699-4BE1-92ED-4AAFB7A2CD43}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
-							<Position X="1" Y="2"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -52,6 +48,30 @@
 						<Module>
 							<ObjectRef Name="Player_Landing" ID="{FF2CCB64-3A47-455B-99FB-2D37B8EAF108}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
 							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Rail_Grind_Start" ID="{82DED27D-B7D0-41D6-BC0E-AC16674F09E0}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Rail_Grind_Stop" ID="{E8930796-D06E-40F4-B6BB-F9FB3B0F6C84}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Test_Metal_Jump" ID="{A53482F8-B7DA-446A-AC58-CF1B382BA92E}" WorkUnitID="{57AF087A-6726-4B5D-B3BB-CD0D71AE2E77}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Test_Metal_Landing" ID="{A1DB11E4-5120-43A4-A8D1-CD087CEB31AE}" WorkUnitID="{57AF087A-6726-4B5D-B3BB-CD0D71AE2E77}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Shrinks" ID="{5ACF63CD-973F-4DEA-B845-B586802CFEFE}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Grows" ID="{9DBEC3C1-5EB1-450B-9572-1B5A681D00B0}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
+							<Position X="4" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -95,6 +115,10 @@
 						<Module>
 							<ObjectRef Name="PressStart" ID="{2CB8A27B-16FC-4B77-917D-CFBB0E350A13}" WorkUnitID="{8A485FB3-535D-415F-B560-4B9336BB7454}"/>
 							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MX_EndRail" ID="{875A59D9-9784-4EA6-9544-AB58EFD088DE}" WorkUnitID="{2DC1DCD6-C2DA-417F-A160-F4129917E20D}"/>
+							<Position X="2" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
