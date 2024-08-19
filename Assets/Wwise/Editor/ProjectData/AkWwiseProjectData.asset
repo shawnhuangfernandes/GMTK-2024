@@ -350,7 +350,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: 1e1b3d425e97e842bd97d5598dde0d35
     GuidInternal: 
-    m_lastTime: -8584775601096584983
+    m_lastTime: -8584774990846393621
     List:
     - name: Player_Footsteps
       guid: 24e3f7944fb3e24784ee53db04fb3b8b
@@ -370,7 +370,7 @@ MonoBehaviour:
       maxDuration: 1.4758322
       minDuration: 1.2607603
     - name: Player_Grows
-      guid: cce2756d9916e14b92ed4aafb7a2cd43
+      guid: c1c3be9db15e0b4595721b5a681d00b0
       id: 1310416267
       PathAndIcons:
       - ElementName: Events
@@ -381,11 +381,11 @@ MonoBehaviour:
         guid: 1e1b3d425e97e842bd97d5598dde0d35
       - ElementName: Player_Grows
         ObjectType: 3
-        guid: cce2756d9916e14b92ed4aafb7a2cd43
+        guid: c1c3be9db15e0b4595721b5a681d00b0
       Path: Events\Player\Player_Grows
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 2.8670416
+      minDuration: 2.8670416
     - name: Player_Jump
       guid: 007cf21dd114ac42854762b4b4305aff
       id: 1305133589
@@ -420,23 +420,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.6559851
       minDuration: 1.4753147
-    - name: Player_Normal
-      guid: c1c3be9db15e0b4595721b5a681d00b0
-      id: 1432981492
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Player
-        ObjectType: 12
-        guid: 1e1b3d425e97e842bd97d5598dde0d35
-      - ElementName: Player_Normal
-        ObjectType: 3
-        guid: c1c3be9db15e0b4595721b5a681d00b0
-      Path: Events\Player\Player_Normal
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - name: Player_Respawn
       guid: 93368d97443c794d94681f8c598531d4
       id: 2161713971
@@ -469,8 +452,8 @@ MonoBehaviour:
         guid: cd63cf5a3f97ea4db845b586802cfefe
       Path: Events\Player\Player_Shrinks
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 2.8670416
+      minDuration: 2.8670416
     - name: Rail_Grind_Start
       guid: 7dd2de82d0b7d641bc0eac16674f09e0
       id: 918267603
@@ -723,7 +706,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584777513763401442
     List: []
-  ExpandedFileSystemItemIds: 0200000003000000050000000600000007000000080000000a0000000d0000000e00000012000000130000001400000075000000760000005701000058010000
+  ExpandedFileSystemItemIds: 0200000003000000050000000600000007000000080000000a0000000d0000000e00000012000000130000001400000017000000180000001900000075000000760000005701000058010000
   ExpandedWaapiItemIds: 050000000600000007000000090000000a0000000b00000011000000120000001400000016000000180000001b0000001d0000001f00000022000000230000002400000075000000760000005701000058010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
