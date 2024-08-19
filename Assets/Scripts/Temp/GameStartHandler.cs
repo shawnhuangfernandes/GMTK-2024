@@ -17,6 +17,12 @@ public class GameStartHandler : MonoBehaviour
 
     [Tooltip("The event used for the musical chime for pressing spacebar")]
     [SerializeField] private AK.Wwise.Event gameStartEvent;
+
+    [Tooltip("The ambience sound used for the environment")]
+    [SerializeField] private AK.Wwise.Event ambienceSoundEvent;
+
+    [Tooltip("The music sound event")]
+    [SerializeField] private AK.Wwise.Event musicSoundEvent;
     private CustomFirstPersonController controller => _controller == null ? FindObjectOfType<CustomFirstPersonController>() : _controller;
     private CustomFirstPersonController _controller;
 
@@ -32,6 +38,10 @@ public class GameStartHandler : MonoBehaviour
         if (gameStartViewVirtualCamera == null) Debug.LogError("Please put a Cinemachine Virtual camera in the scene, and link to GameStartHandler");
 
         controller.enabled = false;
+
+        gameStartEvent.Post(gameObject);
+        musicSoundEvent.Post(gameObject);
+
     }
     private void Update()
     {

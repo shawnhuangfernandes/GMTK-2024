@@ -235,7 +235,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: b35f488a5d535f41b5604b9336bb7454
     GuidInternal: 
-    m_lastTime: -8584775793379764061
+    m_lastTime: -8584775751272888428
     List:
     - name: Play_Music_Menu
       guid: a25977a7afe66740b07572044c16f422
@@ -254,6 +254,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: PressStart
+      guid: 7ba2b82cfc16774b917dcfbb0e350a13
+      id: 3540125970
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: b35f488a5d535f41b5604b9336bb7454
+      - ElementName: PressStart
+        ObjectType: 3
+        guid: 7ba2b82cfc16774b917dcfbb0e350a13
+      Path: Events\Music\PressStart
+      maxAttenuation: 0
+      maxDuration: 16.142855
+      minDuration: 16.142855
   - PhysicalPath: Events\Player.wwu
     PathAndIcons:
     - ElementName: Events
@@ -522,7 +539,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: a24c2f969f74214e8872283108ce1df5
     GuidInternal: 
-    m_lastTime: -8584775945893250459
+    m_lastTime: -8584775751262686123
     List:
     - name: Footsteps
       guid: ae8203b9246fa24ba0653cb688cf0335
@@ -555,6 +572,22 @@ MonoBehaviour:
         - ElementName: Grass
           ObjectType: 10
           guid: eb7f77e12292b34180a1053755190892
+      - name: Metal
+        guid: 371af9074ea6604eb97bcb8dd383ab52
+        id: 2473969246
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a24c2f969f74214e8872283108ce1df5
+        - ElementName: Footsteps
+          ObjectType: 11
+          guid: ae8203b9246fa24ba0653cb688cf0335
+        - ElementName: Metal
+          ObjectType: 10
+          guid: 371af9074ea6604eb97bcb8dd383ab52
       - name: Rock
         guid: cd244c081339bb46ae96ddcc1afafdee
         id: 2144363834
@@ -589,7 +622,7 @@ MonoBehaviour:
     m_lastTime: -8584779946962323396
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000a00000075000000760000005701000058010000
+  ExpandedWaapiItemIds: 050000000600000007000000090000000a0000000b00000011000000120000001400000016000000180000001b0000001d0000001f00000022000000230000002400000075000000760000005701000058010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
