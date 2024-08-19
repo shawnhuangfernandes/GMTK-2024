@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2548563483766527555}
   - component: {fileID: 6901879714106909832}
   m_Layer: 0
-  m_Name: '[Interactable] SizeChanger'
+  m_Name: '[Interactable] SizeChanger_0.25'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
