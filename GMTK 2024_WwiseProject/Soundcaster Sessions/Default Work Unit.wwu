@@ -82,6 +82,25 @@
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
+				<SoundcasterSession Name="Music" ID="{9F31E199-0B0B-419E-9CFD-E8728B798EB6}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Music_Menu" ID="{A77759A2-E6AF-4067-B075-72044C16F422}" WorkUnitID="{8A485FB3-535D-415F-B560-4B9336BB7454}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ambience" ID="{9C644436-50BD-4AD8-9765-B503E2B859F2}" WorkUnitID="{93A8A08E-0D81-4824-B96E-92E177B8D654}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PressStart" ID="{2CB8A27B-16FC-4B77-917D-CFBB0E350A13}" WorkUnitID="{8A485FB3-535D-415F-B560-4B9336BB7454}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>

@@ -547,13 +547,21 @@
 				<GameParameter Id="3040674790" Name="Player_Size"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{7A53F0D2-4980-0770-DDE4-275B2BBBDCED}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{B3556AE4-A1CB-609E-7F87-1CD49EE1B322}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
 				<File Id="262493856" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MX_Menu_4-4_106bpm_L12M.wav</ShortName>
 					<CachePath>SFX/MX_Menu_4-4_106bpm_L12M_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="647135460" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_PressStart_Chimes.wav</ShortName>
+					<CachePath>SFX/SFX_PressStart_Chimes_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="713724561" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_PressStart_HandPan_EG.wav</ShortName>
+					<CachePath>SFX/SFX_PressStart_HandPan_EG_FBC78EF0.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -562,8 +570,14 @@
 						<MediaRef Id="262493856"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3540125970" Name="PressStart" DurationType="OneShot" DurationMin="16.142855" DurationMax="16.142855">
+					<MediaRefs>
+						<MediaRef Id="647135460"/>
+						<MediaRef Id="713724561"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1313650D-375C-5EC0-4566-89DFD2C72AB1}</FileHash>
+	<FileHash>{E87883CD-277A-C7CC-578C-81CC7139A30A}</FileHash>
 </SoundBanksInfo>

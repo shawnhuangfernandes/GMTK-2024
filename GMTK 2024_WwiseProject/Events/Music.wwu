@@ -18,6 +18,29 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="PressStart" ID="{2CB8A27B-16FC-4B77-917D-CFBB0E350A13}">
+					<ChildrenList>
+						<Action Name="" ID="{069A0BBA-85A2-4F57-A7D5-1E3C8694BBC8}" ShortID="864646712">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MX_Menu" ID="{B9640DFA-0854-4891-8A42-A5E30D93FA18}" WorkUnitID="{2DC1DCD6-C2DA-417F-A160-F4129917E20D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{31099F76-064F-40CB-97FE-300E2DFB862E}" ShortID="798686932">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MX_PressStart" ID="{2CAFD1E6-D421-49BB-AADB-A72E78C3A5F1}" WorkUnitID="{2DC1DCD6-C2DA-417F-A160-F4129917E20D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -49,6 +49,17 @@
 										<MusicTransition Name="Transition" ID="{AA995AC0-4E7B-4326-904A-A67E85455EB6}">
 											<TransitionInfo/>
 										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{0E55F89A-EC92-4BDA-A023-5EB4C7096FAB}">
+											<PropertyList>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="MX_Menu_4-4_106bpm_L12M" ID="{6D98831C-4321-4A24-8C29-5ED2793B0BE1}" WorkUnitID="{2DC1DCD6-C2DA-417F-A160-F4129917E20D}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo/>
+										</MusicTransition>
 									</ChildrenList>
 									<TransitionInfo/>
 								</MusicTransition>
@@ -144,6 +155,144 @@
 						</MusicSegment>
 					</ChildrenList>
 				</MusicPlaylistContainer>
+				<MusicSegment Name="MX_PressStart" ID="{2CAFD1E6-D421-49BB-AADB-A72E78C3A5F1}" ShortID="852160638">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="19270.2703234879"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="SFX_PressStart_HandPan_EG" ID="{2FF46737-D77D-43F5-9F44-6ACEF59A6712}" ShortID="945109153">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{57FDBACF-EA8C-4742-8058-FF2A3EF1D205}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_PressStart_HandPan_EG" ID="{40342A53-7C12-409D-8B99-0066EA40BE78}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_PressStart_HandPan_EG.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="713724561"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{6BD2B5D8-8C9B-445C-AC62-D201A40D320C}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="SFX_PressStart_HandPan_EG" ID="{98E27C0F-8464-495E-AAD8-621667FD2AC4}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="16142.8541666667"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="SFX_PressStart_HandPan_EG" ID="{40342A53-7C12-409D-8B99-0066EA40BE78}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="SFX_PressStart_Chimes" ID="{406D070F-C2D0-40C8-A3A2-E74753A772D1}" ShortID="605672885">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{CC2F47C7-88AA-47FC-9102-BA444A1BF357}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_PressStart_Chimes" ID="{24C667C4-1607-4197-B248-8DA0B961DFFE}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_PressStart_Chimes.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="647135460"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{173E9E0D-63B6-4D23-8842-36635AA16C08}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="SFX_PressStart_Chimes" ID="{2BA1AD92-261A-49FC-A139-49BDB98C5924}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="15285.7083333333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="SFX_PressStart_Chimes" ID="{24C667C4-1607-4197-B248-8DA0B961DFFE}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Cues">
+							<Reference>
+								<Local>
+									<MusicCue Name="Entry Cue" ID="{B0D26BF5-F283-4824-B367-9EDCD1503816}"/>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicCue Name="Exit Cue" ID="{AC4DDC22-578F-4993-8ED7-94A45DA53162}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="14000"/>
+										</PropertyList>
+									</MusicCue>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSegment>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>
