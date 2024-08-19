@@ -10,6 +10,11 @@
 				<MusicPlaylistContainer Name="MX_Menu" ID="{B9640DFA-0854-4891-8A42-A5E30D93FA18}" ShortID="923097577">
 					<PropertyList>
 						<Property Name="Tempo" Type="Real64" Value="106"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -158,6 +163,11 @@
 				<MusicSegment Name="MX_PressStart" ID="{2CAFD1E6-D421-49BB-AADB-A72E78C3A5F1}" ShortID="852160638">
 					<PropertyList>
 						<Property Name="EndPosition" Type="Real64" Value="19270.2703234879"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

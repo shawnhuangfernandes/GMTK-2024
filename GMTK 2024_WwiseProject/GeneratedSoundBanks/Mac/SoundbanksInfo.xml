@@ -547,7 +547,7 @@
 				<GameParameter Id="3040674790" Name="Player_Size"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{B3556AE4-A1CB-609E-7F87-1CD49EE1B322}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{E9AC2844-5915-F1E8-18E9-37DD69D04F40}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
@@ -579,5 +579,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0D083C43-ABD6-A543-3328-0613EB47E654}</FileHash>
+	<FileHash>{39791C5A-51B8-5F4D-3954-F819BEBA43FD}</FileHash>
 </SoundBanksInfo>
