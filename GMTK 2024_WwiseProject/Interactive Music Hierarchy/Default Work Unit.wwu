@@ -303,6 +303,315 @@
 						</ObjectList>
 					</ObjectLists>
 				</MusicSegment>
+				<MusicPlaylistContainer Name="MX_EndRail" ID="{875A59D9-9784-4EA6-9544-AB58EFD088DE}" ShortID="511461098">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="106"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+						</Reference>
+						<Reference Name="PlaylistRoot">
+							<Custom>
+								<MusicPlaylistItem Name="" ID="{6906D88D-78F4-4D0D-9B40-75CCD8898B81}" ShortID="667778215">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{B3D56F80-D0C9-4C81-869E-5C030BBA946A}" ShortID="686413746">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Segment">
+													<ObjectRef Name="MX_EndRail_4-4_106bpm_L24M" ID="{335B392E-21EB-4FC3-A4F3-6F22C165CFFF}" WorkUnitID="{2DC1DCD6-C2DA-417F-A160-F4129917E20D}"/>
+												</Reference>
+											</ReferenceList>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Custom>
+						</Reference>
+						<Reference Name="TransitionRoot">
+							<Custom>
+								<MusicTransition Name="Root" ID="{6C01DA2E-B617-4A99-854B-8EE80791E8EF}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{A0AD4831-22E1-4609-B02D-E1187D44C465}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</Custom>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="MX_EndRail_4-4_106bpm_L24M" ID="{335B392E-21EB-4FC3-A4F3-6F22C165CFFF}" ShortID="175778425">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="59857.1458333333"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="MX_EndRail_Guitar_4-4_106bpm_L24M" ID="{D055899B-BEE9-4502-B6A9-757000DABF8B}" ShortID="564759295">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{600B5BCF-1C39-4036-9EDE-6613AAED4F5C}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MX_EndRail_Guitar_4-4_106bpm_L24M" ID="{62B54723-A05B-479D-86DA-C522EF0FF0FF}">
+											<Language>SFX</Language>
+											<AudioFile>MX_EndRail_Guitar_4-4_106bpm_L24M.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="573889323"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{27840282-F4F8-4505-91A4-3857DFBAE4B1}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="MX_EndRail_Guitar_4-4_106bpm_L24M" ID="{A1F393E5-E51F-43DC-9942-407046909DA6}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="59857.1458333333"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="MX_EndRail_Guitar_4-4_106bpm_L24M" ID="{62B54723-A05B-479D-86DA-C522EF0FF0FF}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="MX_EndRail_HandPan_4-4_106bpm_L24M" ID="{D0E41FA9-2EEE-49BC-B7C7-025D5070A6E0}" ShortID="75007080">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{5EED26AF-7FF0-4020-8ABA-F70C7C52A84A}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MX_EndRail_HandPan_4-4_106bpm_L24M" ID="{0CE69EB9-9D35-486D-8D8C-37B723125564}">
+											<Language>SFX</Language>
+											<AudioFile>MX_EndRail_HandPan_4-4_106bpm_L24M.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="303522514"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{59522663-D46C-4ABC-8A90-A70AFBE83180}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="MX_EndRail_HandPan_4-4_106bpm_L24M" ID="{F2B35975-D81D-4359-8E65-D48C9EC80C42}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="59857.1458333333"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="MX_EndRail_HandPan_4-4_106bpm_L24M" ID="{0CE69EB9-9D35-486D-8D8C-37B723125564}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="MX_EndRail_Piano_4-4_106bpm_L24M" ID="{23D0D6BE-AF83-41D8-828A-A2D28CD7AE75}" ShortID="382152376">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{B41BA8E5-EBA2-405D-AB8A-B7C7D1315FEE}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MX_EndRail_Piano_4-4_106bpm_L24M" ID="{E86D0FE4-2414-46E2-8015-B3552125832F}">
+											<Language>SFX</Language>
+											<AudioFile>MX_EndRail_Piano_4-4_106bpm_L24M.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="972360086"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{E29EBA05-C212-4741-AEAC-C69C23F04CC9}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="MX_EndRail_Piano_4-4_106bpm_L24M" ID="{A6690C49-04CF-4DB3-A583-9B8CDE7EF8B3}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="59857.1458333333"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="MX_EndRail_Piano_4-4_106bpm_L24M" ID="{E86D0FE4-2414-46E2-8015-B3552125832F}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="MX_EndRail_Shaker_4-4_106bpm_L24M" ID="{D45D712B-F653-4C6D-9A17-A6DF1A6460A0}" ShortID="52644596">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{151B0920-12F5-4492-B112-5E0764FC8574}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MX_EndRail_Shaker_4-4_106bpm_L24M" ID="{85701306-A25F-444E-A6AF-BE56EF8DC9AE}">
+											<Language>SFX</Language>
+											<AudioFile>MX_EndRail_Shaker_4-4_106bpm_L24M.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="961788281"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{02630D7C-57CC-4F71-A3C1-821C3034CC34}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="MX_EndRail_Shaker_4-4_106bpm_L24M" ID="{86642BE7-40E9-49AB-AEF1-79E611502D60}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="59857.1458333333"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="MX_EndRail_Shaker_4-4_106bpm_L24M" ID="{85701306-A25F-444E-A6AF-BE56EF8DC9AE}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{8A56F671-92B9-4148-9AFF-8C197678BBBE}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{C7D73FA5-5C7B-4A09-BE1B-ADA30A5275E1}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="54905.6603773585"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+				</MusicPlaylistContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>
