@@ -81,12 +81,12 @@ PrefabInstance:
     - target: {fileID: 4363041758731257065, guid: 1dffab2c38b6cab428503e075ebf9472,
         type: 3}
       propertyPath: m_AllowRoll
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4363041758731257065, guid: 1dffab2c38b6cab428503e075ebf9472,
         type: 3}
       propertyPath: m_RenderAlignment
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7637462958591446679, guid: 1dffab2c38b6cab428503e075ebf9472,
         type: 3}
