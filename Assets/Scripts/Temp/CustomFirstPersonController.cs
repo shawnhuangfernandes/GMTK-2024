@@ -43,7 +43,7 @@ public class CustomFirstPersonController : MonoBehaviour
     public float snapToRailLerpRate = 0.9f;
 
     private CharacterController characterController;
-    private Vector3 velocity;
+    [HideInInspector] public Vector3 velocity;
     /// <summary> The movement mode this character should surrently be following. </summary>
     [field: SerializeField(), HideInInspector]
     public MotionState motionState { get; private set; }
@@ -52,6 +52,8 @@ public class CustomFirstPersonController : MonoBehaviour
     /// <summary> The surface normal of the ground this character was touching when the groundedness was last updated. Null if not touching the ground.
     /// Touching the ground does NOT indicate that this character is grounded. </summary>
     private Vector3? groundNormal = null;
+    /// <summary> The ground Collider this character was touching when the groundedness was last updated. </summary>
+    public Collider groundCollider { get; private set; }
     private Rail? currentRail;
 
     [HideInInspector] public float rootWalkSpeed = 0F;
@@ -262,6 +264,7 @@ public class CustomFirstPersonController : MonoBehaviour
         float spherecastRadius = 0.99f * CharacterRadius;
         bool isTouchingGround = Physics.SphereCast(new Ray(transform.position, Vector3.down), spherecastRadius, out hit, groundCheckDistance-spherecastRadius);
         groundNormal = (isTouchingGround ? hit.normal : null);
+        groundCollider = (isTouchingGround ? hit.collider : null);
 
         bool canWalkOnGround = isTouchingGround;
         canWalkOnGround &= Vector3.Angle(Vector3.up, hit.normal) <= characterController.slopeLimit;

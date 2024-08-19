@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 7086699404733965797}
   - component: {fileID: 2807227061738303597}
   - component: {fileID: 5912853675827590655}
+  - component: {fileID: 5277873374692355418}
   m_Layer: 0
   m_Name: '[Player] 1stPersonPlayer'
   m_TagString: Untagged
@@ -98,6 +99,7 @@ Transform:
   - {fileID: 3734681139474511949}
   - {fileID: 8349802363616729134}
   - {fileID: 8622050258731370780}
+  - {fileID: 6034230794318488300}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5998961320894347270
@@ -126,6 +128,7 @@ MonoBehaviour:
   minGrindSpeed: 5
   maxGrindSpeed: 15
   snapToRailLerpRate: 0.9
+  velocity: {x: 0, y: 0, z: 0}
   <motionState>k__BackingField: 0
   rootWalkSpeed: 0
   rootRunSpeed: 0
@@ -245,6 +248,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultSize: {fileID: 11400000, guid: db1e8761bd7621b40977368c52e642d4, type: 2}
   <size>k__BackingField: {fileID: 0}
+--- !u!114 &5277873374692355418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870044342990587400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 314c2599d2ed8a94f9623c0a169db2c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: aff5e8a98f7afb640819d2403498abf9,
+      type: 2}
+  decodeBank: 0
+  overrideLoadSetting: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &1882698103594026026
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,7 +504,7 @@ MonoBehaviour:
   _targetObject: {fileID: 0}
   _offset: {x: 0, y: 0}
   _rotationOffset: {x: 0, y: 0, z: 0}
-  lastPosition: {x: 0, y: 0, z: 0}
+  lastPosition: {x: -290.11, y: 27.95, z: 83.56}
 --- !u!1 &5504720730502432928
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,6 +629,116 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &6456189648549896664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6034230794318488300}
+  - component: {fileID: 5706890423726900267}
+  - component: {fileID: 566605847279129088}
+  m_Layer: 0
+  m_Name: Footstep Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6034230794318488300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6456189648549896664}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3607908764784023447}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5706890423726900267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6456189648549896664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a495a8d66f996814c956f7f4d00007a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stepsPerSecondWalking: 2
+  stepsPerSecondSprinting: 4
+  defaultAkSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fac612c85aadec74fa74cfcee75afa0c,
+      type: 2}
+  materialToAkSwitch:
+  - key: {fileID: 2100000, guid: 6a2cbfc856d3708418717b66d6f5a09b, type: 2}
+    value:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: ba5516cfaae7fd44488aa26f56dcf9ab,
+        type: 2}
+  - key: {fileID: 2100000, guid: 5018189495b23194b868eb884de6a0b0, type: 2}
+    value:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: fac612c85aadec74fa74cfcee75afa0c,
+        type: 2}
+  - key: {fileID: 2100000, guid: a8653032ba2ac6d4da54b89b215bced0, type: 2}
+    value:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: b7fa055412cfa8144b8216fcf7074773,
+        type: 2}
+  - key: {fileID: 2100000, guid: 6a2cbfc856d3708418717b66d6f5a09b, type: 2}
+    value:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: b7fa055412cfa8144b8216fcf7074773,
+        type: 2}
+--- !u!114 &566605847279129088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6456189648549896664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbc37f58524453489411810569e9d09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioEventToPlay:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 85d64dc0000996d468e54bbb9103163f,
+      type: 2}
+  audioSwitchToUse:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &7068185063387008716
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,8 +768,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7068185063387008716}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.17889813, y: -0.012022704, z: -0.0021864697, w: 0.98379177}
+  m_LocalPosition: {x: -9.717829, y: 0.4699993, z: 19.83759}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -669,7 +808,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 40
+  field of view: 70
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
