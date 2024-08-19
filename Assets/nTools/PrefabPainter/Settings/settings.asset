@@ -644,7 +644,7 @@ MonoBehaviour:
       - gameObject: {fileID: 0}
       - gameObject: {fileID: 0}
       selectedSlot: 0
-      selected: 1
+      selected: 0
       colorTag: 0
       customPreviewImage: {fileID: 0}
     - name: Pebbles
@@ -962,7 +962,7 @@ MonoBehaviour:
       - gameObject: {fileID: 0}
       - gameObject: {fileID: 0}
       selectedSlot: 0
-      selected: 0
+      selected: 1
       colorTag: 0
       customPreviewImage: {fileID: 0}
     - name: MESH_Bush_01
@@ -1291,7 +1291,7 @@ MonoBehaviour:
         brushOverlapCheckLayers:
           serializedVersion: 2
           m_Bits: 0
-        surfaceOffset: 0
+        surfaceOffset: -0.14
         orientationTransformMode: 0
         orientationMode: 0
         alongBrushStroke: 0
@@ -2895,7 +2895,7 @@ MonoBehaviour:
   eraseLayers:
     serializedVersion: 2
     m_Bits: 32
-  selectBrushRadius: 5
+  selectBrushRadius: 1.1
   selectByLayer: 0
   selectLayers:
     serializedVersion: 2
