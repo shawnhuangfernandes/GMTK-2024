@@ -23,6 +23,7 @@ public class GameStartHandler : MonoBehaviour
 
     [Tooltip("The music sound event")]
     [SerializeField] private AK.Wwise.Event musicSoundEvent;
+
     private CustomFirstPersonController controller => _controller == null ? FindObjectOfType<CustomFirstPersonController>() : _controller;
     private CustomFirstPersonController _controller;
 
@@ -41,7 +42,6 @@ public class GameStartHandler : MonoBehaviour
 
         gameStartEvent.Post(gameObject);
         musicSoundEvent.Post(gameObject);
-
     }
     private void Update()
     {
