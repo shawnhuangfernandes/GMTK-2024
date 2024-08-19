@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{6A821566-0437-0524-07B2-5FDD93C47B7C}">
+		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{D85C1F56-EEF8-B104-0381-D8548ADE8FF5}">
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<Media>
@@ -103,7 +103,7 @@
 				</File>
 				<File Id="477598937" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Rail_Jump_02.wav</ShortName>
-					<CachePath>SFX/Rail_Jump_02_B123148E.wem</CachePath>
+					<CachePath>SFX/Rail_Jump_02_77C5E2A5.wem</CachePath>
 				</File>
 				<File Id="490577953" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gak_10.wav</ShortName>
@@ -119,7 +119,7 @@
 				</File>
 				<File Id="572012260" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Rail_Jump_03.wav</ShortName>
-					<CachePath>SFX/Rail_Jump_03_76AA2E18.wem</CachePath>
+					<CachePath>SFX/Rail_Jump_03_ABF7965C.wem</CachePath>
 				</File>
 				<File Id="595347034" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Respawn_HandPan-002.wav</ShortName>
@@ -143,7 +143,7 @@
 				</File>
 				<File Id="657697500" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Rail_Jump_01.wav</ShortName>
-					<CachePath>SFX/Rail_Jump_01_48CFFF94.wem</CachePath>
+					<CachePath>SFX/Rail_Jump_01_E12F567C.wem</CachePath>
 				</File>
 				<File Id="664546033" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass_01.wav</ShortName>
@@ -171,7 +171,7 @@
 				</File>
 				<File Id="751811007" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Rail_Landing_03.wav</ShortName>
-					<CachePath>SFX/Rail_Landing_03_F7A35A73.wem</CachePath>
+					<CachePath>SFX/Rail_Landing_03_F6C2E0D0.wem</CachePath>
 				</File>
 				<File Id="780069726" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass_06.wav</ShortName>
@@ -191,7 +191,7 @@
 				</File>
 				<File Id="820211050" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Rail_Landing_01 .wav</ShortName>
-					<CachePath>SFX/Rail_Landing_01 _57B7EF18.wem</CachePath>
+					<CachePath>SFX/Rail_Landing_01 _DCE508AF.wem</CachePath>
 				</File>
 				<File Id="869743916" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Land.wav</ShortName>
@@ -199,7 +199,7 @@
 				</File>
 				<File Id="886182685" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Rail_Landing_02.wav</ShortName>
-					<CachePath>SFX/Rail_Landing_02_EF42BAA6.wem</CachePath>
+					<CachePath>SFX/Rail_Landing_02_CD822EA2.wem</CachePath>
 				</File>
 				<File Id="904491159" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Rail_Grind.wav</ShortName>
@@ -219,7 +219,7 @@
 				</File>
 				<File Id="947767335" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Rail_Landing_04.wav</ShortName>
-					<CachePath>SFX/Rail_Landing_04_CBF32730.wem</CachePath>
+					<CachePath>SFX/Rail_Landing_04_B83A08ED.wem</CachePath>
 				</File>
 				<File Id="962110443" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footstep_08.wav</ShortName>
@@ -504,7 +504,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{94B49CEE-10F8-581D-376B-1143D4BE5986}">
+		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{7149D104-9266-92F5-B6C1-0D7B8539010E}">
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 			<Media>
@@ -651,13 +651,21 @@
 				<GameParameter Id="3040674790" Name="Player_Size"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{6ADF1257-0E08-57B0-871F-D3417A6139D7}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{4D7A5DA3-3081-C41E-F275-BA85147CBE9B}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
 				<File Id="262493856" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MX_Menu_4-4_106bpm_L12M.wav</ShortName>
 					<CachePath>SFX/MX_Menu_4-4_106bpm_L12M_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="303522514" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MX_EndRail_HandPan_4-4_106bpm_L24M.wav</ShortName>
+					<CachePath>SFX/MX_EndRail_HandPan_4-4_106bpm_L24M_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="573889323" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MX_EndRail_Guitar_4-4_106bpm_L24M.wav</ShortName>
+					<CachePath>SFX/MX_EndRail_Guitar_4-4_106bpm_L24M_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="647135460" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_PressStart_Chimes.wav</ShortName>
@@ -667,8 +675,24 @@
 					<ShortName>SFX_PressStart_HandPan_EG.wav</ShortName>
 					<CachePath>SFX/SFX_PressStart_HandPan_EG_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="961788281" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MX_EndRail_Shaker_4-4_106bpm_L24M.wav</ShortName>
+					<CachePath>SFX/MX_EndRail_Shaker_4-4_106bpm_L24M_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="972360086" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MX_EndRail_Piano_4-4_106bpm_L24M.wav</ShortName>
+					<CachePath>SFX/MX_EndRail_Piano_4-4_106bpm_L24M_FBC78EF0.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
+				<Event Id="1140094668" Name="Music_EndRail" DurationType="OneShot" DurationMin="59.857143" DurationMax="59.857143">
+					<MediaRefs>
+						<MediaRef Id="303522514"/>
+						<MediaRef Id="573889323"/>
+						<MediaRef Id="961788281"/>
+						<MediaRef Id="972360086"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1699343283" Name="Play_Music_Menu" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="262493856"/>
@@ -683,5 +707,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{26AE4A15-C5B1-5557-A74A-EE9D38690BB6}</FileHash>
+	<FileHash>{3B29E93C-7A7F-22B4-E0D1-AFBA7C50AFB7}</FileHash>
 </SoundBanksInfo>
