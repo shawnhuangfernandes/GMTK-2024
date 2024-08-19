@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1699343283	Play_Music_Menu			\Music\Play_Music_Menu	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	262493856	MX_Menu_4-4_106bpm_L12M	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Mac\SFX\MX_Menu_4-4_106bpm_L12M_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MX_Menu\MX_Menu_4-4_106bpm_L12M\MX_Menu_4-4_106bpm_L12M		11492668
+

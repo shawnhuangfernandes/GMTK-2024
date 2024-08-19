@@ -9,10 +9,14 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{B32519C7-90FD-6D59-09B6-D0F9A9FEF8B3}">
+		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{1C286F8A-EB8B-3CE8-C133-C1D6E3385456}">
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<Media>
+				<File Id="11464898" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Respawn_Paper-004.wav</ShortName>
+					<CachePath>SFX/Respawn_Paper-004_818F3B66.wem</CachePath>
+				</File>
 				<File Id="29294242" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footstep_02.wav</ShortName>
 					<CachePath>SFX/Footstep_02_818F3B66.wem</CachePath>
@@ -25,9 +29,17 @@
 					<ShortName>Gak_09.wav</ShortName>
 					<CachePath>SFX/Gak_09_818F3B66.wem</CachePath>
 				</File>
+				<File Id="121327956" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Respawn_Paper-001.wav</ShortName>
+					<CachePath>SFX/Respawn_Paper-001_818F3B66.wem</CachePath>
+				</File>
 				<File Id="155080818" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footstep_07.wav</ShortName>
 					<CachePath>SFX/Footstep_07_818F3B66.wem</CachePath>
+				</File>
+				<File Id="193658144" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Respawn_Wind-001.wav</ShortName>
+					<CachePath>SFX/Respawn_Wind-001_818F3B66.wem</CachePath>
 				</File>
 				<File Id="203386750" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass_03.wav</ShortName>
@@ -53,6 +65,10 @@
 					<ShortName>Gak_01.wav</ShortName>
 					<CachePath>SFX/Gak_01_818F3B66.wem</CachePath>
 				</File>
+				<File Id="283295158" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Respawn_Paper-003.wav</ShortName>
+					<CachePath>SFX/Respawn_Paper-003_818F3B66.wem</CachePath>
+				</File>
 				<File Id="298240106" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gak_02.wav</ShortName>
 					<CachePath>SFX/Gak_02_818F3B66.wem</CachePath>
@@ -64,6 +80,22 @@
 				<File Id="320670769" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gak_06.wav</ShortName>
 					<CachePath>SFX/Gak_06_818F3B66.wem</CachePath>
+				</File>
+				<File Id="359341459" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Respawn_Wind-004.wav</ShortName>
+					<CachePath>SFX/Respawn_Wind-004_818F3B66.wem</CachePath>
+				</File>
+				<File Id="402630463" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Respawn_Wind-005.wav</ShortName>
+					<CachePath>SFX/Respawn_Wind-005_818F3B66.wem</CachePath>
+				</File>
+				<File Id="407647084" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Respawn_HandPan-001.wav</ShortName>
+					<CachePath>SFX/Respawn_HandPan-001_818F3B66.wem</CachePath>
+				</File>
+				<File Id="427679451" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Respawn_Wind-006.wav</ShortName>
+					<CachePath>SFX/Respawn_Wind-006_818F3B66.wem</CachePath>
 				</File>
 				<File Id="449175834" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footstep_03.wav</ShortName>
@@ -81,6 +113,10 @@
 					<ShortName>Grass_09.wav</ShortName>
 					<CachePath>SFX/Grass_09_818F3B66.wem</CachePath>
 				</File>
+				<File Id="595347034" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Respawn_HandPan-002.wav</ShortName>
+					<CachePath>SFX/Respawn_HandPan-002_818F3B66.wem</CachePath>
+				</File>
 				<File Id="596041254" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footstep_10.wav</ShortName>
 					<CachePath>SFX/Footstep_10_818F3B66.wem</CachePath>
@@ -88,6 +124,10 @@
 				<File Id="642988751" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass_10.wav</ShortName>
 					<CachePath>SFX/Grass_10_818F3B66.wem</CachePath>
+				</File>
+				<File Id="644494758" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Respawn_Wind-003.wav</ShortName>
+					<CachePath>SFX/Respawn_Wind-003_818F3B66.wem</CachePath>
 				</File>
 				<File Id="646295349" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gak_04.wav</ShortName>
@@ -97,9 +137,25 @@
 					<ShortName>Grass_01.wav</ShortName>
 					<CachePath>SFX/Grass_01_818F3B66.wem</CachePath>
 				</File>
+				<File Id="674561519" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Respawn_Paper-002.wav</ShortName>
+					<CachePath>SFX/Respawn_Paper-002_818F3B66.wem</CachePath>
+				</File>
+				<File Id="684931886" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Respawn_Paper-005.wav</ShortName>
+					<CachePath>SFX/Respawn_Paper-005_818F3B66.wem</CachePath>
+				</File>
 				<File Id="698227480" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footstep_04.wav</ShortName>
 					<CachePath>SFX/Footstep_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="707031096" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Respawn_Wind-002.wav</ShortName>
+					<CachePath>SFX/Respawn_Wind-002_818F3B66.wem</CachePath>
+				</File>
+				<File Id="746776842" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Respawn_HandPan-004.wav</ShortName>
+					<CachePath>SFX/Respawn_HandPan-004_818F3B66.wem</CachePath>
 				</File>
 				<File Id="780069726" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass_06.wav</ShortName>
@@ -125,9 +181,21 @@
 					<ShortName>Gak_05.wav</ShortName>
 					<CachePath>SFX/Gak_05_818F3B66.wem</CachePath>
 				</File>
+				<File Id="929641478" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Respawn_HandPan-003.wav</ShortName>
+					<CachePath>SFX/Respawn_HandPan-003_818F3B66.wem</CachePath>
+				</File>
+				<File Id="941795228" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Respawn_HandPan-005.wav</ShortName>
+					<CachePath>SFX/Respawn_HandPan-005_818F3B66.wem</CachePath>
+				</File>
 				<File Id="962110443" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footstep_08.wav</ShortName>
 					<CachePath>SFX/Footstep_08_818F3B66.wem</CachePath>
+				</File>
+				<File Id="963630446" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Respawn_Wind-007.wav</ShortName>
+					<CachePath>SFX/Respawn_Wind-007_818F3B66.wem</CachePath>
 				</File>
 				<File Id="1032595168" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass_05.wav</ShortName>
@@ -207,6 +275,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="1310416267" Name="Player_Grows" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1305133589" Name="Player_Jump" DurationType="OneShot" DurationMin="1.3998648" DurationMax="1.6041105">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -299,6 +368,29 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="1432981492" Name="Player_Normal" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2161713971" Name="Player_Respawn" DurationType="OneShot" DurationMin="5.0342083" DurationMax="6.014">
+					<MediaRefs>
+						<MediaRef Id="11464898"/>
+						<MediaRef Id="121327956"/>
+						<MediaRef Id="193658144"/>
+						<MediaRef Id="283295158"/>
+						<MediaRef Id="359341459"/>
+						<MediaRef Id="402630463"/>
+						<MediaRef Id="407647084"/>
+						<MediaRef Id="427679451"/>
+						<MediaRef Id="595347034"/>
+						<MediaRef Id="644494758"/>
+						<MediaRef Id="674561519"/>
+						<MediaRef Id="684931886"/>
+						<MediaRef Id="707031096"/>
+						<MediaRef Id="746776842"/>
+						<MediaRef Id="929641478"/>
+						<MediaRef Id="941795228"/>
+						<MediaRef Id="963630446"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3721520397" Name="Player_Shrinks" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<SwitchGroups>
 				<SwitchGroup Id="2385628198" Name="Footsteps">
@@ -309,7 +401,84 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{8F5658ED-CD0B-8958-40C0-36B3A3F53051}">
+		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{7149D104-9266-92F5-B6C1-0D7B8539010E}">
+			<ShortName>Environment</ShortName>
+			<Path>Environment.bnk</Path>
+			<Media>
+				<File Id="225300281" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wind_Gusts-004.wav</ShortName>
+					<CachePath>SFX/Wind_Gusts-004_818F3B66.wem</CachePath>
+				</File>
+				<File Id="317943795" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wind_Gusts-008.wav</ShortName>
+					<CachePath>SFX/Wind_Gusts-008_818F3B66.wem</CachePath>
+				</File>
+				<File Id="343487331" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wind_Gusts-009.wav</ShortName>
+					<CachePath>SFX/Wind_Gusts-009_818F3B66.wem</CachePath>
+				</File>
+				<File Id="386437277" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wind_Gusts-007.wav</ShortName>
+					<CachePath>SFX/Wind_Gusts-007_818F3B66.wem</CachePath>
+				</File>
+				<File Id="397417459" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wind_Ambience .wav</ShortName>
+					<CachePath>SFX/Wind_Ambience _7B74C408.wem</CachePath>
+				</File>
+				<File Id="449167905" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wind_Gusts-003.wav</ShortName>
+					<CachePath>SFX/Wind_Gusts-003_818F3B66.wem</CachePath>
+				</File>
+				<File Id="531644487" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wind_Gusts-001.wav</ShortName>
+					<CachePath>SFX/Wind_Gusts-001_818F3B66.wem</CachePath>
+				</File>
+				<File Id="533012591" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wind_Gusts-006.wav</ShortName>
+					<CachePath>SFX/Wind_Gusts-006_818F3B66.wem</CachePath>
+				</File>
+				<File Id="737916792" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wind_Gusts-010.wav</ShortName>
+					<CachePath>SFX/Wind_Gusts-010_818F3B66.wem</CachePath>
+				</File>
+				<File Id="803296198" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wind_Gusts-002.wav</ShortName>
+					<CachePath>SFX/Wind_Gusts-002_818F3B66.wem</CachePath>
+				</File>
+				<File Id="925352297" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wind_Gusts-005.wav</ShortName>
+					<CachePath>SFX/Wind_Gusts-005_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="925587760" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+				</Custom>
+			</Plugins>
+			<Events>
+				<Event Id="278617630" Name="Play_Ambience" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="225300281"/>
+						<MediaRef Id="317943795"/>
+						<MediaRef Id="343487331"/>
+						<MediaRef Id="386437277"/>
+						<MediaRef Id="397417459"/>
+						<MediaRef Id="449167905"/>
+						<MediaRef Id="531644487"/>
+						<MediaRef Id="533012591"/>
+						<MediaRef Id="737916792"/>
+						<MediaRef Id="803296198"/>
+						<MediaRef Id="925352297"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="925587760"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{5FC69357-ABC9-B158-D5F1-9E6F42C738AA}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -378,6 +547,23 @@
 				<GameParameter Id="3040674790" Name="Player_Size"/>
 			</GameParameters>
 		</SoundBank>
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{7A53F0D2-4980-0770-DDE4-275B2BBBDCED}">
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<Media>
+				<File Id="262493856" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MX_Menu_4-4_106bpm_L12M.wav</ShortName>
+					<CachePath>SFX/MX_Menu_4-4_106bpm_L12M_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1699343283" Name="Play_Music_Menu" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="262493856"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B76CBA08-C0C5-AA2B-97AD-AE30DEC05CDB}</FileHash>
+	<FileHash>{1313650D-375C-5EC0-4566-89DFD2C72AB1}</FileHash>
 </SoundBanksInfo>
