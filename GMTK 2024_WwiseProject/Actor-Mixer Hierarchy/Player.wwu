@@ -7,32 +7,6 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Sound Name="Player_Grows" ID="{B27A14B1-E095-42C7-8BCE-092A03583ADD}" ShortID="66728623">
-					<PropertyList>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
-						</Reference>
-					</ReferenceList>
-				</Sound>
-				<Sound Name="Player_Shrinks" ID="{9A985F79-A2DD-469C-87F4-57C98E09D0D3}" ShortID="179979721">
-					<PropertyList>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
-						</Reference>
-					</ReferenceList>
-				</Sound>
 				<ActorMixer Name="Player_Movement" ID="{3F05D288-40CB-4E26-BE53-6FC6D79772E9}" ShortID="573899028">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="17"/>
@@ -5141,6 +5115,65 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
+				<Sound Name="Player_SizeChange" ID="{2C479492-CD93-4E9D-96B0-F59991E2A93B}" ShortID="667667091">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Player_SizeChange" ID="{F9941DCC-1031-4CA2-A0E4-4BCA7E398E66}">
+							<Language>SFX</Language>
+							<AudioFile>Player_SizeChange.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="397804555"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{0B21D721-64E2-4B2E-9E90-8CFC181FE08A}" ShortID="666926135">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+												<ObjectRef Name="Small_Stretch" ID="{32231724-759A-49EA-B2EC-7EFE1E62F449}" WorkUnitID="{8BF7151F-2C1F-4B78-8B0E-BA56B6718193}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{FD95F3BA-2947-4D03-B7AC-6973742D6AE3}" ShortID="195545311">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+												<ObjectRef Name="Small_EQ" ID="{7B737B68-03D6-493C-866F-7AC3DA14A4BC}" WorkUnitID="{8BF7151F-2C1F-4B78-8B0E-BA56B6718193}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{5D898D4C-E8C2-42C0-9651-EC358E98DF11}" ShortID="92941389">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+												<ObjectRef Name="Small_Reverb" ID="{5C9484DE-EE0A-4800-9569-CA4685769DAA}" WorkUnitID="{8BF7151F-2C1F-4B78-8B0E-BA56B6718193}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="Player_SizeChange" ID="{F9941DCC-1031-4CA2-A0E4-4BCA7E398E66}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

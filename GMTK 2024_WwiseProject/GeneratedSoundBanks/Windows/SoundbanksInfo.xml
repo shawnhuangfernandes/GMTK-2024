@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{D85C1F56-EEF8-B104-0381-D8548ADE8FF5}">
+		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{7FC9C519-0896-D250-A1B1-AC0CF96398A5}">
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<Media>
@@ -84,6 +84,10 @@
 				<File Id="359341459" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Respawn_Wind-004.wav</ShortName>
 					<CachePath>SFX/Respawn_Wind-004_818F3B66.wem</CachePath>
+				</File>
+				<File Id="397804555" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_SizeChange.wav</ShortName>
+					<CachePath>SFX/Player_SizeChange_818F3B66.wem</CachePath>
 				</File>
 				<File Id="402630463" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Respawn_Wind-005.wav</ShortName>
@@ -242,6 +246,13 @@
 					<CachePath>SFX/Grass_08_818F3B66.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="1501174592" Name="Small_Stretch" LibName="Wwise Time Stretch" LibId="8519683"/>
+					<Plugin Id="2481867971" Name="Small_EQ" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="4052205305" Name="Small_Reverb" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="1730208058" Name="Player_Footsteps" DurationType="OneShot" DurationMin="1.2607603" DurationMax="1.4758322">
 					<SwitchContainers>
@@ -332,7 +343,18 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1310416267" Name="Player_Grows" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1310416267" Name="Player_Grows" DurationType="OneShot" DurationMin="2.8670416" DurationMax="2.8670416">
+					<MediaRefs>
+						<MediaRef Id="397804555"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1501174592"/>
+							<PluginRef Id="2481867971"/>
+							<PluginRef Id="4052205305"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 				<Event Id="1305133589" Name="Player_Jump" DurationType="OneShot" DurationMin="1.3998648" DurationMax="1.6041105">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -464,7 +486,6 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1432981492" Name="Player_Normal" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2161713971" Name="Player_Respawn" DurationType="OneShot" DurationMin="5.0342083" DurationMax="6.014">
 					<MediaRefs>
 						<MediaRef Id="11464898"/>
@@ -486,7 +507,18 @@
 						<MediaRef Id="963630446"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3721520397" Name="Player_Shrinks" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3721520397" Name="Player_Shrinks" DurationType="OneShot" DurationMin="2.8670416" DurationMax="2.8670416">
+					<MediaRefs>
+						<MediaRef Id="397804555"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1501174592"/>
+							<PluginRef Id="2481867971"/>
+							<PluginRef Id="4052205305"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 				<Event Id="918267603" Name="Rail_Grind_Start" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="904491159"/>
@@ -494,6 +526,9 @@
 				</Event>
 				<Event Id="581323921" Name="Rail_Grind_Stop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="3040674790" Name="Player_Size"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="2385628198" Name="Footsteps">
 					<Switches>
@@ -504,7 +539,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{7149D104-9266-92F5-B6C1-0D7B8539010E}">
+		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{94B49CEE-10F8-581D-376B-1143D4BE5986}">
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 			<Media>
@@ -651,7 +686,7 @@
 				<GameParameter Id="3040674790" Name="Player_Size"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{4D7A5DA3-3081-C41E-F275-BA85147CBE9B}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{9C5A8A58-C021-3B15-D08A-38150DF3E000}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
@@ -707,5 +742,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3B29E93C-7A7F-22B4-E0D1-AFBA7C50AFB7}</FileHash>
+	<FileHash>{B9A9AE63-1983-5A37-7223-F20F48895636}</FileHash>
 </SoundBanksInfo>

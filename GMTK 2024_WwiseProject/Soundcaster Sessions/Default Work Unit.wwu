@@ -14,12 +14,8 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Player_Normal" ID="{9DBEC3C1-5EB1-450B-9572-1B5A681D00B0}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
+							<ObjectRef Name="Player_Grows" ID="{9DBEC3C1-5EB1-450B-9572-1B5A681D00B0}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
 							<Position X="1" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Player_Grows" ID="{6D75E2CC-1699-4BE1-92ED-4AAFB7A2CD43}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
-							<Position X="1" Y="2"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -32,7 +28,7 @@
 						<CurrentStateRef Name="None" ID="{76EF21FD-DF0B-4BA1-8C35-17D3A4A28957}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Metal" ID="{07F91A37-A64E-4E60-B97B-CB8DD383AB52}"/>
+						<CurrentSwitchRef Name="Grass" ID="{E1777FEB-9222-41B3-80A1-053755190892}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Player Movement" ID="{2A3031DB-C014-4E25-A25A-946BA7030E9B}">
