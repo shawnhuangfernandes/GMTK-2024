@@ -48,6 +48,12 @@ public class CustomFirstPersonController : MonoBehaviour
     [Tooltip("The sound that plays when the player is wall grinding")]
     public AK.Wwise.Event railGrindStopEvent;
 
+    [Tooltip("The field of view for when the player is at max speed")]
+    public int railGrindingFastestFocalLength;
+
+    [Tooltip("The field of view for when the player is at min speed")]
+    public int railGrindingSlowestFocalLength;
+
     private CharacterController characterController;
     [HideInInspector] public Vector3 velocity;
     /// <summary> The movement mode this character should surrently be following. </summary>
@@ -240,7 +246,9 @@ public class CustomFirstPersonController : MonoBehaviour
 				{
                     // if we weren't previously grinding
                     if (motionState != MotionState.Grinding)
+                    {
                         railGrindStartLoopEvent.Post(gameObject);
+                    }
 
                     motionState = MotionState.Grinding;
                     currentRail = otherRail;

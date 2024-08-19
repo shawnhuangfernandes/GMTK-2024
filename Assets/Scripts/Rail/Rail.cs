@@ -15,6 +15,10 @@ public class Rail : MonoBehaviour
 	[field: SerializeField(), HideInInspector]
 	public SplineComputer spline { get; private set; }
 
+	bool playingFinalSequenceMusic = false;
+
+	[SerializeField] private AK.Wwise.Event finalMusicSequence;
+
 	private void Awake()
 	{
 		spline = GetComponent<SplineComputer>();
@@ -22,6 +26,16 @@ public class Rail : MonoBehaviour
 
 	public bool CanStartGrinding(CustomFirstPersonController controller)
 	{
+		if (finalMusicSequence != null)
+		{
+			if (playingFinalSequenceMusic == false)
+			{
+				playingFinalSequenceMusic = true;
+
+				finalMusicSequence.Post(gameObject);
+			}
+		}
+
 		CharacterScaler characterScaler = controller.GetComponent<CharacterScaler>();
 		if(characterScaler == null)
 			return true;
