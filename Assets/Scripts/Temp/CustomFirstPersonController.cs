@@ -42,6 +42,12 @@ public class CustomFirstPersonController : MonoBehaviour
     [Tooltip("When snapping to the current rail, the fraction of the distance to the rail this character covers in 1 second")]
     public float snapToRailLerpRate = 0.9f;
 
+    [Tooltip("The sound that plays when the player is wall grinding")]
+    public AK.Wwise.Event railGrindStartLoopEvent;
+
+    [Tooltip("The sound that plays when the player is wall grinding")]
+    public AK.Wwise.Event railGrindStopEvent;
+
     private CharacterController characterController;
     [HideInInspector] public Vector3 velocity;
     /// <summary> The movement mode this character should surrently be following. </summary>
@@ -116,7 +122,8 @@ public class CustomFirstPersonController : MonoBehaviour
         InteractWithGround();
         HandleCameraRotation();
 
-        Debug.Log(motionState);
+        if (motionState == MotionState.Grounded || motionState == MotionState.Airborne)
+            railGrindStopEvent.Post(gameObject);
     }
 
     void HandleMovement()
@@ -231,6 +238,10 @@ public class CustomFirstPersonController : MonoBehaviour
                 railHandle.spline = otherRail.spline;
                 if(railHandle.result.percent < 1f)
 				{
+                    // if we weren't previously grinding
+                    if (motionState != MotionState.Grinding)
+                        railGrindStartLoopEvent.Post(gameObject);
+
                     motionState = MotionState.Grinding;
                     currentRail = otherRail;
                     break;

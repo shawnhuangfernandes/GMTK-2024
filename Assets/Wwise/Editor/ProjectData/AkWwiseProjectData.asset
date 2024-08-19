@@ -175,8 +175,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7a08af5726675d4bb3bbcd0d71ae2e77
     GuidInternal: 
-    m_lastTime: -8584775945894015048
+    m_lastTime: -8584775601096596747
     List:
+    - name: Play_Metal_Land
+      guid: e6ab66304051df42b7e6caeecd08ed1b
+      id: 1164862133
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a08af5726675d4bb3bbcd0d71ae2e77
+      - ElementName: Play_Metal_Land
+        ObjectType: 3
+        guid: e6ab66304051df42b7e6caeecd08ed1b
+      Path: Events\Default Work Unit\Play_Metal_Land
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Test_Bell_Loop
       guid: c3107017c2c7db4698fd5c7959f123ea
       id: 2131429412
@@ -191,6 +208,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: c3107017c2c7db4698fd5c7959f123ea
       Path: Events\Default Work Unit\Test_Bell_Loop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Test_Metal_Jump
+      guid: f88234a5dab76a44ac58cf1b382ba92e
+      id: 789398788
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a08af5726675d4bb3bbcd0d71ae2e77
+      - ElementName: Test_Metal_Jump
+        ObjectType: 3
+        guid: f88234a5dab76a44ac58cf1b382ba92e
+      Path: Events\Default Work Unit\Test_Metal_Jump
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Test_Metal_Landing
+      guid: e411dba12051a443a8d1cd087ceb31ae
+      id: 3086070585
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a08af5726675d4bb3bbcd0d71ae2e77
+      - ElementName: Test_Metal_Landing
+        ObjectType: 3
+        guid: e411dba12051a443a8d1cd087ceb31ae
+      Path: Events\Default Work Unit\Test_Metal_Landing
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -282,7 +333,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: 1e1b3d425e97e842bd97d5598dde0d35
     GuidInternal: 
-    m_lastTime: -8584775793379754025
+    m_lastTime: -8584775601096584983
     List:
     - name: Player_Footsteps
       guid: 24e3f7944fb3e24784ee53db04fb3b8b
@@ -400,6 +451,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: cd63cf5a3f97ea4db845b586802cfefe
       Path: Events\Player\Player_Shrinks
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Rail_Grind_Start
+      guid: 7dd2de82d0b7d641bc0eac16674f09e0
+      id: 918267603
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 1e1b3d425e97e842bd97d5598dde0d35
+      - ElementName: Rail_Grind_Start
+        ObjectType: 3
+        guid: 7dd2de82d0b7d641bc0eac16674f09e0
+      Path: Events\Player\Rail_Grind_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Rail_Grind_Stop
+      guid: 960793e86ed0f440b6bbf9fb3b0f6c84
+      id: 581323921
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 1e1b3d425e97e842bd97d5598dde0d35
+      - ElementName: Rail_Grind_Stop
+        ObjectType: 3
+        guid: 960793e86ed0f440b6bbf9fb3b0f6c84
+      Path: Events\Player\Rail_Grind_Stop
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -621,7 +706,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584777513763401442
     List: []
-  ExpandedFileSystemItemIds: 0500000006000000070000000a00000012000000130000001400000075000000760000005701000058010000
+  ExpandedFileSystemItemIds: 020000000500000006000000070000000a0000000d00000012000000130000001400000075000000760000005701000058010000
   ExpandedWaapiItemIds: 050000000600000007000000090000000a0000000b00000011000000120000001400000016000000180000001b0000001d0000001f00000022000000230000002400000075000000760000005701000058010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
