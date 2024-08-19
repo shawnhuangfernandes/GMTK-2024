@@ -137,6 +137,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MESH_Gateway
       objectReference: {fileID: 0}
+    - target: {fileID: 5804827248968635479, guid: d7d00e6eeb7d944488e0025878535282,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: df9bf23421c71274dbb63e6073966ef6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
