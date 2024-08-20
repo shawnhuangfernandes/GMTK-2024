@@ -381,8 +381,13 @@ public class CustomFirstPersonController : MonoBehaviour
 
     private void JumpAndBecomeAirborne()
 	{
-        float jumpSpeed = Mathf.Sqrt(jumpHeight * 2 * Physics.gravity.magnitude);
+        float jumpSpeed = GetJumpSpeed(jumpHeight);
         AddForce(Vector3.up * jumpSpeed, ForceMode.VelocityChange);
         motionState = MotionState.Airborne;
+    }
+
+    public static float GetJumpSpeed(float height)
+	{
+        return Mathf.Sqrt(height * 2 * Physics.gravity.magnitude);
     }
 }

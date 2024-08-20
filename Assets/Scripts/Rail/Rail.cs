@@ -51,4 +51,53 @@ public class Rail : MonoBehaviour
 
 		return characterScaler.size.targetScale <= sizeRequiredToEmbark.targetScale;
 	}
+
+	private void OnDrawGizmosSelected()
+	{
+		DrawTrajectories(Color.black, Color.blue);
+	}
+
+	private void OnDrawGizmos()
+	{
+		//DrawTrajectories(Color.gray, Color.white);
+	}
+
+	private void DrawTrajectories(Color idleColor, Color jumpColor)
+	{
+		// Draw thr trajectory of a player flying off this rail.
+		void DrawTrajectory(Vector3 start, Vector3 velocity)
+		{
+			const float timestep = 0.1f;
+			const float duration = 5f;
+			Vector3 prevPos = start;
+			for (float time = timestep; time <= duration; time += timestep)
+			{
+				var pos = start + velocity * time + (Physics.gravity / 2f) * time * time;
+				Gizmos.DrawLine(prevPos, pos);
+				prevPos = pos;
+			}
+		}
+
+		var spline = GetComponent<SplineComputer>();
+		Gizmos.matrix = Matrix4x4.identity;
+		float minGrindSpeed = 15f * sizeRequiredToEmbark.targetScale;
+		float maxGrindSpeed = 25f * sizeRequiredToEmbark.targetScale;
+		float jumpHeight = 1.25f * sizeRequiredToEmbark.targetScale;
+		Vector3 jumpVelocity = Vector3.up * CustomFirstPersonController.GetJumpSpeed(jumpHeight);
+
+		for (int pointIndex = 0; pointIndex < spline.pointCount; pointIndex++)
+		{
+			double pointPercent = spline.GetPointPercent(pointIndex);
+			var splineSample = spline.Evaluate(pointPercent);
+
+			Gizmos.color = idleColor;
+			DrawTrajectory(splineSample.position, splineSample.forward * minGrindSpeed);
+			DrawTrajectory(splineSample.position, splineSample.forward * maxGrindSpeed);
+
+			Gizmos.color = jumpColor;
+			DrawTrajectory(splineSample.position, splineSample.forward * minGrindSpeed + jumpVelocity);
+			DrawTrajectory(splineSample.position, splineSample.forward * maxGrindSpeed + jumpVelocity);
+		}
+
+	}
 }
