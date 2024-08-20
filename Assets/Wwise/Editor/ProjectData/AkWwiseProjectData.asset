@@ -413,7 +413,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2e5d252308968b45a104db5ed4951350
       Path: Events\Default Work Unit\Windmill
-      maxAttenuation: 170
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
   - PhysicalPath: Events\Environment.wwu

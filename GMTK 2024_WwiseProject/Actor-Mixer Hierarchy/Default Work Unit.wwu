@@ -540,6 +540,8 @@
 				</ActorMixer>
 				<Sound Name="Leaves_Rustling" ID="{3CDA671A-D597-4675-A1F6-DE2B0076D253}" ShortID="271553346">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Lowpass" Type="int16">
 							<ModifierList>
@@ -547,6 +549,11 @@
 									<Modifier Name="" ID="{12AE0974-B18B-4D41-AE41-538180381738}"/>
 								</ModifierInfo>
 							</ModifierList>
+						</Property>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
 						</Property>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
@@ -560,6 +567,12 @@
 									</Modifier>
 								</ModifierInfo>
 							</ModifierList>
+						</Property>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ModifierList>
