@@ -1,5 +1,19 @@
 Event	ID	Name			Wwise Object Path	Notes
+	475518338	Mailbox_Close			\Default Work Unit\Mailbox_Close	
+	583713573	Windmill			\Default Work Unit\Windmill	
+	1164862133	Play_Metal_Land			\Default Work Unit\Play_Metal_Land	
 	2131429412	Test_Bell_Loop			\Default Work Unit\Test_Bell_Loop	
+	3536574011	Mailbox			\Default Work Unit\Mailbox	
+	3717737302	Mailbox_Open			\Default Work Unit\Mailbox_Open	
+	3820402890	Leaves_Rustling			\Default Work Unit\Leaves_Rustling	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2385628198	Footsteps			\Default Work Unit\Footsteps	
+
+Switch	ID	Name	Switch Group			Notes
+	2144363834	Rock	Footsteps			
+	2473969246	Metal	Footsteps			
+	4248645337	Grass	Footsteps			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	4258827653	PlayerSize			\Default Work Unit\PlayerSize	
@@ -11,6 +25,7 @@ State	ID	Name	State Group			Notes
 	4284352190	Large	PlayerSize			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	1477008682	Wind_Gusts			\Default Work Unit\Wind_Gusts	
 	3040674790	Player_Size			\Default Work Unit\Player_Size	
 
 Effect plug-ins	ID	Name	Type				Notes
@@ -18,6 +33,29 @@ Effect plug-ins	ID	Name	Type				Notes
 	2481867971	Small_EQ	Wwise Parametric EQ			
 	4052205305	Small_Reverb	Wwise RoomVerb			
 
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	29294242	Footstep_02	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Footstep_02_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Metal\Right\Footstep_02		130738
+	40822885	Footstep_09	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Footstep_09_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Metal\Left\Footstep_09		131528
+	155080818	Footstep_07	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Footstep_07_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Metal\Left\Footstep_07		129796
+	238272670	Footstep_01	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Footstep_01_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Metal\Left\Footstep_01		128584
+	267339551	Footstep_05	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Footstep_05_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Metal\Left\Footstep_05		128326
+	395720407	Mailbox	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Mailbox_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mailbox		179006
+	449175834	Footstep_03	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Footstep_03_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Metal\Left\Footstep_03		130564
+	596041254	Footstep_10	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Footstep_10_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Metal\Right\Footstep_10		129474
+	698227480	Footstep_04	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Footstep_04_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Metal\Right\Footstep_04		130956
+	751811007	Rail_Landing_03	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Rail_Landing_03_F6C2E0D0.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Metal\Rail_Landing\Rail_Landing_03		16470
+	770930447	Leaves_Rustling	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Leaves_Rustling_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Leaves_Rustling		1344096
+	805539665	Footstep_06	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Footstep_06_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Metal\Right\Footstep_06		133668
+	820211050	Rail_Landing_01	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Rail_Landing_01 _DCE508AF.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Metal\Rail_Landing\Rail_Landing_01		16814
+	826557122	Mailbox_Close	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Mailbox_Close_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mailbox_Close		111530
+	869743916	Landing	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Player_Land_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Metal\Landing		150148
+	886182685	Rail_Landing_02	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Rail_Landing_02_CD822EA2.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Metal\Rail_Landing\Rail_Landing_02		20000
+	947767335	Rail_Landing_04	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Rail_Landing_04_B83A08ED.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Metal\Rail_Landing\Rail_Landing_04		14586
+	962110443	Footstep_08	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Footstep_08_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Metal\Right\Footstep_08		129252
+	1027790810	Mailbox_Open	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Mailbox_Open_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mailbox_Open		37276
+
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	302336510	Wooden_Wheel_Large_Turning_Smooth_01_Loop	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Wooden_Wheel_Large_Turning_Smooth_01_Loop_FBC78EF0.wem	302336510.wem	\Actor-Mixer Hierarchy\Default Work Unit\Large Emitters\Windmill\Wooden_Wheel_Large_Turning_Smooth_01_Loop	
 	694506031	Test_Bell_Loop	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Soundly Audio\BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 2_FBC78EF0.wem	694506031.wem	\Actor-Mixer Hierarchy\Default Work Unit\Large Emitters\Test_Bell_Loop	
+	792277974	Windmill_CrankingSound	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Windmill_CrankingSound_FBC78EF0.wem	792277974.wem	\Actor-Mixer Hierarchy\Default Work Unit\Large Emitters\Windmill\Windmill_CrankingSound	
 
