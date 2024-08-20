@@ -74,6 +74,8 @@ public class CustomFirstPersonController : MonoBehaviour
     public Collider groundCollider { get; private set; }
     private Rail? currentRail;
 
+    private float lastLandingSoundTime;
+
     [HideInInspector] public float rootWalkSpeed = 0F;
     [HideInInspector] public float rootRunSpeed = 0F;
     [HideInInspector] public float rootJumpHeight = 0F;
@@ -326,7 +328,12 @@ public class CustomFirstPersonController : MonoBehaviour
                     motionState = MotionState.Grounded;
                     jumpSwitch = footstepManager.GetSwitchToUse();
                     jumpSwitch.SetValue(gameObject);
-                    landSoundEvent.Post(gameObject);
+
+                    if (Time.time - lastLandingSoundTime > 1F)
+                    {
+                        landSoundEvent.Post(gameObject);
+                        lastLandingSoundTime = Time.time;
+                    }
                 }
                     
                 break;
