@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 49089d7fd8944846b20cbbf8b81997cd
     GuidInternal: 
-    m_lastTime: -8584774862835662579
+    m_lastTime: -8584774844489466874
     List:
     - name: Checkpoint_ReActv
       guid: 2045389072061f4795e7d88241b8149f
@@ -444,7 +444,7 @@ MonoBehaviour:
     ParentPath: Events\Environment
     guid: 8ea0a893810d2448b96e92e177b8d654
     GuidInternal: 
-    m_lastTime: -8584774865092607338
+    m_lastTime: -8584774758681292263
     List:
     - name: Play_Ambience
       guid: 3644649cbd50d84a9765b503e2b859f2
@@ -478,8 +478,8 @@ MonoBehaviour:
         guid: f6893868d21aad4cae7eb38cb285f6a3
       Path: Events\Environment\Player_Checkpoint
       maxAttenuation: 0
-      maxDuration: 11.285708
-      minDuration: 11.285708
+      maxDuration: 13.285708
+      minDuration: 13.285708
     - name: Player_Checkpoint_ReActv
       guid: 432af532a6ecaf4b8cdf6dd82870a2c8
       id: 1478396515
@@ -508,7 +508,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: b35f488a5d535f41b5604b9336bb7454
     GuidInternal: 
-    m_lastTime: -8584774794365726639
+    m_lastTime: -8584774769287037272
     List:
     - name: Music_EndRail
       guid: 1ecafc7c70e2ff44a24343164da14043
@@ -589,7 +589,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: 1e1b3d425e97e842bd97d5598dde0d35
     GuidInternal: 
-    m_lastTime: -8584774836257783509
+    m_lastTime: -8584774808443869958
     List:
     - name: Play_Player_WindRush
       guid: 3653c5485bf13f44b2c4d0c647b62954
@@ -773,7 +773,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 2db9b6da6575f7428329572c0b05a910
     GuidInternal: 
-    m_lastTime: -8584774796401281655
+    m_lastTime: -8584774769287002079
     List:
     - name: Player_Size
       guid: 0cfa0bf4012d20468f7d006735cb5bf5
