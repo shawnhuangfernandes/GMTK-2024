@@ -66,14 +66,6 @@
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Test_Metal_Jump" ID="{A53482F8-B7DA-446A-AC58-CF1B382BA92E}" WorkUnitID="{57AF087A-6726-4B5D-B3BB-CD0D71AE2E77}"/>
-							<Position X="3" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Test_Metal_Landing" ID="{A1DB11E4-5120-43A4-A8D1-CD087CEB31AE}" WorkUnitID="{57AF087A-6726-4B5D-B3BB-CD0D71AE2E77}"/>
-							<Position X="3" Y="1"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Player_Shrinks" ID="{5ACF63CD-973F-4DEA-B845-B586802CFEFE}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
 							<Position X="4" Y="0"/>
 						</Module>

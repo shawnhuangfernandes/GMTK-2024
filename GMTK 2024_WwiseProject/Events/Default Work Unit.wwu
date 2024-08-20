@@ -14,54 +14,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Test_Metal_Jump" ID="{A53482F8-B7DA-446A-AC58-CF1B382BA92E}">
-					<ChildrenList>
-						<Action Name="" ID="{B79BFF27-D379-4BF2-AF00-D1943451653F}" ShortID="976241770">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Metal" ID="{75E73EB0-41D9-4E66-AD3A-21B1BFD4B993}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{62B8C5CC-F7B5-414D-8731-F5DAC8BD180D}" ShortID="532107688">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="41"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Rail_Grind_Stop" ID="{E8930796-D06E-40F4-B6BB-F9FB3B0F6C84}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Metal_Land" ID="{3066ABE6-5140-42DF-B7E6-CAEECD08ED1B}">
 					<ChildrenList>
 						<Action Name="" ID="{9757DCAE-510D-499F-8E19-D893E8D54D2E}" ShortID="161387973">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Metal" ID="{CA275AC5-1053-4D67-BDE7-A98B9210BC1F}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Test_Metal_Landing" ID="{A1DB11E4-5120-43A4-A8D1-CD087CEB31AE}">
-					<ChildrenList>
-						<Action Name="" ID="{6EDE43A9-570C-443D-980C-A75189FA14E0}" ShortID="260284999">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Metal" ID="{CA275AC5-1053-4D67-BDE7-A98B9210BC1F}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{FA4F3C70-33DC-401C-AA68-821FF1D6BF98}" ShortID="126770296">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="41"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Rail_Grind_Start" ID="{82DED27D-B7D0-41D6-BC0E-AC16674F09E0}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

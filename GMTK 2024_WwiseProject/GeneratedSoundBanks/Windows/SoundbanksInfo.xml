@@ -550,7 +550,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{596A1E22-C71B-5747-352E-94EFC592D1DB}">
+		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{AAADDC19-030D-1252-E495-DA714E4146BD}">
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 			<Media>
@@ -589,10 +589,6 @@
 				<File Id="343487331" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wind_Gusts-009.wav</ShortName>
 					<CachePath>SFX/Wind_Gusts-009_818F3B66.wem</CachePath>
-				</File>
-				<File Id="360785982" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_Checkpoint_HandPan-002.wav</ShortName>
-					<CachePath>SFX/SFX_Checkpoint_HandPan-002_818F3B66.wem</CachePath>
 				</File>
 				<File Id="386437277" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wind_Gusts-007.wav</ShortName>
@@ -670,10 +666,6 @@
 					<ShortName>SFX_CheckPoint_ReActv_Chimes-001.wav</ShortName>
 					<CachePath>SFX/SFX_CheckPoint_ReActv_Chimes-001_818F3B66.wem</CachePath>
 				</File>
-				<File Id="904246870" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_Checkpoint_HandPan-003.wav</ShortName>
-					<CachePath>SFX/SFX_Checkpoint_HandPan-003_818F3B66.wem</CachePath>
-				</File>
 				<File Id="906306108" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_CheckPoint_Wind_Gust-003.wav</ShortName>
 					<CachePath>SFX/SFX_CheckPoint_Wind_Gust-003_818F3B66.wem</CachePath>
@@ -688,19 +680,15 @@
 				</File>
 				<File Id="952505378" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_CheckPoint_Paper-002.wav</ShortName>
-					<CachePath>SFX/SFX_CheckPoint_Paper-002_A7C88D0B.wem</CachePath>
+					<CachePath>SFX/SFX_CheckPoint_Paper-002_11CA193A.wem</CachePath>
 				</File>
 				<File Id="972721749" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_CheckPoint_Paper-003.wav</ShortName>
-					<CachePath>SFX/SFX_CheckPoint_Paper-003_589B8760.wem</CachePath>
+					<CachePath>SFX/SFX_CheckPoint_Paper-003_91738230.wem</CachePath>
 				</File>
 				<File Id="1038576000" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_CheckPoint_Paper-001.wav</ShortName>
-					<CachePath>SFX/SFX_CheckPoint_Paper-001_BE188F48.wem</CachePath>
-				</File>
-				<File Id="1054894463" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_Checkpoint_HandPan-001.wav</ShortName>
-					<CachePath>SFX/SFX_Checkpoint_HandPan-001_818F3B66.wem</CachePath>
+					<CachePath>SFX/SFX_CheckPoint_Paper-001_929524E8.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -735,17 +723,14 @@
 					<MediaRefs>
 						<MediaRef Id="79701115"/>
 						<MediaRef Id="180191431"/>
-						<MediaRef Id="360785982"/>
 						<MediaRef Id="426866245"/>
 						<MediaRef Id="648909529"/>
 						<MediaRef Id="794164658"/>
-						<MediaRef Id="904246870"/>
 						<MediaRef Id="906306108"/>
 						<MediaRef Id="928497713"/>
 						<MediaRef Id="952505378"/>
 						<MediaRef Id="972721749"/>
 						<MediaRef Id="1038576000"/>
-						<MediaRef Id="1054894463"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1478396515" Name="Player_Checkpoint_ReActv" DurationType="OneShot" DurationMin="4.4285626" DurationMax="5.654896">
@@ -810,14 +795,96 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3157003241" Type="User" Language="SFX" Hash="{6DB9BF68-6671-249E-F293-A213787BF00B}">
+		<SoundBank Id="3157003241" Type="User" Language="SFX" Hash="{B9A99D47-6590-0161-7B0D-1C19D5243F37}">
 			<ShortName>Test</ShortName>
 			<Path>Test.bnk</Path>
 			<Media>
+				<File Id="29294242" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footstep_02.wav</ShortName>
+					<CachePath>SFX/Footstep_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="40822885" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footstep_09.wav</ShortName>
+					<CachePath>SFX/Footstep_09_818F3B66.wem</CachePath>
+				</File>
+				<File Id="155080818" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footstep_07.wav</ShortName>
+					<CachePath>SFX/Footstep_07_818F3B66.wem</CachePath>
+				</File>
+				<File Id="238272670" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footstep_01.wav</ShortName>
+					<CachePath>SFX/Footstep_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="267339551" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footstep_05.wav</ShortName>
+					<CachePath>SFX/Footstep_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="302336510" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>Wooden_Wheel_Large_Turning_Smooth_01_Loop.wav</ShortName>
+					<Path>Media/302336510.wem</Path>
+					<CachePath>SFX/Wooden_Wheel_Large_Turning_Smooth_01_Loop_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="449175834" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footstep_03.wav</ShortName>
+					<CachePath>SFX/Footstep_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="596041254" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footstep_10.wav</ShortName>
+					<CachePath>SFX/Footstep_10_818F3B66.wem</CachePath>
+				</File>
 				<File Id="694506031" Language="SFX" Streaming="true" Location="Loose">
 					<ShortName>Soundly Audio\BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 2.wav</ShortName>
 					<Path>Media/694506031.wem</Path>
 					<CachePath>SFX/Soundly Audio/BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 2_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="698227480" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footstep_04.wav</ShortName>
+					<CachePath>SFX/Footstep_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="751811007" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Rail_Landing_03.wav</ShortName>
+					<CachePath>SFX/Rail_Landing_03_F6C2E0D0.wem</CachePath>
+				</File>
+				<File Id="770930447" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Leaves_Rustling.wav</ShortName>
+					<CachePath>SFX/Leaves_Rustling_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="792277974" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>Windmill_CrankingSound.wav</ShortName>
+					<Path>Media/792277974.wem</Path>
+					<CachePath>SFX/Windmill_CrankingSound_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="805539665" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footstep_06.wav</ShortName>
+					<CachePath>SFX/Footstep_06_818F3B66.wem</CachePath>
+				</File>
+				<File Id="820211050" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Rail_Landing_01 .wav</ShortName>
+					<CachePath>SFX/Rail_Landing_01 _DCE508AF.wem</CachePath>
+				</File>
+				<File Id="826557122" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Mailbox_Close.wav</ShortName>
+					<CachePath>SFX/Mailbox_Close_818F3B66.wem</CachePath>
+				</File>
+				<File Id="869743916" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Land.wav</ShortName>
+					<CachePath>SFX/Player_Land_818F3B66.wem</CachePath>
+				</File>
+				<File Id="886182685" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Rail_Landing_02.wav</ShortName>
+					<CachePath>SFX/Rail_Landing_02_CD822EA2.wem</CachePath>
+				</File>
+				<File Id="947767335" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Rail_Landing_04.wav</ShortName>
+					<CachePath>SFX/Rail_Landing_04_B83A08ED.wem</CachePath>
+				</File>
+				<File Id="962110443" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footstep_08.wav</ShortName>
+					<CachePath>SFX/Footstep_08_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1027790810" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Mailbox_Open.wav</ShortName>
+					<CachePath>SFX/Mailbox_Open_818F3B66.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -828,6 +895,40 @@
 				</ShareSets>
 			</Plugins>
 			<Events>
+				<Event Id="3820402890" Name="Leaves_Rustling" MaxAttenuation="30" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="770930447"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="475518338" Name="Mailbox_Close" DurationType="OneShot" DurationMin="1.1607708" DurationMax="1.1607708">
+					<MediaRefs>
+						<MediaRef Id="826557122"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3717737302" Name="Mailbox_Open" DurationType="OneShot" DurationMin="0.38729167" DurationMax="0.38729167">
+					<MediaRefs>
+						<MediaRef Id="1027790810"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1164862133" Name="Play_Metal_Land" DurationType="OneShot" DurationMin="1.4753147" DurationMax="1.6559851">
+					<MediaRefs>
+						<MediaRef Id="29294242"/>
+						<MediaRef Id="40822885"/>
+						<MediaRef Id="155080818"/>
+						<MediaRef Id="238272670"/>
+						<MediaRef Id="267339551"/>
+						<MediaRef Id="449175834"/>
+						<MediaRef Id="596041254"/>
+						<MediaRef Id="698227480"/>
+						<MediaRef Id="751811007"/>
+						<MediaRef Id="805539665"/>
+						<MediaRef Id="820211050"/>
+						<MediaRef Id="869743916"/>
+						<MediaRef Id="886182685"/>
+						<MediaRef Id="947767335"/>
+						<MediaRef Id="962110443"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2131429412" Name="Test_Bell_Loop" MaxAttenuation="170" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="694506031"/>
@@ -840,12 +941,35 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
+				<Event Id="583713573" Name="Windmill" MaxAttenuation="170" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="302336510"/>
+						<MediaRef Id="792277974"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1501174592"/>
+							<PluginRef Id="2481867971"/>
+							<PluginRef Id="4052205305"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
 			</Events>
 			<GameParameters>
+				<GameParameter Id="1477008682" Name="Wind_Gusts"/>
 				<GameParameter Id="3040674790" Name="Player_Size"/>
 			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="2385628198" Name="Footsteps">
+					<Switches>
+						<Switch Id="2144363834" Name="Rock"/>
+						<Switch Id="2473969246" Name="Metal"/>
+						<Switch Id="4248645337" Name="Grass"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{0455737A-4F5C-C012-3857-F222430D7AF2}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{781A7949-D1E3-B387-AB6A-D8EADC54DBC0}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
@@ -902,5 +1026,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7956A600-8990-C531-AC88-7A45CEAF1D79}</FileHash>
+	<FileHash>{10BA4FCF-B9D4-9D5C-54E5-F0D2C8D0A18E}</FileHash>
 </SoundBanksInfo>
