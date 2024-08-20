@@ -12,6 +12,8 @@ public class Rail : MonoBehaviour
 	[Tooltip("The SizeSetting a character must have as their current size in order to start grinding on this rail")]
 	public SizeSetting sizeRequiredToEmbark;
 
+	public float speedFactor = 1f;
+
 	[field: SerializeField(), HideInInspector]
 	public SplineComputer spline { get; private set; }
 
@@ -80,8 +82,8 @@ public class Rail : MonoBehaviour
 
 		var spline = GetComponent<SplineComputer>();
 		Gizmos.matrix = Matrix4x4.identity;
-		float minGrindSpeed = 15f * sizeRequiredToEmbark.targetScale;
-		float maxGrindSpeed = 25f * sizeRequiredToEmbark.targetScale;
+		float minGrindSpeed = 15f * sizeRequiredToEmbark.targetScale * speedFactor;
+		float maxGrindSpeed = 25f * sizeRequiredToEmbark.targetScale * speedFactor;
 		float jumpHeight = 1.25f * sizeRequiredToEmbark.targetScale;
 		Vector3 jumpVelocity = Vector3.up * CustomFirstPersonController.GetJumpSpeed(jumpHeight);
 

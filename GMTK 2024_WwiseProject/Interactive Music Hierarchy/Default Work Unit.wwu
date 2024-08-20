@@ -313,7 +313,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+							<ObjectRef Name="Music" ID="{1DF19180-0FD8-48A3-B064-7439A5C0F3A3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
 						</Reference>
 						<Reference Name="PlaylistRoot">
 							<Custom>

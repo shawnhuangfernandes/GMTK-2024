@@ -189,19 +189,23 @@ public class CustomFirstPersonController : MonoBehaviour
                 break;
 
             case MotionState.Grinding:
+                // Calculate current grind speeds.
+                float minSpeed = minGrindSpeed * currentRail.speedFactor;
+                float maxSpeed = maxGrindSpeed * currentRail.speedFactor;
+
                 // Then, align velocity to the current rail.
                 float speed = velocity.magnitude;
                 Vector3 direction = railHandle.result.forward;
 
                 // Apply gravity.
                 float speedChangeDueToGravity = Vector3.Dot(Physics.gravity*Time.deltaTime, direction);
-                if (speedChangeDueToGravity > 0 || speed >= minGrindSpeed)
+                if (speedChangeDueToGravity > 0 || speed >= minSpeed)
                     speed += speedChangeDueToGravity;
 
                 // Enforce min and max speed.
-                if(speed < minGrindSpeed)
+                if(speed < minSpeed)
                     speed += grindAcceleration * Time.deltaTime;
-                speed = Mathf.Clamp(speed, 0, maxGrindSpeed);
+                speed = Mathf.Clamp(speed, 0, maxSpeed);
                 velocity = speed * direction;
                 break;
 		}
