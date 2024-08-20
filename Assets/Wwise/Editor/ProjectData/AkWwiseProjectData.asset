@@ -328,7 +328,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: c3107017c2c7db4698fd5c7959f123ea
       Path: Events\Default Work Unit\Test_Bell_Loop
-      maxAttenuation: 0
+      maxAttenuation: 170
       maxDuration: -1
       minDuration: -1
     - name: Test_Metal_Jump
