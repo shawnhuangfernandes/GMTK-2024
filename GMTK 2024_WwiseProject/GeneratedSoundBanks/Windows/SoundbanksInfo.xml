@@ -651,7 +651,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3157003241" Type="User" Language="SFX" Hash="{AD1C6280-625D-7F5A-4D2E-F05E0C06388F}">
+		<SoundBank Id="3157003241" Type="User" Language="SFX" Hash="{F0742090-F463-9649-3114-B65BC8C2CEAF}">
 			<ShortName>Test</ShortName>
 			<Path>Test.bnk</Path>
 			<Media>
@@ -669,7 +669,7 @@
 				</ShareSets>
 			</Plugins>
 			<Events>
-				<Event Id="2131429412" Name="Test_Bell_Loop" DurationType="Infinite">
+				<Event Id="2131429412" Name="Test_Bell_Loop" MaxAttenuation="170" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="694506031"/>
 					</MediaRefs>
@@ -742,5 +742,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B9A9AE63-1983-5A37-7223-F20F48895636}</FileHash>
+	<FileHash>{588F46C7-7CB3-6ED2-58F5-0BCE3D9F7D2D}</FileHash>
 </SoundBanksInfo>

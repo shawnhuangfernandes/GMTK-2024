@@ -21,7 +21,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Player_Size" ID="{F40BFA0C-2D01-4620-8F7D-006735CB5BF5}"/>
-							<Value>50</Value>
+							<Value>50.9029345372461</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
