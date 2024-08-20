@@ -307,11 +307,6 @@
 				<MusicPlaylistContainer Name="MX_EndRail" ID="{875A59D9-9784-4EA6-9544-AB58EFD088DE}" ShortID="511461098">
 					<PropertyList>
 						<Property Name="Tempo" Type="Real64" Value="106"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>5</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
