@@ -491,6 +491,50 @@
 						<ActiveSource Name="Leaves_Rustling" ID="{7580E5D0-1D0D-4C24-9CE2-0069E4EC02D4}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Mailbox_Close" ID="{07F0F8B1-0ACB-4747-A3C2-F53D556E8787}" ShortID="337130421">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Mailbox_Close" ID="{B140498C-50CF-4F24-BA9D-ACF2E30248A0}">
+							<Language>SFX</Language>
+							<AudioFile>Mailbox_Close.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="826557122"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Mailbox_Close" ID="{B140498C-50CF-4F24-BA9D-ACF2E30248A0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Mailbox_Open" ID="{BE9FC66B-5740-454F-B2C7-9614338066C5}" ShortID="483900650">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Mailbox_Open" ID="{8D0CC236-DD04-432A-8145-56945E175642}">
+							<Language>SFX</Language>
+							<AudioFile>Mailbox_Open.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1027790810"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Mailbox_Open" ID="{8D0CC236-DD04-432A-8145-56945E175642}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

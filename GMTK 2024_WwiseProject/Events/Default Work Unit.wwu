@@ -89,6 +89,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Mailbox_Open" ID="{4916150D-6AFB-4EE3-8B3A-289E54ADC0A5}">
+					<ChildrenList>
+						<Action Name="" ID="{EAD7CB66-E53E-49C2-B2FF-389B4B78EB03}" ShortID="194370567">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mailbox_Open" ID="{BE9FC66B-5740-454F-B2C7-9614338066C5}" WorkUnitID="{4C339756-FB93-4187-A0A8-CA194E81830A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mailbox_Close" ID="{9B71C277-F12F-4BD1-9CBC-B768238E2742}">
+					<ChildrenList>
+						<Action Name="" ID="{5409D844-8145-4C2A-8834-C8635513D1D5}" ShortID="811391420">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mailbox_Close" ID="{07F0F8B1-0ACB-4747-A3C2-F53D556E8787}" WorkUnitID="{4C339756-FB93-4187-A0A8-CA194E81830A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

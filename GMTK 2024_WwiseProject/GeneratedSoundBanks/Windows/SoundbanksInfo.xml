@@ -550,7 +550,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{43152E32-EC51-4AFF-3211-683074988CAB}">
+		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{8ED6DAC0-E413-0234-B4A3-A7373554179B}">
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 			<Media>
@@ -855,7 +855,7 @@
 				<GameParameter Id="3040674790" Name="Player_Size"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{0455737A-4F5C-C012-3857-F222430D7AF2}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{781A7949-D1E3-B387-AB6A-D8EADC54DBC0}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
@@ -912,5 +912,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E64B1430-39D9-0EE4-5746-AD5F80520FBC}</FileHash>
+	<FileHash>{4465CA74-5E30-C6C1-45A0-8B1F683E93A4}</FileHash>
 </SoundBanksInfo>
