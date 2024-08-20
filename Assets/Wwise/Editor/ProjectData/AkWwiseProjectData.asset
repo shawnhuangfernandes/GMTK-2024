@@ -350,7 +350,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: 1e1b3d425e97e842bd97d5598dde0d35
     GuidInternal: 
-    m_lastTime: -8584774941313394254
+    m_lastTime: -8584774893144532897
     List:
     - name: Player_Checkpoint
       guid: f6893868d21aad4cae7eb38cb285f6a3
@@ -369,6 +369,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 11.285708
       minDuration: 11.285708
+    - name: Player_Checkpoint_ReActv
+      guid: 432af532a6ecaf4b8cdf6dd82870a2c8
+      id: 1478396515
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 1e1b3d425e97e842bd97d5598dde0d35
+      - ElementName: Player_Checkpoint_ReActv
+        ObjectType: 3
+        guid: 432af532a6ecaf4b8cdf6dd82870a2c8
+      Path: Events\Player\Player_Checkpoint_ReActv
+      maxAttenuation: 0
+      maxDuration: 5.654896
+      minDuration: 4.4285626
     - name: Player_Footsteps
       guid: 24e3f7944fb3e24784ee53db04fb3b8b
       id: 1730208058

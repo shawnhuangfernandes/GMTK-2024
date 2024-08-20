@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -10,6 +11,9 @@ public class Respawner : MonoBehaviour
 	public float delay = 0.25f;
 	public UnityEvent onRespawnStart;
 	public UnityEvent onRespawn;
+
+	public AK.Wwise.Event respawnSoundEvent;
+
 	private Coroutine currentRespawnCoroutine;
 	private bool isRespawning = false;
 	private SavedState spawnState;
@@ -53,6 +57,9 @@ public class Respawner : MonoBehaviour
 	private IEnumerator Respawn()
 	{
 		onRespawnStart.Invoke();
+
+		respawnSoundEvent.Post(gameObject);
+
 		yield return new WaitForSeconds(delay);
 
 		// If this is a character, force it to teleport.
