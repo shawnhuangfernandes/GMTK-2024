@@ -25,6 +25,9 @@ public class Waypoint : MonoBehaviour
 		// Triggered!
 		respawner.SaveState(this);
 		(isObtained ? onRepeatTrigger : onFirstTrigger).Invoke();
+
+		if (isObtained == false)
+			
 		isObtained = true;
 	}
 
