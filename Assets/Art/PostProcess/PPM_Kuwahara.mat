@@ -42,7 +42,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Base_Distance: 1
+    - _Base_Distance: 2
     - _Distance: 2
     - _Frame_Steps: 10
     - _Noise_Contrast: 3
