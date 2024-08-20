@@ -49,13 +49,6 @@
 				</Event>
 				<Event Name="Player_Checkpoint" ID="{683889F6-1AD2-4CAD-AE7E-B38CB285F6A3}">
 					<ChildrenList>
-						<Action Name="" ID="{C9150626-EA5E-406F-A045-70A5134F5A39}" ShortID="498070462">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Checkpoint_Chimes" ID="{855D25E9-8306-453B-BCA5-F406CC9151ED}" WorkUnitID="{D735D4EA-05C6-48E5-A28A-E0512FE7EBED}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{8485310B-207B-4E1F-B347-E500DD16A3F2}" ShortID="992956912">
 							<ReferenceList>
 								<Reference Name="Target">
@@ -74,6 +67,13 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Checkpoint_Wind_Swell" ID="{B9CF9455-7F6D-46B9-ACF5-8BD743161B8C}" WorkUnitID="{D735D4EA-05C6-48E5-A28A-E0512FE7EBED}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D9933204-F1A4-46B1-A083-9603B5C7CF91}" ShortID="459568345">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Checkpoint_Handpan" ID="{C9B95E4E-AD81-4F8E-986D-4C96899C9184}" WorkUnitID="{D735D4EA-05C6-48E5-A28A-E0512FE7EBED}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

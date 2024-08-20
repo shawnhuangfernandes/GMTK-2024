@@ -16,4 +16,10 @@ public class ReticleManager : MonoBehaviour
         canvasGroup.DOFade(1F, 0.5F)
             .SetEase(Ease.InQuad);
     }
+
+    public void HideReticle()
+    {
+        canvasGroup.DOFade(0F, 0.5F)
+            .SetEase(Ease.InQuad);
+    }
 }
