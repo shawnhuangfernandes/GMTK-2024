@@ -137,56 +137,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Player_Checkpoint" ID="{683889F6-1AD2-4CAD-AE7E-B38CB285F6A3}">
-					<ChildrenList>
-						<Action Name="" ID="{C9150626-EA5E-406F-A045-70A5134F5A39}" ShortID="498070462">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Checkpoint_Chimes" ID="{855D25E9-8306-453B-BCA5-F406CC9151ED}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{8485310B-207B-4E1F-B347-E500DD16A3F2}" ShortID="992956912">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Checkpoint_Paper" ID="{3B416B71-A62A-4766-A7B0-3DFE77842F24}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{091E6885-3CAD-4023-9B15-46C5CED4D1CC}" ShortID="477128992">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Checkpoint_Wind_Gust" ID="{F5D8084F-056C-41A1-B143-D1BE7A1E9704}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{88440224-36F4-4FA8-AF8B-9D01018E1114}" ShortID="1038580506">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Checkpoint_Wind_Swell" ID="{B9CF9455-7F6D-46B9-ACF5-8BD743161B8C}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Player_Checkpoint_ReActv" ID="{32F52A43-ECA6-4BAF-8CDF-6DD82870A2C8}">
-					<ChildrenList>
-						<Action Name="" ID="{BB5CE939-40D7-44EA-B5B7-0B9471C4DF26}" ShortID="619586775">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Checkpoint_ReAvt_Chimes" ID="{17972FD2-E077-4233-8C3B-26F8739CB5FF}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{F1A27AC3-300D-4E1A-BA79-E59CE394EA2B}" ShortID="1014121880">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Checkpoint_ReAvt_Paper" ID="{E3DA811E-CDDA-4C50-8DFD-216232322C76}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

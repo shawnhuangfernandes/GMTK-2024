@@ -8,7 +8,13 @@ State	ID	Name	State Group			Notes
 	4284352190	Large	PlayerSize			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	1069431850	Player			\Default Work Unit\Master Audio Bus\SFX\Player	
+	1229948536	Environment			\Default Work Unit\Master Audio Bus\SFX\Environment	
+	1684828447	Checkpoint_ReActv			\Default Work Unit\Master Audio Bus\SFX\Environment\Checkpoint_ReActv	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+	4279841335	Respawn			\Default Work Unit\Master Audio Bus\SFX\Player\Respawn	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

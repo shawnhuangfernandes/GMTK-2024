@@ -9,6 +9,48 @@
 							<ObjectRef Name="System" ID="{A97C0C5B-B3EB-4518-AA45-C05F81BC2C02}" WorkUnitID="{6C9E37A1-B372-4D12-AAC3-1D69845BE989}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="SFX" ID="{5C8B605E-EF0B-4CCF-A26B-724B28707BB0}">
+							<ChildrenList>
+								<Bus Name="Player" ID="{18E7E606-CAAE-453D-9559-1655C38C0613}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="17"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<Bus Name="Respawn" ID="{35E8A3FE-3749-414C-A093-557510F18805}">
+											<DuckingList>
+												<DuckItem>
+													<BusRef Name="Checkpoint_ReActv" ID="{90384520-0672-471F-95E7-D88241B8149F}"/>
+													<DuckingParam>
+														<Volume>-96</Volume>
+														<FadeInTime>1</FadeInTime>
+														<FadeOutTime>0.100000001490116</FadeOutTime>
+														<FadeCurve>FadeExp1</FadeCurve>
+													</DuckingParam>
+												</DuckItem>
+											</DuckingList>
+										</Bus>
+									</ChildrenList>
+								</Bus>
+								<Bus Name="Environment" ID="{968DABB5-61F8-44D5-BFFA-A3BD4DF65701}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="2"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<Bus Name="Checkpoint_ReActv" ID="{90384520-0672-471F-95E7-D88241B8149F}"/>
+									</ChildrenList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Music" ID="{1DF19180-0FD8-48A3-B064-7439A5C0F3A3}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>
