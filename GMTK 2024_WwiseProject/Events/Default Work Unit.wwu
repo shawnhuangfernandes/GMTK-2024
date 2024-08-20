@@ -78,6 +78,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Leaves_Rustling" ID="{CB08FC51-741F-4ECB-928D-4C78A5640D29}">
+					<ChildrenList>
+						<Action Name="" ID="{CF51DDE6-839D-4C84-A23A-BA7715ACFEC5}" ShortID="511890670">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Leaves_Rustling" ID="{3CDA671A-D597-4675-A1F6-DE2B0076D253}" WorkUnitID="{4C339756-FB93-4187-A0A8-CA194E81830A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

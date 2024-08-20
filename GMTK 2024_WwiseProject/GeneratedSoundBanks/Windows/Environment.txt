@@ -3,6 +3,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	1478396515	Player_Checkpoint_ReActv			\Environment\Player_Checkpoint_ReActv	
 	3400834491	Player_Checkpoint			\Environment\Player_Checkpoint	
 
+Effect plug-ins	ID	Name	Type				Notes
+	829618371	Meter (Custom)	Wwise Meter			
+
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	925587760	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Environment\Wind_Gust_Controller\Wind_Silence\Silence	
 
