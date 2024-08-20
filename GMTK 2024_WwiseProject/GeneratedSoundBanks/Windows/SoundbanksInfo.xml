@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{5E361E39-5902-458F-AD3C-E9218DF82502}">
+		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{4C9CFE96-2E71-9546-FF5B-2999190DF063}">
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<Media>
@@ -550,7 +550,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{7D20EAA8-855E-87BE-D809-012379A6168E}">
+		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{2E403F57-3E26-50EC-5211-EB50177FF453}">
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 			<Media>
@@ -795,7 +795,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3157003241" Type="User" Language="SFX" Hash="{E7C6BB39-C645-EAD9-7ADC-6E7FBD174D57}">
+		<SoundBank Id="3157003241" Type="User" Language="SFX" Hash="{1646932B-EF4C-E6C8-FE96-FA0E1EEB71A1}">
 			<ShortName>Test</ShortName>
 			<Path>Test.bnk</Path>
 			<Media>
@@ -899,7 +899,7 @@
 				</ShareSets>
 			</Plugins>
 			<Events>
-				<Event Id="3820402890" Name="Leaves_Rustling" MaxAttenuation="30" DurationType="Infinite">
+				<Event Id="3820402890" Name="Leaves_Rustling" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="770930447"/>
 					</MediaRefs>
@@ -978,7 +978,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{03B6128F-19DA-332A-B39B-10B0ABF8B9B1}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{8433A976-7C29-B9AA-0EA5-3581525CA3CC}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
@@ -1035,5 +1035,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4BA06489-A390-19B7-C0DA-2BC8011338C4}</FileHash>
+	<FileHash>{EF004AAA-6A44-4B5B-1323-6EF5FCE25A53}</FileHash>
 </SoundBanksInfo>

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6068c6069aca2845879a829c1cca94d, type: 3}
+  m_Name: CB08FC51-741F-4ECB-928D-4C78A5640D29
+  m_EditorClassIdentifier: 
+  objectName: Leaves_Rustling
+  id: 3820402890
+  guid: CB08FC51-741F-4ECB-928D-4C78A5640D29

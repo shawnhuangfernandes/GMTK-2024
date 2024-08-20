@@ -158,7 +158,7 @@
 				</Attenuation>
 				<Attenuation Name="Small Emitters" ID="{7E9B2AE0-7A11-4645-999A-2FDD6D4BBA07}" ShortID="920842806">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="30"/>
+						<Property Name="RadiusMax" Type="Real64" Value="20"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -174,12 +174,17 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>8.93271</XPos>
-											<YPos>-1.64236</YPos>
+											<XPos>5.8314</XPos>
+											<YPos>-2.35199</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>30</XPos>
+											<XPos>13.87567</XPos>
+											<YPos>-13.25893</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>20</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -206,12 +211,12 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>7.96623177283193</XPos>
+											<XPos>5.24942</XPos>
 											<YPos>27</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>30</XPos>
+											<XPos>20</XPos>
 											<YPos>50</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -231,22 +236,22 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>100</YPos>
+											<YPos>68.31687</YPos>
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>5</XPos>
-											<YPos>100</YPos>
+											<XPos>2.82682</XPos>
+											<YPos>55.83133</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>14.9539170506912</XPos>
-											<YPos>60.184331797235</YPos>
+											<XPos>9.98463</XPos>
+											<YPos>44.34278</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>30</XPos>
-											<YPos>49.20635</YPos>
+											<XPos>20</XPos>
+											<YPos>18.01821</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>

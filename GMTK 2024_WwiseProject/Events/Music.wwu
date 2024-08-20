@@ -44,6 +44,9 @@
 				<Event Name="Music_EndRail" ID="{7CFCCA1E-E270-44FF-A243-43164DA14043}">
 					<ChildrenList>
 						<Action Name="" ID="{74E3FC90-DBA6-42FF-A3FC-7AC430F05423}" ShortID="68971090">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.25"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="MX_EndRail" ID="{875A59D9-9784-4EA6-9544-AB58EFD088DE}" WorkUnitID="{2DC1DCD6-C2DA-417F-A160-F4129917E20D}"/>
