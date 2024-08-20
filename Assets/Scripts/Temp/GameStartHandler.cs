@@ -24,6 +24,8 @@ public class GameStartHandler : MonoBehaviour
     [Tooltip("The music sound event")]
     [SerializeField] private AK.Wwise.Event musicSoundEvent;
 
+    public CanvasGroup tutorialText;
+
     private CustomFirstPersonController controller => _controller == null ? FindObjectOfType<CustomFirstPersonController>() : _controller;
     private CustomFirstPersonController _controller;
 
@@ -70,5 +72,14 @@ public class GameStartHandler : MonoBehaviour
         reticleManager.ShowReticle();
         controller.enabled = true;
 
+        yield return new WaitForSeconds(1F);
+
+        tutorialText.DOFade(1F, 0.5F)
+            .SetEase(Ease.OutQuad);
+
+        yield return new WaitForSeconds(5F);
+
+        tutorialText.DOFade(0F, 0.5F)
+            .SetEase(Ease.OutQuad);
     }
 }
