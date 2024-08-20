@@ -409,10 +409,15 @@ public class CustomFirstPersonController : MonoBehaviour
         jumpSwitch = footstepManager.GetSwitchToUse();
         jumpSwitch.SetValue(gameObject);
 
-        float jumpSpeed = Mathf.Sqrt(jumpHeight * 2 * Physics.gravity.magnitude);
+        float jumpSpeed = GetJumpSpeed(jumpHeight);
         AddForce(Vector3.up * jumpSpeed, ForceMode.VelocityChange);
         motionState = MotionState.Airborne;
 
         jumpSoundEvent.Post(gameObject);
+    }
+
+    public static float GetJumpSpeed(float height)
+	{
+        return Mathf.Sqrt(height * 2 * Physics.gravity.magnitude);
     }
 }
