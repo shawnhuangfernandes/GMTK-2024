@@ -795,7 +795,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3157003241" Type="User" Language="SFX" Hash="{32E42B34-1155-F5C4-93AC-58B0E1137B98}">
+		<SoundBank Id="3157003241" Type="User" Language="SFX" Hash="{E7C6BB39-C645-EAD9-7ADC-6E7FBD174D57}">
 			<ShortName>Test</ShortName>
 			<Path>Test.bnk</Path>
 			<Media>
@@ -950,7 +950,7 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="583713573" Name="Windmill" MaxAttenuation="170" DurationType="Infinite">
+				<Event Id="583713573" Name="Windmill" MaxAttenuation="100" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="302336510"/>
 						<MediaRef Id="792277974"/>
@@ -978,7 +978,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{F0D423FB-34B0-E7DA-4BF3-6206453A3879}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{03B6128F-19DA-332A-B39B-10B0ABF8B9B1}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
@@ -1035,5 +1035,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{433CCDAA-F6A2-A9F4-2297-45403369F796}</FileHash>
+	<FileHash>{4BA06489-A390-19B7-C0DA-2BC8011338C4}</FileHash>
 </SoundBanksInfo>
