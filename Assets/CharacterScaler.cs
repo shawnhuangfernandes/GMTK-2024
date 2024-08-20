@@ -43,7 +43,7 @@ public class CharacterScaler : MonoBehaviour
         if (size == sizeSetting)
             return;
 
-        if (sizeSetting.targetScale > size.targetScale)
+        if (sizeSetting.targetScale < size.targetScale)
             growSoundEvent.Post(gameObject);
         else
             shrinkSoundEvent.Post(gameObject);
