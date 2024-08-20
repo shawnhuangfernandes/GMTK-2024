@@ -74,26 +74,26 @@ public class FootstepManager : MonoBehaviour
 		footstepSoundEmitter.PlayAudioEvent();
 	}
 
-	private AK.Wwise.Switch GetSwitchToUse()
-	{
-		Renderer renderer = playerController.groundCollider.GetComponentInParent<Renderer>();
-		if (renderer == null)
-			return defaultAkSwitch;
+    public AK.Wwise.Switch GetSwitchToUse()
+    {
+        Renderer renderer = playerController.groundCollider.GetComponentInParent<Renderer>();
+        if (renderer == null)
+            return defaultAkSwitch;
 
-		// HACK: Rails have disabled renderers on their collider objects, because Dreamteck always creates MeshRenderers. Account for this:
-		if(renderer.transform.parent != null && !renderer.enabled)
-		{
-			renderer = renderer.transform.parent.GetComponentInParent<Renderer>();
-		}
+        // HACK: Rails have disabled renderers on their collider objects, because Dreamteck always creates MeshRenderers. Account for this:
+        if (renderer.transform.parent != null && !renderer.enabled)
+        {
+            renderer = renderer.transform.parent.GetComponentInParent<Renderer>();
+        }
 
 
-		// Determine which surface type to use for audio.
-		for (int i = 0; i < materialToAkSwitch.Count; i++)
-		{
-			if(System.Array.IndexOf(renderer.sharedMaterials, materialToAkSwitch[i].key) != -1)
-				return materialToAkSwitch[i].value;
-		}
+        // Determine which surface type to use for audio.
+        for (int i = 0; i < materialToAkSwitch.Count; i++)
+        {
+            if (System.Array.IndexOf(renderer.sharedMaterials, materialToAkSwitch[i].key) != -1)
+                return materialToAkSwitch[i].value;
+        }
 
-		return defaultAkSwitch;
-	}
+        return defaultAkSwitch;
+    }
 }

@@ -15,6 +15,12 @@ public class CharacterScaler : MonoBehaviour
     private CustomFirstPersonController firstPersonController;
     private DG.Tweening.Core.TweenerCore<float, float, DG.Tweening.Plugins.Options.FloatOptions> currentTween = null;
 
+    [Tooltip("The sound to play on shrinking")]
+    [SerializeField] private AK.Wwise.Event shrinkSoundEvent;
+
+    [Tooltip("The sound to play on growing")]
+    [SerializeField] private AK.Wwise.Event growSoundEvent;
+
     public void ResetState()
     {
         size = defaultSize;
@@ -34,6 +40,14 @@ public class CharacterScaler : MonoBehaviour
 
     public void ScaleTarget(SizeSetting sizeSetting)
     {
+        if (size == sizeSetting)
+            return;
+
+        if (sizeSetting.targetScale > size.targetScale)
+            growSoundEvent.Post(gameObject);
+        else
+            shrinkSoundEvent.Post(gameObject);
+
         size = sizeSetting;
         currentTween = DOTween.To(() => transform.localScale.x, (interpolant) => LerpCharacterMoveStats(interpolant), sizeSetting.targetScale, SCALE_LERP_DURATION);
     }
