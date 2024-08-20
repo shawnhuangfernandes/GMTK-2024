@@ -19,5 +19,5 @@ Effect plug-ins	ID	Name	Type				Notes
 	4052205305	Small_Reverb	Wwise RoomVerb			
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	694506031	Test_Bell_Loop	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Soundly Audio\BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 2_FBC78EF0.wem	694506031.wem	\Actor-Mixer Hierarchy\Default Work Unit\Test_Bell_Loop	
+	694506031	Test_Bell_Loop	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Soundly Audio\BELLLrg_Church Bell Steady Loop_B00M_WOF FREE 2_FBC78EF0.wem	694506031.wem	\Actor-Mixer Hierarchy\Default Work Unit\Test_Bell_Loop	
 
