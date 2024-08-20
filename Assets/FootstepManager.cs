@@ -76,7 +76,7 @@ public class FootstepManager : MonoBehaviour
 
     public AK.Wwise.Switch GetSwitchToUse()
     {
-        Renderer renderer = playerController.groundCollider.GetComponentInParent<Renderer>();
+        Renderer renderer = playerController.groundCollider?.GetComponentInParent<Renderer>();
         if (renderer == null)
             return defaultAkSwitch;
 
