@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1768554196222050297}
   - component: {fileID: 5179797241694153208}
   - component: {fileID: 3719073752510592316}
+  - component: {fileID: 1512284988694306488}
+  - component: {fileID: 2844652661373507079}
   m_Layer: 0
   m_Name: '[Interactable] WaypointMarker'
   m_TagString: Untagged
@@ -90,12 +92,36 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1512284988694306488}
+        m_TargetAssemblyTypeName: PlaySoundWwise, Assembly-CSharp
+        m_MethodName: PlayAudioEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onRepeatTrigger:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 877744329416538177}
         m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2844652661373507079}
+        m_TargetAssemblyTypeName: PlaySoundWwise, Assembly-CSharp
+        m_MethodName: PlayAudioEvent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -221,6 +247,52 @@ MonoBehaviour:
   glowColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   particleRenderer: {fileID: 1654605360655462320}
   player: {fileID: 0}
+--- !u!114 &1512284988694306488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770423406862419716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbc37f58524453489411810569e9d09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioEventToPlay:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d97225a7c2995b044839e91429a5c22f,
+      type: 2}
+  audioSwitchToUse:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+--- !u!114 &2844652661373507079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770423406862419716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbc37f58524453489411810569e9d09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioEventToPlay:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 506dc0a4951bf7c45930dd490f74c8e3,
+      type: 2}
+  audioSwitchToUse:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &3083750275601323838
 GameObject:
   m_ObjectHideFlags: 0
