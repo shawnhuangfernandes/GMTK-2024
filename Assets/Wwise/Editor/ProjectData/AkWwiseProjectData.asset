@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 49089d7fd8944846b20cbbf8b81997cd
     GuidInternal: 
-    m_lastTime: -8584774862835662579
+    m_lastTime: -8584774844489466874
     List:
     - name: Checkpoint_ReActv
       guid: 2045389072061f4795e7d88241b8149f
@@ -295,8 +295,59 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7a08af5726675d4bb3bbcd0d71ae2e77
     GuidInternal: 
-    m_lastTime: -8584774861198216436
+    m_lastTime: -8584774769287042315
     List:
+    - name: Leaves_Rustling
+      guid: 51fc08cb1f74cb4e928d4c78a5640d29
+      id: 3820402890
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a08af5726675d4bb3bbcd0d71ae2e77
+      - ElementName: Leaves_Rustling
+        ObjectType: 3
+        guid: 51fc08cb1f74cb4e928d4c78a5640d29
+      Path: Events\Default Work Unit\Leaves_Rustling
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Mailbox_Close
+      guid: 77c2719b2ff1d14b9cbcb768238e2742
+      id: 475518338
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a08af5726675d4bb3bbcd0d71ae2e77
+      - ElementName: Mailbox_Close
+        ObjectType: 3
+        guid: 77c2719b2ff1d14b9cbcb768238e2742
+      Path: Events\Default Work Unit\Mailbox_Close
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Mailbox_Open
+      guid: 0d151649fb6ae34e8b3a289e54adc0a5
+      id: 3717737302
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a08af5726675d4bb3bbcd0d71ae2e77
+      - ElementName: Mailbox_Open
+        ObjectType: 3
+        guid: 0d151649fb6ae34e8b3a289e54adc0a5
+      Path: Events\Default Work Unit\Mailbox_Open
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Metal_Land
       guid: e6ab66304051df42b7e6caeecd08ed1b
       id: 1164862133
@@ -393,7 +444,7 @@ MonoBehaviour:
     ParentPath: Events\Environment
     guid: 8ea0a893810d2448b96e92e177b8d654
     GuidInternal: 
-    m_lastTime: -8584774865092607338
+    m_lastTime: -8584774844502461760
     List:
     - name: Play_Ambience
       guid: 3644649cbd50d84a9765b503e2b859f2
@@ -457,7 +508,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: b35f488a5d535f41b5604b9336bb7454
     GuidInternal: 
-    m_lastTime: -8584775566874113828
+    m_lastTime: -8584774769287037272
     List:
     - name: Music_EndRail
       guid: 1ecafc7c70e2ff44a24343164da14043
@@ -510,6 +561,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 16.142855
       minDuration: 16.142855
+    - name: Stop_Music_EndRail
+      guid: aefe9afce6fe3945b309827334dee052
+      id: 3350983311
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: b35f488a5d535f41b5604b9336bb7454
+      - ElementName: Stop_Music_EndRail
+        ObjectType: 3
+        guid: aefe9afce6fe3945b309827334dee052
+      Path: Events\Music\Stop_Music_EndRail
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\Player.wwu
     PathAndIcons:
     - ElementName: Events
@@ -521,8 +589,25 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: 1e1b3d425e97e842bd97d5598dde0d35
     GuidInternal: 
-    m_lastTime: -8584774865092332247
+    m_lastTime: -8584774808443869958
     List:
+    - name: Play_Player_WindRush
+      guid: 3653c5485bf13f44b2c4d0c647b62954
+      id: 948940024
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 1e1b3d425e97e842bd97d5598dde0d35
+      - ElementName: Play_Player_WindRush
+        ObjectType: 3
+        guid: 3653c5485bf13f44b2c4d0c647b62954
+      Path: Events\Player\Play_Player_WindRush
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Player_Footsteps
       guid: 24e3f7944fb3e24784ee53db04fb3b8b
       id: 1730208058
@@ -659,6 +744,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_Player_WindRush
+      guid: 8def5b40bad1f149a8f1e6f500888e23
+      id: 1838579378
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 1e1b3d425e97e842bd97d5598dde0d35
+      - ElementName: Stop_Player_WindRush
+        ObjectType: 3
+        guid: 8def5b40bad1f149a8f1e6f500888e23
+      Path: Events\Player\Stop_Player_WindRush
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -671,7 +773,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 2db9b6da6575f7428329572c0b05a910
     GuidInternal: 
-    m_lastTime: -8584776872981739323
+    m_lastTime: -8584774769287002079
     List:
     - name: Player_Size
       guid: 0cfa0bf4012d20468f7d006735cb5bf5
@@ -687,6 +789,34 @@ MonoBehaviour:
         ObjectType: 13
         guid: 0cfa0bf4012d20468f7d006735cb5bf5
       Path: Game Parameters\Default Work Unit\Player_Size
+    - name: Player_Speed
+      guid: 789fa89e1bb0084f94d016943e0e7c33
+      id: 1062779386
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2db9b6da6575f7428329572c0b05a910
+      - ElementName: Player_Speed
+        ObjectType: 13
+        guid: 789fa89e1bb0084f94d016943e0e7c33
+      Path: Game Parameters\Default Work Unit\Player_Speed
+    - name: Wind_Gusts
+      guid: fa9a3b5876d8cf45bc352fc3be92b703
+      id: 1477008682
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2db9b6da6575f7428329572c0b05a910
+      - ElementName: Wind_Gusts
+        ObjectType: 13
+        guid: fa9a3b5876d8cf45bc352fc3be92b703
+      Path: Game Parameters\Default Work Unit\Wind_Gusts
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:

@@ -33,6 +33,8 @@ public class FootstepManager : MonoBehaviour
 
 	private void Update()
 	{
+		if (playerController.enabled == false) return;
+
 		float speed = playerController.velocity.magnitude;
 		bool canStep = (
 			playerController.motionState == CustomFirstPersonController.MotionState.Grounded
