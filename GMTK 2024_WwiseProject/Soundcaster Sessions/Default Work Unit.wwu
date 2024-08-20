@@ -10,6 +10,10 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Windmill" ID="{23255D2E-9608-458B-A104-DB5ED4951350}" WorkUnitID="{57AF087A-6726-4B5D-B3BB-CD0D71AE2E77}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Player_Shrinks" ID="{5ACF63CD-973F-4DEA-B845-B586802CFEFE}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -21,7 +25,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Player_Size" ID="{F40BFA0C-2D01-4620-8F7D-006735CB5BF5}"/>
-							<Value>50.9029345372461</Value>
+							<Value>50</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
@@ -72,6 +76,14 @@
 						<Module>
 							<ObjectRef Name="Player_Grows" ID="{9DBEC3C1-5EB1-450B-9572-1B5A681D00B0}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
 							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Windmill" ID="{23255D2E-9608-458B-A104-DB5ED4951350}" WorkUnitID="{57AF087A-6726-4B5D-B3BB-CD0D71AE2E77}"/>
+							<Position X="4" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Test_Bell_Loop" ID="{177010C3-C7C2-46DB-98FD-5C7959F123EA}" WorkUnitID="{57AF087A-6726-4B5D-B3BB-CD0D71AE2E77}"/>
+							<Position X="4" Y="3"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
