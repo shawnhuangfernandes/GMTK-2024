@@ -550,14 +550,10 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{8ED6DAC0-E413-0234-B4A3-A7373554179B}">
+		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{596A1E22-C71B-5747-352E-94EFC592D1DB}">
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 			<Media>
-				<File Id="26071193" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_CheckPoint_Chimes-001.wav</ShortName>
-					<CachePath>SFX/SFX_CheckPoint_Chimes-001_818F3B66.wem</CachePath>
-				</File>
 				<File Id="37759664" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_CheckPoint_ReActv_Paper-001.wav</ShortName>
 					<CachePath>SFX/SFX_CheckPoint_ReActv_Paper-001_818F3B66.wem</CachePath>
@@ -594,6 +590,10 @@
 					<ShortName>Wind_Gusts-009.wav</ShortName>
 					<CachePath>SFX/Wind_Gusts-009_818F3B66.wem</CachePath>
 				</File>
+				<File Id="360785982" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Checkpoint_HandPan-002.wav</ShortName>
+					<CachePath>SFX/SFX_Checkpoint_HandPan-002_818F3B66.wem</CachePath>
+				</File>
 				<File Id="386437277" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wind_Gusts-007.wav</ShortName>
 					<CachePath>SFX/Wind_Gusts-007_818F3B66.wem</CachePath>
@@ -626,10 +626,6 @@
 					<ShortName>Wind_Gusts-006.wav</ShortName>
 					<CachePath>SFX/Wind_Gusts-006_818F3B66.wem</CachePath>
 				</File>
-				<File Id="534019865" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_CheckPoint_Chimes-003.wav</ShortName>
-					<CachePath>SFX/SFX_CheckPoint_Chimes-003_818F3B66.wem</CachePath>
-				</File>
 				<File Id="563563347" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_CheckPoint_ReActv_Paper-004.wav</ShortName>
 					<CachePath>SFX/SFX_CheckPoint_ReActv_Paper-004_818F3B66.wem</CachePath>
@@ -641,14 +637,6 @@
 				<File Id="591951204" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_CheckPoint_ReActv_Paper-006.wav</ShortName>
 					<CachePath>SFX/SFX_CheckPoint_ReActv_Paper-006_818F3B66.wem</CachePath>
-				</File>
-				<File Id="603001178" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_CheckPoint_Chimes-005.wav</ShortName>
-					<CachePath>SFX/SFX_CheckPoint_Chimes-005_818F3B66.wem</CachePath>
-				</File>
-				<File Id="627785128" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_CheckPoint_Chimes-004.wav</ShortName>
-					<CachePath>SFX/SFX_CheckPoint_Chimes-004_818F3B66.wem</CachePath>
 				</File>
 				<File Id="648909529" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_CheckPoint_Wind_Gust-005.wav</ShortName>
@@ -682,9 +670,9 @@
 					<ShortName>SFX_CheckPoint_ReActv_Chimes-001.wav</ShortName>
 					<CachePath>SFX/SFX_CheckPoint_ReActv_Chimes-001_818F3B66.wem</CachePath>
 				</File>
-				<File Id="875943764" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_CheckPoint_Chimes-002.wav</ShortName>
-					<CachePath>SFX/SFX_CheckPoint_Chimes-002_818F3B66.wem</CachePath>
+				<File Id="904246870" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Checkpoint_HandPan-003.wav</ShortName>
+					<CachePath>SFX/SFX_Checkpoint_HandPan-003_818F3B66.wem</CachePath>
 				</File>
 				<File Id="906306108" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_CheckPoint_Wind_Gust-003.wav</ShortName>
@@ -700,15 +688,19 @@
 				</File>
 				<File Id="952505378" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_CheckPoint_Paper-002.wav</ShortName>
-					<CachePath>SFX/SFX_CheckPoint_Paper-002_818F3B66.wem</CachePath>
+					<CachePath>SFX/SFX_CheckPoint_Paper-002_A7C88D0B.wem</CachePath>
 				</File>
 				<File Id="972721749" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_CheckPoint_Paper-003.wav</ShortName>
-					<CachePath>SFX/SFX_CheckPoint_Paper-003_818F3B66.wem</CachePath>
+					<CachePath>SFX/SFX_CheckPoint_Paper-003_589B8760.wem</CachePath>
 				</File>
 				<File Id="1038576000" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_CheckPoint_Paper-001.wav</ShortName>
-					<CachePath>SFX/SFX_CheckPoint_Paper-001_818F3B66.wem</CachePath>
+					<CachePath>SFX/SFX_CheckPoint_Paper-001_BE188F48.wem</CachePath>
+				</File>
+				<File Id="1054894463" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Checkpoint_HandPan-001.wav</ShortName>
+					<CachePath>SFX/SFX_Checkpoint_HandPan-001_818F3B66.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -739,23 +731,21 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="3400834491" Name="Player_Checkpoint" DurationType="OneShot" DurationMin="11.285708" DurationMax="11.285708">
+				<Event Id="3400834491" Name="Player_Checkpoint" DurationType="OneShot" DurationMin="13.285708" DurationMax="13.285708">
 					<MediaRefs>
-						<MediaRef Id="26071193"/>
 						<MediaRef Id="79701115"/>
 						<MediaRef Id="180191431"/>
+						<MediaRef Id="360785982"/>
 						<MediaRef Id="426866245"/>
-						<MediaRef Id="534019865"/>
-						<MediaRef Id="603001178"/>
-						<MediaRef Id="627785128"/>
 						<MediaRef Id="648909529"/>
 						<MediaRef Id="794164658"/>
-						<MediaRef Id="875943764"/>
+						<MediaRef Id="904246870"/>
 						<MediaRef Id="906306108"/>
 						<MediaRef Id="928497713"/>
 						<MediaRef Id="952505378"/>
 						<MediaRef Id="972721749"/>
 						<MediaRef Id="1038576000"/>
+						<MediaRef Id="1054894463"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1478396515" Name="Player_Checkpoint_ReActv" DurationType="OneShot" DurationMin="4.4285626" DurationMax="5.654896">
@@ -855,7 +845,7 @@
 				<GameParameter Id="3040674790" Name="Player_Size"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{781A7949-D1E3-B387-AB6A-D8EADC54DBC0}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{0455737A-4F5C-C012-3857-F222430D7AF2}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
@@ -912,5 +902,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4465CA74-5E30-C6C1-45A0-8B1F683E93A4}</FileHash>
+	<FileHash>{7956A600-8990-C531-AC88-7A45CEAF1D79}</FileHash>
 </SoundBanksInfo>
