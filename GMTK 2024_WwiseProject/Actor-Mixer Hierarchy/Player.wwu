@@ -5575,6 +5575,335 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
+				<ActorMixer Name="Player_Checkpoint_ReActv" ID="{D2AE53B2-3247-4F0B-9102-B4CE266275D3}" ShortID="747154852">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Checkpoint_ReAvt_Chimes" ID="{17972FD2-E077-4233-8C3B-26F8739CB5FF}" ShortID="326170274">
+							<PropertyList>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_CheckPoint_ReActv_Chimes-001" ID="{08A935E0-EEE9-4D06-A2C6-24DBF93FD0FB}" ShortID="66516050">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_CheckPoint_ReActv_Chimes-001" ID="{E75F6373-F709-49F1-BA78-DCD97F0D5829}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_CheckPoint_ReActv_Chimes-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="853080617"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_CheckPoint_ReActv_Chimes-001" ID="{E75F6373-F709-49F1-BA78-DCD97F0D5829}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_CheckPoint_ReActv_Chimes-002" ID="{0430950A-5387-402B-A373-FAD64B53EF68}" ShortID="743013683">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_CheckPoint_ReActv_Chimes-002" ID="{CC535564-9DA1-46B0-AD9E-080BD94CBE22}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_CheckPoint_ReActv_Chimes-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="306508150"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_CheckPoint_ReActv_Chimes-002" ID="{CC535564-9DA1-46B0-AD9E-080BD94CBE22}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_CheckPoint_ReActv_Chimes-003" ID="{662533C1-ADD5-4CA1-B723-8796F042691E}" ShortID="865546438">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_CheckPoint_ReActv_Chimes-003" ID="{52A47BAE-0ACC-47B4-AB39-421F8D7ADC4A}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_CheckPoint_ReActv_Chimes-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="52652950"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_CheckPoint_ReActv_Chimes-003" ID="{52A47BAE-0ACC-47B4-AB39-421F8D7ADC4A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_CheckPoint_ReActv_Chimes-004" ID="{B8B819A3-7131-4E06-8970-24E500EAA409}" ShortID="703505581">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_CheckPoint_ReActv_Chimes-004" ID="{7A70C0E8-72CE-47AF-AC52-ABB7731A66C3}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_CheckPoint_ReActv_Chimes-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="740984033"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_CheckPoint_ReActv_Chimes-004" ID="{7A70C0E8-72CE-47AF-AC52-ABB7731A66C3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_CheckPoint_ReActv_Chimes-005" ID="{C183B7F5-0137-4804-98C3-0C241A5BF78E}" ShortID="194944994">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_CheckPoint_ReActv_Chimes-005" ID="{4B5AAFBF-5170-4184-800B-0604D5ED0F55}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_CheckPoint_ReActv_Chimes-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="701248913"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_CheckPoint_ReActv_Chimes-005" ID="{4B5AAFBF-5170-4184-800B-0604D5ED0F55}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Checkpoint_ReAvt_Paper" ID="{E3DA811E-CDDA-4C50-8DFD-216232322C76}" ShortID="623599634">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_CheckPoint_ReActv_Paper-001" ID="{E1083813-EA01-40E5-9A57-28DAC37B21CE}" ShortID="576236155">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_CheckPoint_ReActv_Paper-001" ID="{6451C61D-B151-4DFA-AE5D-28A6F5ECBF8D}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_CheckPoint_ReActv_Paper-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="37759664"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_CheckPoint_ReActv_Paper-001" ID="{6451C61D-B151-4DFA-AE5D-28A6F5ECBF8D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_CheckPoint_ReActv_Paper-002" ID="{06322F8E-0EA4-459F-AA51-F59EDDACB1E3}" ShortID="323968722">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_CheckPoint_ReActv_Paper-002" ID="{B178F5E6-B51A-48C9-8D35-2A6277787BE4}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_CheckPoint_ReActv_Paper-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="419824713"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_CheckPoint_ReActv_Paper-002" ID="{B178F5E6-B51A-48C9-8D35-2A6277787BE4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_CheckPoint_ReActv_Paper-003" ID="{33ED482D-3119-4026-9100-F604BE5EF4EB}" ShortID="110507498">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_CheckPoint_ReActv_Paper-003" ID="{19C3DFCE-3C6F-40C3-9C7C-95EF9B7654F2}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_CheckPoint_ReActv_Paper-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="399694132"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_CheckPoint_ReActv_Paper-003" ID="{19C3DFCE-3C6F-40C3-9C7C-95EF9B7654F2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_CheckPoint_ReActv_Paper-004" ID="{E37BD71D-7D93-47DE-9F12-B251C4457566}" ShortID="519789666">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_CheckPoint_ReActv_Paper-004" ID="{1BC382D2-E038-470C-94E4-A25CF7E9B846}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_CheckPoint_ReActv_Paper-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="563563347"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_CheckPoint_ReActv_Paper-004" ID="{1BC382D2-E038-470C-94E4-A25CF7E9B846}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_CheckPoint_ReActv_Paper-005" ID="{8C928805-346D-4B97-A5C2-FA1B512E962C}" ShortID="934376229">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_CheckPoint_ReActv_Paper-005" ID="{68E4B669-F2EB-4B29-8C99-B83B32899F50}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_CheckPoint_ReActv_Paper-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="586445591"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_CheckPoint_ReActv_Paper-005" ID="{68E4B669-F2EB-4B29-8C99-B83B32899F50}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_CheckPoint_ReActv_Paper-006" ID="{6291DF55-BB85-4AF8-A0FB-E97277B71920}" ShortID="699032896">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_CheckPoint_ReActv_Paper-006" ID="{F8D68410-B49D-4695-AB4E-1F20CA8A475E}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_CheckPoint_ReActv_Paper-006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="591951204"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_CheckPoint_ReActv_Paper-006" ID="{F8D68410-B49D-4695-AB4E-1F20CA8A475E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_CheckPoint_ReActv_Paper-007" ID="{B5D06A9A-A2AA-4EA4-BF59-2D0D28058D61}" ShortID="727586838">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_CheckPoint_ReActv_Paper-007" ID="{FAD55CB1-9660-4A72-847E-E64B0F748D8A}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_CheckPoint_ReActv_Paper-007.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="803973415"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_CheckPoint_ReActv_Paper-007" ID="{FAD55CB1-9660-4A72-847E-E64B0F748D8A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_CheckPoint_ReActv_Paper-008" ID="{5AA33268-C77D-472E-97E7-C48B6A85AD0B}" ShortID="996176893">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_CheckPoint_ReActv_Paper-008" ID="{BA4239A5-DD63-43FA-BAD2-0491229565C4}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_CheckPoint_ReActv_Paper-008.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="162159929"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_CheckPoint_ReActv_Paper-008" ID="{BA4239A5-DD63-43FA-BAD2-0491229565C4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -169,6 +169,24 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Player_Checkpoint_ReActv" ID="{32F52A43-ECA6-4BAF-8CDF-6DD82870A2C8}">
+					<ChildrenList>
+						<Action Name="" ID="{BB5CE939-40D7-44EA-B5B7-0B9471C4DF26}" ShortID="619586775">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Checkpoint_ReAvt_Chimes" ID="{17972FD2-E077-4233-8C3B-26F8739CB5FF}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F1A27AC3-300D-4E1A-BA79-E59CE394EA2B}" ShortID="1014121880">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Checkpoint_ReAvt_Paper" ID="{E3DA811E-CDDA-4C50-8DFD-216232322C76}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
