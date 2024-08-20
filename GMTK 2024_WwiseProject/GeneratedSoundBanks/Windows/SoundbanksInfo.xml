@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{3D90E861-FE43-62BC-C705-B2FD2692358A}">
+		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{5E361E39-5902-458F-AD3C-E9218DF82502}">
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<Media>
@@ -39,7 +39,7 @@
 				</File>
 				<File Id="188784232" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_WindRush.wav</ShortName>
-					<CachePath>SFX/Player_WindRush_C64B63BB.wem</CachePath>
+					<CachePath>SFX/Player_WindRush_0CBCC629.wem</CachePath>
 				</File>
 				<File Id="193658144" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Respawn_Wind-001.wav</ShortName>
@@ -550,7 +550,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{DBA153FE-848D-CD95-1D81-8FD573C91B32}">
+		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{8ED6DAC0-E413-0234-B4A3-A7373554179B}">
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 			<Media>
@@ -713,6 +713,7 @@
 			</Media>
 			<Plugins>
 				<Custom>
+					<Plugin Id="829618371" Name="Meter (Custom)" LibName="Wwise Meter" LibId="8454147"/>
 					<Plugin Id="925587760" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 				</Custom>
 			</Plugins>
@@ -733,6 +734,7 @@
 					</MediaRefs>
 					<PluginRefs>
 						<Custom>
+							<PluginRef Id="829618371"/>
 							<PluginRef Id="925587760"/>
 						</Custom>
 					</PluginRefs>
@@ -775,7 +777,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{1332C4BE-168C-D681-B071-18016348FF1A}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{6EF95280-5FC9-FDF7-227B-16EB23EDBF86}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -795,6 +797,7 @@
 			</Busses>
 			<GameParameters>
 				<GameParameter Id="1062779386" Name="Player_Speed"/>
+				<GameParameter Id="1477008682" Name="Wind_Gusts"/>
 				<GameParameter Id="3040674790" Name="Player_Size"/>
 			</GameParameters>
 			<StateGroups>
@@ -852,7 +855,7 @@
 				<GameParameter Id="3040674790" Name="Player_Size"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{463C239F-8D2A-AD48-EEA2-2C03CB23AF54}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{AE6EECCE-5010-38B3-C553-92E98391BD4F}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
@@ -908,5 +911,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8D04F71B-2BCA-F805-1B29-63F9E17658E7}</FileHash>
+	<FileHash>{67F740FF-800B-6C29-1F17-D7FCA0740C45}</FileHash>
 </SoundBanksInfo>

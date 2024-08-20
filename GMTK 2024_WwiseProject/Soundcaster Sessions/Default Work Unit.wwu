@@ -24,6 +24,10 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="Wind_Gusts" ID="{583B9AFA-D876-45CF-BC35-2FC3BE92B703}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Player_Size" ID="{F40BFA0C-2D01-4620-8F7D-006735CB5BF5}"/>
 							<Value>50</Value>
 						</RTPCValue>
@@ -88,6 +92,10 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="Wind_Gusts" ID="{583B9AFA-D876-45CF-BC35-2FC3BE92B703}"/>
+							<Value>-5.36229635376261</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Player_Size" ID="{F40BFA0C-2D01-4620-8F7D-006735CB5BF5}"/>
 							<Value>50</Value>
 						</RTPCValue>
@@ -148,6 +156,26 @@
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Leaves and Wind" ID="{CBDA991B-24CA-40C2-85C1-970D2935A109}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Ambience" ID="{9C644436-50BD-4AD8-9765-B503E2B859F2}" WorkUnitID="{93A8A08E-0D81-4824-B96E-92E177B8D654}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Leaves_Rustling" ID="{CB08FC51-741F-4ECB-928D-4C78A5640D29}" WorkUnitID="{57AF087A-6726-4B5D-B3BB-CD0D71AE2E77}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Wind_Gusts" ID="{583B9AFA-D876-45CF-BC35-2FC3BE92B703}"/>
+							<Value>-48</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

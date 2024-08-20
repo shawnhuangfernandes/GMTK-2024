@@ -81,6 +81,7 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="Wind_Gusts" ID="{168B32CA-E162-461F-B9CC-E0D220350313}" ShortID="128767950">
 							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-2</Value>
@@ -317,6 +318,26 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{E706090D-4B1E-43DC-97DC-AD5D09AC8287}" ShortID="434910193">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Meter (Custom)" ID="{B31714D8-5B8B-4C3E-BBB1-564161C6FA86}" ShortID="829618371" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">																<PluginData>
+	<GameParameter Name="Wind_Gusts" ID="{583B9AFA-D876-45CF-BC35-2FC3BE92B703}"/>
+</PluginData>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 						</RandomSequenceContainer>
 						<Sound Name="Wind_Silence" ID="{E45530DB-0F79-4CFE-AF26-50D853D04C7C}" ShortID="1055506213">
 							<ReferenceList>
