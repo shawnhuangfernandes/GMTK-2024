@@ -48,11 +48,6 @@ public class GameFinaleSequence : MonoBehaviour
 
         yield return new WaitForSeconds(timeUntilSincerely);
 
-        fadeToWhiteFader.DOFade(1F, 1F)
-        .SetEase(Ease.InQuad)
-        .OnComplete(() =>
-        {
-            // TODO: Restart the scene
-        });
+        FindObjectOfType<Fader>().FadeInAndRestart();
     }
 }
