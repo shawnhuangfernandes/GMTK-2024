@@ -713,6 +713,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="Checkpoint_Wind_Swell" ID="{B9CF9455-7F6D-46B9-ACF5-8BD743161B8C}" ShortID="1004424433">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
@@ -918,6 +925,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="SFX_CheckPoint_Paper-001" ID="{2D9A7B38-0433-4463-B266-F5283CC6A3D9}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="3.53494739583331"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.53494739583331"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_CheckPoint_Paper-001.wav</AudioFile>
 											<MediaIDList>
@@ -940,6 +952,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="SFX_CheckPoint_Paper-002" ID="{F7D9F406-683A-46BC-AA50-90457FA8E371}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="3.01300885416667"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.36887604166666"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_CheckPoint_Paper-002.wav</AudioFile>
 											<MediaIDList>
@@ -962,6 +979,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="SFX_CheckPoint_Paper-003" ID="{86B425C4-1DC9-4621-A266-D95985DED615}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="3.10790677083331"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.10790677083331"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_CheckPoint_Paper-003.wav</AudioFile>
 											<MediaIDList>
@@ -977,8 +999,18 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Checkpoint_Chimes" ID="{855D25E9-8306-453B-BCA5-F406CC9151ED}" ShortID="3639297">
 							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1097,6 +1129,97 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="SFX_CheckPoint_Chimes-005" ID="{70C53B7F-9A26-4CBA-8BA1-CDFAF9A1EF7F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Checkpoint_Handpan" ID="{C9B95E4E-AD81-4F8E-986D-4C96899C9184}" ShortID="118496635">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>40</Value>
+									</ValueList>
+								</Property>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_Checkpoint_HandPan-001" ID="{065B2E0B-EAFC-49C0-9E0C-F41B7EC36967}" ShortID="33469443">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Checkpoint_HandPan-001" ID="{812E0706-0A8F-41C1-9080-3BA575FDFB34}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Checkpoint_HandPan-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1054894463"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Checkpoint_HandPan-001" ID="{812E0706-0A8F-41C1-9080-3BA575FDFB34}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Checkpoint_HandPan-002" ID="{A8B7322C-55FF-4070-B0C2-7A072BCC1F98}" ShortID="270938983">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Checkpoint_HandPan-002" ID="{B71294A9-A96E-4890-93F4-5A7B65A49FD3}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Checkpoint_HandPan-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="360785982"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Checkpoint_HandPan-002" ID="{B71294A9-A96E-4890-93F4-5A7B65A49FD3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Checkpoint_HandPan-003" ID="{89F2426A-23F4-4BA2-97D8-72A2CB990F5E}" ShortID="233728319">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Checkpoint_HandPan-003" ID="{AA7E00EA-84B9-4C5E-B298-77F259E52D6A}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Checkpoint_HandPan-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="904246870"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Checkpoint_HandPan-003" ID="{AA7E00EA-84B9-4C5E-B298-77F259E52D6A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
