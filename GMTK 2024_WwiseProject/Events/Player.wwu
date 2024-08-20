@@ -137,6 +137,31 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Player_WindRush" ID="{48C55336-F15B-443F-B2C4-D0C647B62954}">
+					<ChildrenList>
+						<Action Name="" ID="{BA08A3DA-3022-4D44-8869-DA6CE3F47C73}" ShortID="667681092">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_WindRush" ID="{B7D2A583-EA7B-46D2-B503-7F9DDBC92F71}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Player_WindRush" ID="{405BEF8D-D1BA-49F1-A8F1-E6F500888E23}">
+					<ChildrenList>
+						<Action Name="" ID="{73D860C1-67A8-4171-93B5-996BD951C652}" ShortID="953290342">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_WindRush" ID="{B7D2A583-EA7B-46D2-B503-7F9DDBC92F71}" WorkUnitID="{FD725C5E-3E3F-4B4A-B0E4-82082FA97DCD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

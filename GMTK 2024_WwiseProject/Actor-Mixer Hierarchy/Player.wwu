@@ -4657,6 +4657,177 @@
 								<ActiveSource Name="Rail_Grind" ID="{311E245B-19BD-4B44-9DA2-E5D2C36A4423}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Player_WindRush" ID="{B7D2A583-EA7B-46D2-B503-7F9DDBC92F71}" ShortID="593638012">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6361AA68-4DA0-4B39-B3C3-F99B27350AEE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Plr_Death_Fall_WindRush" ID="{20C402CF-38AA-4AE5-BF03-D1EC0548070D}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="495.463"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0480295758928571"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.464285900297617"/>
+										<Property Name="LoopEnd" Type="Real64" Value="5.20320405505953"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="8.94951097470238"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SFX_Plr_Death_Fall_WindRush.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="421942647"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="Player_WindRush" ID="{5D017158-EEC5-44CD-9174-381739400907}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="188.372"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.325985900297619"/>
+										<Property Name="LoopEnd" Type="Real64" Value="3.30489854910714"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Player_WindRush.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="188784232"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{BDE6E649-A45D-4142-85E8-27C94B5931B9}" ShortID="510018335">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Player_Speed" ID="{9EA89F78-B01B-4F08-94D0-16943E0E7C33}" WorkUnitID="{DAB6B92D-7565-42F7-8329-572C0B05A910}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{08D89B50-8CB8-4D8D-A57C-257515CF2DA6}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>25</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{EB7A756F-D0D9-4C25-924D-1BEC68B131ED}" ShortID="484411738">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Player_Speed" ID="{9EA89F78-B01B-4F08-94D0-16943E0E7C33}" WorkUnitID="{DAB6B92D-7565-42F7-8329-572C0B05A910}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{76E95C09-96B2-4DF4-848F-19566D940301}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>40</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>69.94382</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{2E5D6C3F-0DBC-4825-A9E8-A80C26B70CB9}" ShortID="203975558">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Highpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Player_Speed" ID="{9EA89F78-B01B-4F08-94D0-16943E0E7C33}" WorkUnitID="{DAB6B92D-7565-42F7-8329-572C0B05A910}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{D448E05C-E53D-441C-B420-A6777F54C433}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>40</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>69.80337</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Player_WindRush" ID="{5D017158-EEC5-44CD-9174-381739400907}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Player_Respawn" ID="{4000C36C-1953-43C3-B2A7-92C3F3A079BE}" ShortID="946421696">

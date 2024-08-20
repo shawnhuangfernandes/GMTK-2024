@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{30250E14-DB27-6CAE-5838-BB75C85AFC18}">
+		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{3D90E861-FE43-62BC-C705-B2FD2692358A}">
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<Media>
@@ -36,6 +36,10 @@
 				<File Id="155080818" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footstep_07.wav</ShortName>
 					<CachePath>SFX/Footstep_07_818F3B66.wem</CachePath>
+				</File>
+				<File Id="188784232" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_WindRush.wav</ShortName>
+					<CachePath>SFX/Player_WindRush_C64B63BB.wem</CachePath>
 				</File>
 				<File Id="193658144" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Respawn_Wind-001.wav</ShortName>
@@ -254,6 +258,11 @@
 				</ShareSets>
 			</Plugins>
 			<Events>
+				<Event Id="948940024" Name="Play_Player_WindRush" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="188784232"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1730208058" Name="Player_Footsteps" DurationType="OneShot" DurationMin="1.2607603" DurationMax="1.4758322">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -525,8 +534,10 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="581323921" Name="Rail_Grind_Stop" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1838579378" Name="Stop_Player_WindRush" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<GameParameters>
+				<GameParameter Id="1062779386" Name="Player_Speed"/>
 				<GameParameter Id="3040674790" Name="Player_Size"/>
 			</GameParameters>
 			<SwitchGroups>
@@ -764,7 +775,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F4832C81-AA02-F060-2777-D46DC54CB76B}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{DFAF16BC-A628-8204-2076-34172685E8B3}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -783,6 +794,7 @@
 				<Bus Id="4279841335" Name="Respawn"/>
 			</Busses>
 			<GameParameters>
+				<GameParameter Id="1062779386" Name="Player_Speed"/>
 				<GameParameter Id="3040674790" Name="Player_Size"/>
 			</GameParameters>
 			<StateGroups>
@@ -896,5 +908,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4A7246A2-FFD7-4E49-0FD8-AC1D6BE862A2}</FileHash>
+	<FileHash>{86E7096D-EDD6-1F9B-DDE7-C1C89FECB0D3}</FileHash>
 </SoundBanksInfo>

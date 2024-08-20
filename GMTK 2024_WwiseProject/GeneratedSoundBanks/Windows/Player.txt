@@ -1,10 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
 	581323921	Rail_Grind_Stop			\Player\Rail_Grind_Stop	
 	918267603	Rail_Grind_Start			\Player\Rail_Grind_Start	
+	948940024	Play_Player_WindRush			\Player\Play_Player_WindRush	
 	1282282006	Player_Landing			\Player\Player_Landing	
 	1305133589	Player_Jump			\Player\Player_Jump	
 	1310416267	Player_Grows			\Player\Player_Grows	
 	1730208058	Player_Footsteps			\Player\Player_Footsteps	
+	1838579378	Stop_Player_WindRush			\Player\Stop_Player_WindRush	
 	2161713971	Player_Respawn			\Player\Player_Respawn	
 	3721520397	Player_Shrinks			\Player\Player_Shrinks	
 
@@ -17,6 +19,7 @@ Switch	ID	Name	Switch Group			Notes
 	4248645337	Grass	Footsteps			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	1062779386	Player_Speed			\Default Work Unit\Player_Speed	
 	3040674790	Player_Size			\Default Work Unit\Player_Size	
 
 Effect plug-ins	ID	Name	Type				Notes
@@ -31,6 +34,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	65851852	Gak_09	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Gak_09_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Footsteps\Rock\Gak\Gak_09		131196
 	121327956	Respawn_Paper-001	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Respawn_Paper-001_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Respawn\Respawn_Paper\Respawn_Paper-001		800760
 	155080818	Footstep_07	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Footstep_07_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Jump\Rock\Left\Footstep_07		129796
+	188784232	Player_WindRush	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Player_WindRush_C64B63BB.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_WindRush		684812
 	193658144	Respawn_Wind-001	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Respawn_Wind-001_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Respawn\Respawn_Wind\Respawn_Wind-001		846816
 	203386750	Grass_03	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Grass_03_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Grass\Grass\Grass_03		126240
 	238272670	Footstep_01	D:\Projects\Game Jams\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Footstep_01_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Jump\Rock\Left\Footstep_01		128584
