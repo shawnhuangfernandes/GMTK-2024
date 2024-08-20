@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1140094668	Music_EndRail			\Music\Music_EndRail	
+	1369021357	Stop_Music_All			\Music\Stop_Music_All	
 	1699343283	Play_Music_Menu			\Music\Play_Music_Menu	
 	3350983311	Stop_Music_EndRail			\Music\Stop_Music_EndRail	
 	3540125970	PressStart			\Music\PressStart	

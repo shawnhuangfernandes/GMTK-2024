@@ -550,7 +550,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{D766A629-8B37-7928-B94F-EFEF52062574}">
+		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{B8BF30D7-D9A1-0AED-0D12-633B0A187E35}">
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 			<Media>
@@ -750,6 +750,7 @@
 						<MediaRef Id="853080617"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2477713992" Name="Stop_Ambience" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{6EF95280-5FC9-FDF7-227B-16EB23EDBF86}">
@@ -978,7 +979,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{164A8D63-F542-BEEC-5C97-10DAFEC250F4}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{B7E567AA-F9F4-653E-ECDB-A3996CC88688}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
@@ -1031,9 +1032,10 @@
 						<MediaRef Id="713724561"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1369021357" Name="Stop_Music_All" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3350983311" Name="Stop_Music_EndRail" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E9D520A7-2731-CB1E-A2D7-616C91C5046D}</FileHash>
+	<FileHash>{FC60BF3B-F303-C53C-6267-0F7656616693}</FileHash>
 </SoundBanksInfo>

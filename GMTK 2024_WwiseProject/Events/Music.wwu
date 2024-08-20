@@ -72,6 +72,46 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_Music_All" ID="{0CF49569-28C5-462F-A430-A79F9D7845CB}">
+					<ChildrenList>
+						<Action Name="" ID="{C4CDF951-D991-4E6E-8809-6738C02CA78D}" ShortID="139218783">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MX_EndRail" ID="{875A59D9-9784-4EA6-9544-AB58EFD088DE}" WorkUnitID="{2DC1DCD6-C2DA-417F-A160-F4129917E20D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{76385993-C7FE-4E1C-80A2-7C9EFCB37D3D}" ShortID="152330271">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MX_Menu" ID="{B9640DFA-0854-4891-8A42-A5E30D93FA18}" WorkUnitID="{2DC1DCD6-C2DA-417F-A160-F4129917E20D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C57CAA46-A5AE-4B38-BDA4-30D0421DE522}" ShortID="136761127">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MX_PressStart" ID="{2CAFD1E6-D421-49BB-AADB-A72E78C3A5F1}" WorkUnitID="{2DC1DCD6-C2DA-417F-A160-F4129917E20D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

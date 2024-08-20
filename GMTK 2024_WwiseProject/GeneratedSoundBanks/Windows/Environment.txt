@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	278617630	Play_Ambience			\Environment\Play_Ambience	
 	1478396515	Player_Checkpoint_ReActv			\Environment\Player_Checkpoint_ReActv	
+	2477713992	Stop_Ambience			\Environment\Stop_Ambience	
 	3400834491	Player_Checkpoint			\Environment\Player_Checkpoint	
 
 Effect plug-ins	ID	Name	Type				Notes
