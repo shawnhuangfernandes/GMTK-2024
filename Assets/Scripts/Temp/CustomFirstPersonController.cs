@@ -54,6 +54,12 @@ public class CustomFirstPersonController : MonoBehaviour
     [Tooltip("The field of view for when the player is at min speed")]
     public int railGrindingSlowestFocalLength;
 
+    [Tooltip("The audio event for jumping")]
+    public AK.Wwise.Event jumpSoundEvent;
+    public AK.Wwise.Switch jumpSwitch;
+
+    public AK.Wwise.Event landSoundEvent;
+
     private CharacterController characterController;
     [HideInInspector] public Vector3 velocity;
     /// <summary> The movement mode this character should surrently be following. </summary>
@@ -68,6 +74,8 @@ public class CustomFirstPersonController : MonoBehaviour
     public Collider groundCollider { get; private set; }
     private Rail? currentRail;
 
+    private float lastLandingSoundTime;
+
     [HideInInspector] public float rootWalkSpeed = 0F;
     [HideInInspector] public float rootRunSpeed = 0F;
     [HideInInspector] public float rootJumpHeight = 0F;
@@ -80,6 +88,8 @@ public class CustomFirstPersonController : MonoBehaviour
     [HideInInspector] public float rootmaxGrindSpeed;
     /// <summary> The current radius of characterController, accounting for this character's localScale. </summary>
     private float CharacterRadius => transform.localScale.x * characterController.radius;
+
+    private FootstepManager footstepManager => GetComponentInChildren<FootstepManager>();
 
 	public void ResetState()
 	{
@@ -124,9 +134,12 @@ public class CustomFirstPersonController : MonoBehaviour
     {
         HandleMovement();
         InteractWithRails();
+
         // After all movement, decide how this character should respond to the ground.
         InteractWithGround();
         HandleCameraRotation();
+
+
 
         if (motionState == MotionState.Grounded || motionState == MotionState.Airborne)
             railGrindStopEvent.Post(gameObject);
@@ -277,6 +290,7 @@ public class CustomFirstPersonController : MonoBehaviour
         }
 	}
 
+
     private void InteractWithGround()
     {
         RaycastHit hit;
@@ -310,7 +324,18 @@ public class CustomFirstPersonController : MonoBehaviour
 
             case MotionState.Airborne:
                 if(velocity.y < 0 && canWalkOnGround)
+                {
                     motionState = MotionState.Grounded;
+                    jumpSwitch = footstepManager.GetSwitchToUse();
+                    jumpSwitch.SetValue(gameObject);
+
+                    if (Time.time - lastLandingSoundTime > 1F)
+                    {
+                        landSoundEvent.Post(gameObject);
+                        lastLandingSoundTime = Time.time;
+                    }
+                }
+                    
                 break;
         }
     }
@@ -381,8 +406,13 @@ public class CustomFirstPersonController : MonoBehaviour
 
     private void JumpAndBecomeAirborne()
 	{
+        jumpSwitch = footstepManager.GetSwitchToUse();
+        jumpSwitch.SetValue(gameObject);
+
         float jumpSpeed = Mathf.Sqrt(jumpHeight * 2 * Physics.gravity.magnitude);
         AddForce(Vector3.up * jumpSpeed, ForceMode.VelocityChange);
         motionState = MotionState.Airborne;
+
+        jumpSoundEvent.Post(gameObject);
     }
 }
