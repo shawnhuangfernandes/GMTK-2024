@@ -10,6 +10,10 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Windmill" ID="{23255D2E-9608-458B-A104-DB5ED4951350}" WorkUnitID="{57AF087A-6726-4B5D-B3BB-CD0D71AE2E77}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Player_Shrinks" ID="{5ACF63CD-973F-4DEA-B845-B586802CFEFE}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -21,7 +25,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Player_Size" ID="{F40BFA0C-2D01-4620-8F7D-006735CB5BF5}"/>
-							<Value>50.9029345372461</Value>
+							<Value>50</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
@@ -73,6 +77,14 @@
 							<ObjectRef Name="Player_Grows" ID="{9DBEC3C1-5EB1-450B-9572-1B5A681D00B0}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
 							<Position X="4" Y="1"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Windmill" ID="{23255D2E-9608-458B-A104-DB5ED4951350}" WorkUnitID="{57AF087A-6726-4B5D-B3BB-CD0D71AE2E77}"/>
+							<Position X="4" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Test_Bell_Loop" ID="{177010C3-C7C2-46DB-98FD-5C7959F123EA}" WorkUnitID="{57AF087A-6726-4B5D-B3BB-CD0D71AE2E77}"/>
+							<Position X="4" Y="3"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -84,7 +96,7 @@
 						<CurrentStateRef Name="None" ID="{76EF21FD-DF0B-4BA1-8C35-17D3A4A28957}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Metal" ID="{07F91A37-A64E-4E60-B97B-CB8DD383AB52}"/>
+						<CurrentSwitchRef Name="Grass" ID="{E1777FEB-9222-41B3-80A1-053755190892}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Respawn - Checkpoint" ID="{BA4C1F71-B6EF-417C-9E40-ED398B522D41}">
@@ -94,7 +106,7 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Player_Checkpoint" ID="{683889F6-1AD2-4CAD-AE7E-B38CB285F6A3}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
+							<ObjectRef Name="Player_Checkpoint" ID="{683889F6-1AD2-4CAD-AE7E-B38CB285F6A3}" WorkUnitID="{93A8A08E-0D81-4824-B96E-92E177B8D654}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
@@ -102,14 +114,14 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Player_Checkpoint_ReActv" ID="{32F52A43-ECA6-4BAF-8CDF-6DD82870A2C8}" WorkUnitID="{423D1B1E-975E-42E8-BD97-D5598DDE0D35}"/>
+							<ObjectRef Name="Player_Checkpoint_ReActv" ID="{32F52A43-ECA6-4BAF-8CDF-6DD82870A2C8}" WorkUnitID="{93A8A08E-0D81-4824-B96E-92E177B8D654}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Metal" ID="{07F91A37-A64E-4E60-B97B-CB8DD383AB52}"/>
+						<CurrentSwitchRef Name="Grass" ID="{E1777FEB-9222-41B3-80A1-053755190892}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Music" ID="{9F31E199-0B0B-419E-9CFD-E8728B798EB6}">

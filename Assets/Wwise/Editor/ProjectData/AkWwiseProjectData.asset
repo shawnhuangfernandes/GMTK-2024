@@ -38,8 +38,51 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 49089d7fd8944846b20cbbf8b81997cd
     GuidInternal: 
-    m_lastTime: -8584777513764840129
+    m_lastTime: -8584774862835662579
     List:
+    - name: Checkpoint_ReActv
+      guid: 2045389072061f4795e7d88241b8149f
+      id: 1684828447
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 49089d7fd8944846b20cbbf8b81997cd
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 5e608b5c0befcf4ca26b724b28707bb0
+      - ElementName: Environment
+        ObjectType: 2
+        guid: b5ab8d96f861d544bffaa3bd4df65701
+      - ElementName: Checkpoint_ReActv
+        ObjectType: 2
+        guid: 2045389072061f4795e7d88241b8149f
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Environment\Checkpoint_ReActv
+    - name: Environment
+      guid: b5ab8d96f861d544bffaa3bd4df65701
+      id: 1229948536
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 49089d7fd8944846b20cbbf8b81997cd
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 5e608b5c0befcf4ca26b724b28707bb0
+      - ElementName: Environment
+        ObjectType: 2
+        guid: b5ab8d96f861d544bffaa3bd4df65701
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Environment
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -54,6 +97,83 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Music
+      guid: 8091f11dd80fa348b0647439a5c0f3a3
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 49089d7fd8944846b20cbbf8b81997cd
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 8091f11dd80fa348b0647439a5c0f3a3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
+    - name: Player
+      guid: 06e6e718aeca3d4595591655c38c0613
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 49089d7fd8944846b20cbbf8b81997cd
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 5e608b5c0befcf4ca26b724b28707bb0
+      - ElementName: Player
+        ObjectType: 2
+        guid: 06e6e718aeca3d4595591655c38c0613
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Player
+    - name: Respawn
+      guid: fea3e83549374c41a093557510f18805
+      id: 4279841335
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 49089d7fd8944846b20cbbf8b81997cd
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 5e608b5c0befcf4ca26b724b28707bb0
+      - ElementName: Player
+        ObjectType: 2
+        guid: 06e6e718aeca3d4595591655c38c0613
+      - ElementName: Respawn
+        ObjectType: 2
+        guid: fea3e83549374c41a093557510f18805
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Player\Respawn
+    - name: SFX
+      guid: 5e608b5c0befcf4ca26b724b28707bb0
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 49089d7fd8944846b20cbbf8b81997cd
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 5e608b5c0befcf4ca26b724b28707bb0
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -175,7 +295,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7a08af5726675d4bb3bbcd0d71ae2e77
     GuidInternal: 
-    m_lastTime: -8584775601096596747
+    m_lastTime: -8584774861198216436
     List:
     - name: Play_Metal_Land
       guid: e6ab66304051df42b7e6caeecd08ed1b
@@ -245,6 +365,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Windmill
+      guid: 2e5d252308968b45a104db5ed4951350
+      id: 583713573
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a08af5726675d4bb3bbcd0d71ae2e77
+      - ElementName: Windmill
+        ObjectType: 3
+        guid: 2e5d252308968b45a104db5ed4951350
+      Path: Events\Default Work Unit\Windmill
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Environment.wwu
     PathAndIcons:
     - ElementName: Events
@@ -256,7 +393,7 @@ MonoBehaviour:
     ParentPath: Events\Environment
     guid: 8ea0a893810d2448b96e92e177b8d654
     GuidInternal: 
-    m_lastTime: -8584775766774633479
+    m_lastTime: -8584774865092607338
     List:
     - name: Play_Ambience
       guid: 3644649cbd50d84a9765b503e2b859f2
@@ -275,6 +412,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Player_Checkpoint
+      guid: f6893868d21aad4cae7eb38cb285f6a3
+      id: 3400834491
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Environment
+        ObjectType: 12
+        guid: 8ea0a893810d2448b96e92e177b8d654
+      - ElementName: Player_Checkpoint
+        ObjectType: 3
+        guid: f6893868d21aad4cae7eb38cb285f6a3
+      Path: Events\Environment\Player_Checkpoint
+      maxAttenuation: 0
+      maxDuration: 11.285708
+      minDuration: 11.285708
+    - name: Player_Checkpoint_ReActv
+      guid: 432af532a6ecaf4b8cdf6dd82870a2c8
+      id: 1478396515
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Environment
+        ObjectType: 12
+        guid: 8ea0a893810d2448b96e92e177b8d654
+      - ElementName: Player_Checkpoint_ReActv
+        ObjectType: 3
+        guid: 432af532a6ecaf4b8cdf6dd82870a2c8
+      Path: Events\Environment\Player_Checkpoint_ReActv
+      maxAttenuation: 0
+      maxDuration: 5.654896
+      minDuration: 4.4285626
   - PhysicalPath: Events\Music.wwu
     PathAndIcons:
     - ElementName: Events
@@ -350,25 +521,8 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: 1e1b3d425e97e842bd97d5598dde0d35
     GuidInternal: 
-    m_lastTime: -8584774941313394254
+    m_lastTime: -8584774865092332247
     List:
-    - name: Player_Checkpoint
-      guid: f6893868d21aad4cae7eb38cb285f6a3
-      id: 3400834491
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Player
-        ObjectType: 12
-        guid: 1e1b3d425e97e842bd97d5598dde0d35
-      - ElementName: Player_Checkpoint
-        ObjectType: 3
-        guid: f6893868d21aad4cae7eb38cb285f6a3
-      Path: Events\Player\Player_Checkpoint
-      maxAttenuation: 0
-      maxDuration: 11.285708
-      minDuration: 11.285708
     - name: Player_Footsteps
       guid: 24e3f7944fb3e24784ee53db04fb3b8b
       id: 1730208058

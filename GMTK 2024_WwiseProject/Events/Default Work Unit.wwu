@@ -67,6 +67,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Windmill" ID="{23255D2E-9608-458B-A104-DB5ED4951350}">
+					<ChildrenList>
+						<Action Name="" ID="{2175878C-AB27-4368-9E6E-64C5EC4C0097}" ShortID="901224957">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Windmill" ID="{27E5414D-0AB5-4DAB-A979-0E61388A779A}" WorkUnitID="{4C339756-FB93-4187-A0A8-CA194E81830A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
