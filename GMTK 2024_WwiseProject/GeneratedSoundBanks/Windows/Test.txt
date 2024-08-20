@@ -3,6 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	583713573	Windmill			\Default Work Unit\Windmill	
 	1164862133	Play_Metal_Land			\Default Work Unit\Play_Metal_Land	
 	2131429412	Test_Bell_Loop			\Default Work Unit\Test_Bell_Loop	
+	3536574011	Mailbox			\Default Work Unit\Mailbox	
 	3717737302	Mailbox_Open			\Default Work Unit\Mailbox_Open	
 	3820402890	Leaves_Rustling			\Default Work Unit\Leaves_Rustling	
 
@@ -38,6 +39,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	155080818	Footstep_07	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Footstep_07_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Metal\Left\Footstep_07		129796
 	238272670	Footstep_01	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Footstep_01_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Metal\Left\Footstep_01		128584
 	267339551	Footstep_05	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Footstep_05_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Metal\Left\Footstep_05		128326
+	395720407	Mailbox	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Mailbox_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mailbox		179006
 	449175834	Footstep_03	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Footstep_03_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Metal\Left\Footstep_03		130564
 	596041254	Footstep_10	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Footstep_10_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Metal\Right\Footstep_10		129474
 	698227480	Footstep_04	D:\Game Audio\Shawn Huang Fernandes\GMTK Game Jam 2024\GMTK-2024\GMTK 2024_WwiseProject\.cache\Windows\SFX\Footstep_04_818F3B66.wem		\Actor-Mixer Hierarchy\Player\Player_Movement\Player_Landing\Metal\Right\Footstep_04		130956

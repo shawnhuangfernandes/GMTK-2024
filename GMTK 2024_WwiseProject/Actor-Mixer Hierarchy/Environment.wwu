@@ -777,8 +777,18 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Checkpoint_Wind_Gust" ID="{F5D8084F-056C-41A1-B143-D1BE7A1E9704}" ShortID="48363467">
 							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>40</Value>
+									</ValueList>
+								</Property>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">

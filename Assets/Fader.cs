@@ -14,13 +14,9 @@ public class Fader : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void FadeInAndRestart()
+    public void FadeIn()
     {
         GetComponent<CanvasGroup>().DOFade(1F, 1F)
-            .SetEase(Ease.InQuad)
-            .OnComplete(() => 
-            {
-                SceneManager.LoadScene("ShipScene");
-            });
+            .SetEase(Ease.InQuad);
     }
 }

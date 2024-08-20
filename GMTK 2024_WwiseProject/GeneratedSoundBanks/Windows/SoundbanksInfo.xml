@@ -550,7 +550,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{8C601B89-2298-4406-1B18-D02DBAF21D97}">
+		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{AAADDC19-030D-1252-E495-DA714E4146BD}">
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 			<Media>
@@ -795,7 +795,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3157003241" Type="User" Language="SFX" Hash="{424CBDD2-7D0C-ED43-54EF-C28958D182FB}">
+		<SoundBank Id="3157003241" Type="User" Language="SFX" Hash="{32E42B34-1155-F5C4-93AC-58B0E1137B98}">
 			<ShortName>Test</ShortName>
 			<Path>Test.bnk</Path>
 			<Media>
@@ -823,6 +823,10 @@
 					<ShortName>Wooden_Wheel_Large_Turning_Smooth_01_Loop.wav</ShortName>
 					<Path>Media/302336510.wem</Path>
 					<CachePath>SFX/Wooden_Wheel_Large_Turning_Smooth_01_Loop_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="395720407" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Mailbox.wav</ShortName>
+					<CachePath>SFX/Mailbox_818F3B66.wem</CachePath>
 				</File>
 				<File Id="449175834" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footstep_03.wav</ShortName>
@@ -900,6 +904,11 @@
 						<MediaRef Id="770930447"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3536574011" Name="Mailbox" DurationType="OneShot" DurationMin="1.8636458" DurationMax="1.8636458">
+					<MediaRefs>
+						<MediaRef Id="395720407"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="475518338" Name="Mailbox_Close" DurationType="OneShot" DurationMin="1.1607708" DurationMax="1.1607708">
 					<MediaRefs>
 						<MediaRef Id="826557122"/>
@@ -969,7 +978,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{F0D423FB-34B0-E7DA-4BF3-6206453A3879}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{03B6128F-19DA-332A-B39B-10B0ABF8B9B1}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
@@ -1026,5 +1035,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{08317600-1B7C-CCBD-BB73-CBCBAD852FC1}</FileHash>
+	<FileHash>{FF26E946-21B8-B326-82D5-A3DD21919EBC}</FileHash>
 </SoundBanksInfo>
