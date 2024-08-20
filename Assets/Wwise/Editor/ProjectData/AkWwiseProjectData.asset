@@ -295,7 +295,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7a08af5726675d4bb3bbcd0d71ae2e77
     GuidInternal: 
-    m_lastTime: -8584774741365487011
+    m_lastTime: -8584774729044297847
     List:
     - name: Leaves_Rustling
       guid: 51fc08cb1f74cb4e928d4c78a5640d29
@@ -311,7 +311,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 51fc08cb1f74cb4e928d4c78a5640d29
       Path: Events\Default Work Unit\Leaves_Rustling
-      maxAttenuation: 30
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
     - name: Mailbox
@@ -427,7 +427,7 @@ MonoBehaviour:
     ParentPath: Events\Environment
     guid: 8ea0a893810d2448b96e92e177b8d654
     GuidInternal: 
-    m_lastTime: -8584774758078345231
+    m_lastTime: -8584774674069849694
     List:
     - name: Play_Ambience
       guid: 3644649cbd50d84a9765b503e2b859f2
@@ -480,6 +480,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 5.654896
       minDuration: 4.4285626
+    - name: Stop_Ambience
+      guid: 8e0303324872744283ebc52c12134f1f
+      id: 2477713992
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Environment
+        ObjectType: 12
+        guid: 8ea0a893810d2448b96e92e177b8d654
+      - ElementName: Stop_Ambience
+        ObjectType: 3
+        guid: 8e0303324872744283ebc52c12134f1f
+      Path: Events\Environment\Stop_Ambience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\Music.wwu
     PathAndIcons:
     - ElementName: Events
@@ -491,7 +508,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: b35f488a5d535f41b5604b9336bb7454
     GuidInternal: 
-    m_lastTime: -8584774741365476927
+    m_lastTime: -8584774674069739697
     List:
     - name: Music_EndRail
       guid: 1ecafc7c70e2ff44a24343164da14043
@@ -508,8 +525,8 @@ MonoBehaviour:
         guid: 1ecafc7c70e2ff44a24343164da14043
       Path: Events\Music\Music_EndRail
       maxAttenuation: 0
-      maxDuration: 59.857143
-      minDuration: 59.857143
+      maxDuration: 60.107143
+      minDuration: 60.107143
     - name: Play_Music_Menu
       guid: a25977a7afe66740b07572044c16f422
       id: 1699343283
@@ -544,6 +561,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 16.142855
       minDuration: 16.142855
+    - name: Stop_Music_All
+      guid: 6995f40cc5282f46a430a79f9d7845cb
+      id: 1369021357
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: b35f488a5d535f41b5604b9336bb7454
+      - ElementName: Stop_Music_All
+        ObjectType: 3
+        guid: 6995f40cc5282f46a430a79f9d7845cb
+      Path: Events\Music\Stop_Music_All
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_Music_EndRail
       guid: aefe9afce6fe3945b309827334dee052
       id: 3350983311
