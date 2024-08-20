@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 49089d7fd8944846b20cbbf8b81997cd
     GuidInternal: 
-    m_lastTime: -8584774862835662579
+    m_lastTime: -8584774855103371948
     List:
     - name: Checkpoint_ReActv
       guid: 2045389072061f4795e7d88241b8149f
@@ -186,7 +186,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 38f52f7bfb32434f8b3284d5c6ee7567
     GuidInternal: 
-    m_lastTime: -8584777513763421826
+    m_lastTime: -8584774756742800340
     List:
     - name: Test
       guid: a945bd56bd8778409bb368a15a4cb042
@@ -295,7 +295,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7a08af5726675d4bb3bbcd0d71ae2e77
     GuidInternal: 
-    m_lastTime: -8584774768821394442
+    m_lastTime: -8584774742662795729
     List:
     - name: Leaves_Rustling
       guid: 51fc08cb1f74cb4e928d4c78a5640d29
@@ -311,9 +311,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 51fc08cb1f74cb4e928d4c78a5640d29
       Path: Events\Default Work Unit\Leaves_Rustling
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: -1
       minDuration: -1
+    - name: Mailbox
+      guid: 68aa628e1ad0cc4ba4ea67487287e486
+      id: 3536574011
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a08af5726675d4bb3bbcd0d71ae2e77
+      - ElementName: Mailbox
+        ObjectType: 3
+        guid: 68aa628e1ad0cc4ba4ea67487287e486
+      Path: Events\Default Work Unit\Mailbox
+      maxAttenuation: 0
+      maxDuration: 1.8636458
+      minDuration: 1.8636458
     - name: Mailbox_Close
       guid: 77c2719b2ff1d14b9cbcb768238e2742
       id: 475518338
@@ -329,8 +346,8 @@ MonoBehaviour:
         guid: 77c2719b2ff1d14b9cbcb768238e2742
       Path: Events\Default Work Unit\Mailbox_Close
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.1607708
+      minDuration: 1.1607708
     - name: Mailbox_Open
       guid: 0d151649fb6ae34e8b3a289e54adc0a5
       id: 3717737302
@@ -346,8 +363,8 @@ MonoBehaviour:
         guid: 0d151649fb6ae34e8b3a289e54adc0a5
       Path: Events\Default Work Unit\Mailbox_Open
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.38729167
+      minDuration: 0.38729167
     - name: Play_Metal_Land
       guid: e6ab66304051df42b7e6caeecd08ed1b
       id: 1164862133
@@ -363,8 +380,8 @@ MonoBehaviour:
         guid: e6ab66304051df42b7e6caeecd08ed1b
       Path: Events\Default Work Unit\Play_Metal_Land
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.6559851
+      minDuration: 1.4753147
     - name: Test_Bell_Loop
       guid: c3107017c2c7db4698fd5c7959f123ea
       id: 2131429412
@@ -382,40 +399,6 @@ MonoBehaviour:
       maxAttenuation: 170
       maxDuration: -1
       minDuration: -1
-    - name: Test_Metal_Jump
-      guid: f88234a5dab76a44ac58cf1b382ba92e
-      id: 789398788
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 7a08af5726675d4bb3bbcd0d71ae2e77
-      - ElementName: Test_Metal_Jump
-        ObjectType: 3
-        guid: f88234a5dab76a44ac58cf1b382ba92e
-      Path: Events\Default Work Unit\Test_Metal_Jump
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Test_Metal_Landing
-      guid: e411dba12051a443a8d1cd087ceb31ae
-      id: 3086070585
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 7a08af5726675d4bb3bbcd0d71ae2e77
-      - ElementName: Test_Metal_Landing
-        ObjectType: 3
-        guid: e411dba12051a443a8d1cd087ceb31ae
-      Path: Events\Default Work Unit\Test_Metal_Landing
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Windmill
       guid: 2e5d252308968b45a104db5ed4951350
       id: 583713573
@@ -430,7 +413,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2e5d252308968b45a104db5ed4951350
       Path: Events\Default Work Unit\Windmill
-      maxAttenuation: 0
+      maxAttenuation: 170
       maxDuration: -1
       minDuration: -1
   - PhysicalPath: Events\Environment.wwu
@@ -444,7 +427,7 @@ MonoBehaviour:
     ParentPath: Events\Environment
     guid: 8ea0a893810d2448b96e92e177b8d654
     GuidInternal: 
-    m_lastTime: -8584774865092607338
+    m_lastTime: -8584774758078345231
     List:
     - name: Play_Ambience
       guid: 3644649cbd50d84a9765b503e2b859f2
@@ -478,8 +461,8 @@ MonoBehaviour:
         guid: f6893868d21aad4cae7eb38cb285f6a3
       Path: Events\Environment\Player_Checkpoint
       maxAttenuation: 0
-      maxDuration: 11.285708
-      minDuration: 11.285708
+      maxDuration: 13.285708
+      minDuration: 13.285708
     - name: Player_Checkpoint_ReActv
       guid: 432af532a6ecaf4b8cdf6dd82870a2c8
       id: 1478396515
@@ -508,7 +491,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: b35f488a5d535f41b5604b9336bb7454
     GuidInternal: 
-    m_lastTime: -8584774794365726639
+    m_lastTime: -8584774751202336434
     List:
     - name: Music_EndRail
       guid: 1ecafc7c70e2ff44a24343164da14043
@@ -589,7 +572,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: 1e1b3d425e97e842bd97d5598dde0d35
     GuidInternal: 
-    m_lastTime: -8584774836257783509
+    m_lastTime: -8584774826265660750
     List:
     - name: Play_Player_WindRush
       guid: 3653c5485bf13f44b2c4d0c647b62954
