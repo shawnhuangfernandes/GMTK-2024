@@ -60,6 +60,7 @@ public class Respawner : MonoBehaviour
 
 		respawnSoundEvent.Post(gameObject);
 
+
 		yield return new WaitForSeconds(delay);
 
 		// If this is a character, force it to teleport.

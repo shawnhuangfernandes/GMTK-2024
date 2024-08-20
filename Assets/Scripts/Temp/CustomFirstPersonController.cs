@@ -1,3 +1,5 @@
+using Cinemachine;
+using System.Collections.Generic;
 using UnityEngine;
 
 // Author: Shawn Huang Fernandes
@@ -30,7 +32,7 @@ public class CustomFirstPersonController : MonoBehaviour
     public float groundCheckDistance = 1.1f;
 
     [Tooltip("The camera XFRM to control")]
-    public Transform cameraXFRM;
+    public List<Transform> cameraXFRMs = new List<Transform>();
 
     [Header("Rail Grinding")]
     [Tooltip("The object at whose position this character should attach to rails while grinding.")]
@@ -49,14 +51,13 @@ public class CustomFirstPersonController : MonoBehaviour
     public AK.Wwise.Event railGrindStopEvent;
 
     [Tooltip("The field of view for when the player is at max speed")]
-    public int railGrindingFastestFocalLength;
-
-    [Tooltip("The field of view for when the player is at min speed")]
-    public int railGrindingSlowestFocalLength;
+    public CinemachineVirtualCamera railGrindVcam;
 
     [Tooltip("The audio event for jumping")]
     public AK.Wwise.Event jumpSoundEvent;
     public AK.Wwise.Switch jumpSwitch;
+
+    public AK.Wwise.Event railGrindLand;
 
     public AK.Wwise.Event landSoundEvent;
 
@@ -264,6 +265,7 @@ public class CustomFirstPersonController : MonoBehaviour
                     // if we weren't previously grinding
                     if (motionState != MotionState.Grinding)
                     {
+                        railGrindLand.Post(gameObject);
                         railGrindStartLoopEvent.Post(gameObject);
                     }
 
@@ -278,11 +280,14 @@ public class CustomFirstPersonController : MonoBehaviour
 		{
             case MotionState.Grounded:
                 SnapToNearbyRail(0.1f);
+                railGrindVcam.Priority = 0;
                 break;
 
             case MotionState.Airborne:
                 if(velocity.y < 0)
                     SnapToNearbyRail(0.6f);
+
+                railGrindVcam.Priority = 0;
                 break;
 
             case MotionState.Grinding:
@@ -290,6 +295,8 @@ public class CustomFirstPersonController : MonoBehaviour
                 // Leave the rail when this character reaches the end.
                 if (railHandle.result.percent >= 1f)
                     motionState = MotionState.Airborne;
+
+                railGrindVcam.Priority = 100;
                 break;
         }
 	}
@@ -349,7 +356,11 @@ public class CustomFirstPersonController : MonoBehaviour
 
         rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
         rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
-        cameraXFRM.localRotation = Quaternion.Euler(rotationX, 0, 0);
+
+        foreach(Transform xfrm in cameraXFRMs)
+        {
+            xfrm.localRotation = Quaternion.Euler(rotationX, 0, 0);
+        }
         transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         Debug.Log(Input.GetAxis("Mouse Y") + "           " + Input.GetAxis("Mouse X"));
     }
