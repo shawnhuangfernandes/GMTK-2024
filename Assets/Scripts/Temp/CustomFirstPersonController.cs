@@ -58,6 +58,8 @@ public class CustomFirstPersonController : MonoBehaviour
     public AK.Wwise.Event jumpSoundEvent;
     public AK.Wwise.Switch jumpSwitch;
 
+    public AK.Wwise.Event railGrindLand;
+
     public AK.Wwise.Event landSoundEvent;
 
     private CharacterController characterController;
@@ -260,6 +262,7 @@ public class CustomFirstPersonController : MonoBehaviour
                     // if we weren't previously grinding
                     if (motionState != MotionState.Grinding)
                     {
+                        railGrindLand.Post(gameObject);
                         railGrindStartLoopEvent.Post(gameObject);
                     }
 
