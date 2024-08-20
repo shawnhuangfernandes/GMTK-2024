@@ -406,7 +406,8 @@
 																			<PropertyList>
 																				<Property Name="EndTrimOffset" Type="Real64" Value="59857.1458333333"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="31747.5225294872"/>
+																				<Property Name="FadeOutShape" Type="int16" Value="6"/>
 																			</PropertyList>
 																			<AudioSourceRef Name="MX_EndRail_Guitar_4-4_106bpm_L24M" ID="{62B54723-A05B-479D-86DA-C522EF0FF0FF}"/>
 																		</MusicClip>
@@ -421,13 +422,6 @@
 									</ObjectLists>
 								</MusicTrack>
 								<MusicTrack Name="MX_EndRail_HandPan_4-4_106bpm_L24M" ID="{D0E41FA9-2EEE-49BC-B7C7-025D5070A6E0}" ShortID="75007080">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
@@ -465,7 +459,8 @@
 																			<PropertyList>
 																				<Property Name="EndTrimOffset" Type="Real64" Value="59857.1458333333"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="32117.3432242659"/>
+																				<Property Name="FadeOutShape" Type="int16" Value="6"/>
 																			</PropertyList>
 																			<AudioSourceRef Name="MX_EndRail_HandPan_4-4_106bpm_L24M" ID="{0CE69EB9-9D35-486D-8D8C-37B723125564}"/>
 																		</MusicClip>
@@ -517,7 +512,8 @@
 																			<PropertyList>
 																				<Property Name="EndTrimOffset" Type="Real64" Value="59857.1458333333"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="32189.8428703703"/>
+																				<Property Name="FadeOutShape" Type="int16" Value="6"/>
 																			</PropertyList>
 																			<AudioSourceRef Name="MX_EndRail_Piano_4-4_106bpm_L24M" ID="{E86D0FE4-2414-46E2-8015-B3552125832F}"/>
 																		</MusicClip>
@@ -532,13 +528,6 @@
 									</ObjectLists>
 								</MusicTrack>
 								<MusicTrack Name="MX_EndRail_Shaker_4-4_106bpm_L24M" ID="{D45D712B-F653-4C6D-9A17-A6DF1A6460A0}" ShortID="52644596">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7F9D0849-94D8-4648-B20C-BBF8B81997CD}"/>
@@ -576,7 +565,8 @@
 																			<PropertyList>
 																				<Property Name="EndTrimOffset" Type="Real64" Value="59857.1458333333"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="32189.8428703703"/>
+																				<Property Name="FadeOutShape" Type="int16" Value="6"/>
 																			</PropertyList>
 																			<AudioSourceRef Name="MX_EndRail_Shaker_4-4_106bpm_L24M" ID="{85701306-A25F-444E-A6AF-BE56EF8DC9AE}"/>
 																		</MusicClip>
