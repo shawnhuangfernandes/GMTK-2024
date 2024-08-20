@@ -9,13 +9,17 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{7FC9C519-0896-D250-A1B1-AC0CF96398A5}">
+		<SoundBank Id="1069431850" Type="User" Language="SFX" Hash="{8F94D1AB-C7A8-7A99-93B5-F799FD593EE4}">
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<Media>
 				<File Id="11464898" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Respawn_Paper-004.wav</ShortName>
 					<CachePath>SFX/Respawn_Paper-004_818F3B66.wem</CachePath>
+				</File>
+				<File Id="26071193" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_CheckPoint_Chimes-001.wav</ShortName>
+					<CachePath>SFX/SFX_CheckPoint_Chimes-001_818F3B66.wem</CachePath>
 				</File>
 				<File Id="29294242" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footstep_02.wav</ShortName>
@@ -29,6 +33,10 @@
 					<ShortName>Gak_09.wav</ShortName>
 					<CachePath>SFX/Gak_09_818F3B66.wem</CachePath>
 				</File>
+				<File Id="79701115" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_CheckPoint_Wind_Gust-001.wav</ShortName>
+					<CachePath>SFX/SFX_CheckPoint_Wind_Gust-001_818F3B66.wem</CachePath>
+				</File>
 				<File Id="121327956" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Respawn_Paper-001.wav</ShortName>
 					<CachePath>SFX/Respawn_Paper-001_818F3B66.wem</CachePath>
@@ -36,6 +44,10 @@
 				<File Id="155080818" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footstep_07.wav</ShortName>
 					<CachePath>SFX/Footstep_07_818F3B66.wem</CachePath>
+				</File>
+				<File Id="180191431" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_CheckPoint_Wind_Swell-002.wav</ShortName>
+					<CachePath>SFX/SFX_CheckPoint_Wind_Swell-002_818F3B66.wem</CachePath>
 				</File>
 				<File Id="193658144" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Respawn_Wind-001.wav</ShortName>
@@ -97,6 +109,10 @@
 					<ShortName>Respawn_HandPan-001.wav</ShortName>
 					<CachePath>SFX/Respawn_HandPan-001_818F3B66.wem</CachePath>
 				</File>
+				<File Id="426866245" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_CheckPoint_Wind_Gust-002.wav</ShortName>
+					<CachePath>SFX/SFX_CheckPoint_Wind_Gust-002_818F3B66.wem</CachePath>
+				</File>
 				<File Id="427679451" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Respawn_Wind-006.wav</ShortName>
 					<CachePath>SFX/Respawn_Wind-006_818F3B66.wem</CachePath>
@@ -121,6 +137,10 @@
 					<ShortName>Grass_09.wav</ShortName>
 					<CachePath>SFX/Grass_09_818F3B66.wem</CachePath>
 				</File>
+				<File Id="534019865" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_CheckPoint_Chimes-003.wav</ShortName>
+					<CachePath>SFX/SFX_CheckPoint_Chimes-003_818F3B66.wem</CachePath>
+				</File>
 				<File Id="572012260" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Rail_Jump_03.wav</ShortName>
 					<CachePath>SFX/Rail_Jump_03_ABF7965C.wem</CachePath>
@@ -133,6 +153,14 @@
 					<ShortName>Footstep_10.wav</ShortName>
 					<CachePath>SFX/Footstep_10_818F3B66.wem</CachePath>
 				</File>
+				<File Id="603001178" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_CheckPoint_Chimes-005.wav</ShortName>
+					<CachePath>SFX/SFX_CheckPoint_Chimes-005_818F3B66.wem</CachePath>
+				</File>
+				<File Id="627785128" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_CheckPoint_Chimes-004.wav</ShortName>
+					<CachePath>SFX/SFX_CheckPoint_Chimes-004_818F3B66.wem</CachePath>
+				</File>
 				<File Id="642988751" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass_10.wav</ShortName>
 					<CachePath>SFX/Grass_10_818F3B66.wem</CachePath>
@@ -144,6 +172,10 @@
 				<File Id="646295349" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gak_04.wav</ShortName>
 					<CachePath>SFX/Gak_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="648909529" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_CheckPoint_Wind_Gust-005.wav</ShortName>
+					<CachePath>SFX/SFX_CheckPoint_Wind_Gust-005_818F3B66.wem</CachePath>
 				</File>
 				<File Id="657697500" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Rail_Jump_01.wav</ShortName>
@@ -185,6 +217,10 @@
 					<ShortName>Gak_03.wav</ShortName>
 					<CachePath>SFX/Gak_03_818F3B66.wem</CachePath>
 				</File>
+				<File Id="794164658" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_CheckPoint_Wind_Gust-004.wav</ShortName>
+					<CachePath>SFX/SFX_CheckPoint_Wind_Gust-004_818F3B66.wem</CachePath>
+				</File>
 				<File Id="805539665" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footstep_06.wav</ShortName>
 					<CachePath>SFX/Footstep_06_818F3B66.wem</CachePath>
@@ -201,6 +237,10 @@
 					<ShortName>Player_Land.wav</ShortName>
 					<CachePath>SFX/Player_Land_818F3B66.wem</CachePath>
 				</File>
+				<File Id="875943764" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_CheckPoint_Chimes-002.wav</ShortName>
+					<CachePath>SFX/SFX_CheckPoint_Chimes-002_818F3B66.wem</CachePath>
+				</File>
 				<File Id="886182685" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Rail_Landing_02.wav</ShortName>
 					<CachePath>SFX/Rail_Landing_02_CD822EA2.wem</CachePath>
@@ -209,9 +249,17 @@
 					<ShortName>Rail_Grind.wav</ShortName>
 					<CachePath>SFX/Rail_Grind_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="906306108" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_CheckPoint_Wind_Gust-003.wav</ShortName>
+					<CachePath>SFX/SFX_CheckPoint_Wind_Gust-003_818F3B66.wem</CachePath>
+				</File>
 				<File Id="907478584" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gak_05.wav</ShortName>
 					<CachePath>SFX/Gak_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="928497713" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_CheckPoint_Wind_Swell-001.wav</ShortName>
+					<CachePath>SFX/SFX_CheckPoint_Wind_Swell-001_818F3B66.wem</CachePath>
 				</File>
 				<File Id="929641478" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Respawn_HandPan-003.wav</ShortName>
@@ -225,6 +273,10 @@
 					<ShortName>Rail_Landing_04.wav</ShortName>
 					<CachePath>SFX/Rail_Landing_04_B83A08ED.wem</CachePath>
 				</File>
+				<File Id="952505378" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_CheckPoint_Paper-002.wav</ShortName>
+					<CachePath>SFX/SFX_CheckPoint_Paper-002_818F3B66.wem</CachePath>
+				</File>
 				<File Id="962110443" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footstep_08.wav</ShortName>
 					<CachePath>SFX/Footstep_08_818F3B66.wem</CachePath>
@@ -233,6 +285,10 @@
 					<ShortName>Respawn_Wind-007.wav</ShortName>
 					<CachePath>SFX/Respawn_Wind-007_818F3B66.wem</CachePath>
 				</File>
+				<File Id="972721749" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_CheckPoint_Paper-003.wav</ShortName>
+					<CachePath>SFX/SFX_CheckPoint_Paper-003_818F3B66.wem</CachePath>
+				</File>
 				<File Id="1032595168" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass_05.wav</ShortName>
 					<CachePath>SFX/Grass_05_818F3B66.wem</CachePath>
@@ -240,6 +296,10 @@
 				<File Id="1038134498" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Gak_08.wav</ShortName>
 					<CachePath>SFX/Gak_08_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1038576000" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_CheckPoint_Paper-001.wav</ShortName>
+					<CachePath>SFX/SFX_CheckPoint_Paper-001_818F3B66.wem</CachePath>
 				</File>
 				<File Id="1053780604" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grass_08.wav</ShortName>
@@ -254,6 +314,25 @@
 				</ShareSets>
 			</Plugins>
 			<Events>
+				<Event Id="3400834491" Name="Player_Checkpoint" DurationType="OneShot" DurationMin="11.285708" DurationMax="11.285708">
+					<MediaRefs>
+						<MediaRef Id="26071193"/>
+						<MediaRef Id="79701115"/>
+						<MediaRef Id="180191431"/>
+						<MediaRef Id="426866245"/>
+						<MediaRef Id="534019865"/>
+						<MediaRef Id="603001178"/>
+						<MediaRef Id="627785128"/>
+						<MediaRef Id="648909529"/>
+						<MediaRef Id="794164658"/>
+						<MediaRef Id="875943764"/>
+						<MediaRef Id="906306108"/>
+						<MediaRef Id="928497713"/>
+						<MediaRef Id="952505378"/>
+						<MediaRef Id="972721749"/>
+						<MediaRef Id="1038576000"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1730208058" Name="Player_Footsteps" DurationType="OneShot" DurationMin="1.2607603" DurationMax="1.4758322">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -539,7 +618,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{94B49CEE-10F8-581D-376B-1143D4BE5986}">
+		<SoundBank Id="1229948536" Type="User" Language="SFX" Hash="{7149D104-9266-92F5-B6C1-0D7B8539010E}">
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 			<Media>
@@ -686,7 +765,7 @@
 				<GameParameter Id="3040674790" Name="Player_Size"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{9C5A8A58-C021-3B15-D08A-38150DF3E000}">
+		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{4D7A5DA3-3081-C41E-F275-BA85147CBE9B}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<Media>
@@ -742,5 +821,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{588F46C7-7CB3-6ED2-58F5-0BCE3D9F7D2D}</FileHash>
+	<FileHash>{D05F659D-E432-012C-7B39-3B4E6AA8C85B}</FileHash>
 </SoundBanksInfo>
